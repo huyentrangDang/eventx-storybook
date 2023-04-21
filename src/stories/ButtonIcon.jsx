@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css';
-import './assets/common/button.scss'
+import './assets/common/button-icon.scss'
 import Circle_white_sm from './assets/icons/icon-button/circle-default/circle-white-sm.svg'
 import Circle_white_md from './assets/icons/icon-button/circle-default/circle-white-md.svg'
 import Circle_white_lg from './assets/icons/icon-button/circle-default/circle-white-lg.svg'
@@ -59,60 +58,36 @@ import Circle_error800_xl from './assets/icons/icon-button/circle-default/circle
 import Circle_error800_2xl from './assets/icons/icon-button/circle-default/circle-error-800-2xl.svg'
 
 
+export const ButtonIcon = ({destructive, hierarchy, state, size, icon, ...props }) => {
 
+    return (
 
-
-import DotLeadingWhite from './assets/icons/icon-button/dot-leading/dot-leading-white.svg'
-import DotLeadingSuccess500 from './assets/icons/icon-button/dot-leading/dot-leading-success-500.svg'
-import DotLeadingError300 from './assets/icons/icon-button/dot-leading/dot-leading-error-300.svg'
-import DotLeadingGray300 from './assets/icons/icon-button/dot-leading/dot-leading-gray-300.svg'
-import DotLeadingPrimary300 from './assets/icons/icon-button/dot-leading/dot-leading-error-300.svg'
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({destructive, hierarchy, state, size, icon, ...props }) => {
-  const iconMap = {
-    error: Circle_white_sm,
-    success: Circle_white_md,
+      <button
+        type="button"
+        className={['base-button-icon', `icon-button-icon--${icon}-size--${size}`, `icon-button-${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
+        {...props}
+      >
+      <img src={iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)} alt='icon'></img>
+      </button>
+    );
   };
-
-  
-  return (
-    <button
-      type="button"
-      className={['base-button', `button-icon-${icon}-size--${size}`, `button-${hierarchy}-icon-${icon}-destructive-${destructive}-state--${state}`].join(' ')}
-      {...props}
-    >
-    {/* <img src={iconMap[`size_${size}_hierarchy_${hierarchy}_icon_${icon}_${destructive}_state_${state}`]} alt="circle" /> */}
-    
-    <img src={iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)} alt="circle" />
-    <span> Button CTA</span>
-    {icon === 'default' && <img src={iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)} alt="circle" />}
-    </button>
-  );
+ButtonIcon.propTypes = {
+    size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl']),
+    hierarchy: PropTypes.string,
+    icon: PropTypes.string,
+    destructive: PropTypes.bool,
+    state: PropTypes.string
 };
 
-Button.propTypes = {
-  size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl']),
-  hierarchy: PropTypes.string,
-  icon: PropTypes.string,
-  destructive: PropTypes.bool,
-  state: PropTypes.string
-};
+export const iconPath = (size, hierarchy, icon, state, destructive) =>{
 
-Button.defaultProps = {
-};
-export const iconPath = (size, hierarchy, icon, state, destructive)=>{
-  if(icon === 'default'){
-    return iconDefaultPath(size, hierarchy, state, destructive);
+  if(icon === 'only'){
+
+    return iconOnlyPath (destructive, hierarchy, state, size)
   }
-  if(icon === 'dotLeading'){
-    return iconDotLeadingPath(size, hierarchy, state, destructive);
-  }
- 
-  
+
 }
-export const iconDefaultPath = (size, hierarchy, state, destructive) => {
+export const iconOnlyPath = (destructive, hierarchy, state, size) => {
   switch(size){
     case 'sm': {
       if(hierarchy === 'primary'){
@@ -164,28 +139,6 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_primary800_sm
           }
         }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_gray600_sm
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_gray300_sm
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_gray700_sm
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_primary700_sm
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_gray300_sm
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_primary800_sm
-          }
-        }
       }else{
         if(hierarchy === 'secondaryGray'){
           if(state === 'default' || state === 'focused'){
@@ -228,28 +181,6 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_error300_sm
           }
           if(hierarchy === 'tertiaryColor' && state === 'hover'){
-            return Circle_error800_sm
-          }
-        }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_sm
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_error300_sm
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_error800_sm
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_sm
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_error300_sm
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
             return Circle_error800_sm
           }
         }
@@ -306,28 +237,6 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_primary800_md
           }
         }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_gray600_md
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_gray300_md
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_gray700_md
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_primary700_md
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_gray300_md
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_primary800_md
-          }
-        }
       }
       else{
         if(hierarchy === 'secondaryGray'){
@@ -371,28 +280,6 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_error300_md
           }
           if(hierarchy === 'tertiaryColor' && state === 'hover'){
-            return Circle_error800_md
-          }
-        }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_md
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_error300_md
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_error800_md
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_md
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_error300_md
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
             return Circle_error800_md
           }
         }
@@ -448,28 +335,7 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_primary800_lg
           }
         }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_gray600_lg
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_gray300_lg
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_gray700_lg
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_primary700_lg
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_gray300_lg
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_primary800_lg
-          }
-        }
+        
       }
       else{
         if(hierarchy === 'secondaryGray'){
@@ -516,28 +382,7 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_error800_lg
           }
         }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_lg
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_error300_lg
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_error800_lg
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_lg
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_error300_lg
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_error800_lg
-          }
-        }
+       
       }
       break;
     }
@@ -589,28 +434,7 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
           if(hierarchy === 'tertiaryColor' && state === 'hover'){
             return Circle_primary800_xl
           }
-        }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_gray600_xl
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_gray300_xl
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_gray700_xl
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_primary700_xl
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_gray300_xl
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_primary800_xl
-          }
+                
         }
       }
       else{
@@ -655,28 +479,6 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_error300_xl
           }
           if(hierarchy === 'tertiaryColor' && state === 'hover'){
-            return Circle_error800_xl
-          }
-        }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_xl
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_error300_xl
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_error800_xl
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_xl
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_error300_xl
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
             return Circle_error800_xl
           }
         }
@@ -733,28 +535,7 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_primary800_2xl
           }
         }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_gray600_2xl
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_gray300_2xl
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_gray700_2xl
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_primary700_2xl
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_gray300_2xl
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_primary800_2xl
-          }
-        }
+        
       }
       else{
         if(hierarchy === 'secondaryGray'){
@@ -801,55 +582,14 @@ export const iconDefaultPath = (size, hierarchy, state, destructive) => {
             return Circle_error800_2xl
           }
         }
-        if(hierarchy === 'linkGray'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_2xl
-          }
-          if(hierarchy === 'linkGray' && state === 'disabled'){
-            return Circle_error300_2xl
-          }
-          if(hierarchy === 'linkGray' && state === 'hover'){
-            return Circle_error800_2xl
-          }
-        }
-        if(hierarchy === 'linkColor'){
-          if(state === 'default' || state === 'focused'){
-            return Circle_error700_2xl
-          }
-          if(hierarchy === 'linkColor' && state === 'disabled'){
-            return Circle_error300_2xl
-          }
-          if(hierarchy === 'linkColor' && state === 'hover'){
-            return Circle_error800_2xl
-          }
-        }
+        
       }
       
       break;
     }
     default: {
+      console.log( size,"icon nè",hierarchy )
       return {};
     }
   }
-}
-export const iconDotLeadingPath = (size, hierarchy, state, destructive) => {
-  
-  if(hierarchy === 'primary'){
-
-    return DotLeadingWhite
-  }
-  if(destructive === 'false'){
-    if(state !== "disabled"){
-      return DotLeadingSuccess500
-    }
-    if(hierarchy === 'secondaryGray' || hierarchy ==='tertiaryGray' || hierarchy === 'linkGray' || hierarchy === 'linkColor'){
-      return DotLeadingGray300;
-    }
-    if(hierarchy === 'secondaryColor'){
-      return DotLeadingPrimary300;
-    }
-  }else{
-    return DotLeadingError300;
-  }
-  
 }
