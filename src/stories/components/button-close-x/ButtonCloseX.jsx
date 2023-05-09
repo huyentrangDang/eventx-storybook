@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/css/button-close-x.css'
+import '../../assets/css/button-close-x.css'
 export const ButtonCloseX = ({color, state, size, theme, ...props }) => {
 
     return (

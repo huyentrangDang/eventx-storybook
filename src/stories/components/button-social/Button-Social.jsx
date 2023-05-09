@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/css/button-social.css'
+import '../../assets/css/button-social.css'
 
 
 export const ButtonSocial = ({social, supportText, theme, state}) => {
