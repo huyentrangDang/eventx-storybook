@@ -1,0 +1,477 @@
+@import url('./color.css');
+@import url('./common.css');
+.display-2xl-regular {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-2xl-medium {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-2xl-semibold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+
+  }
+.display-2xl-bold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+
+  }
+
+  .display-xl-regular {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-xl-medium {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-xl-semibold{
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+  }
+.display-xl-bold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+  }
+  .display-lg-regular {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-lg-medium {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-lg-semibold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+
+  }
+.display-lg-bold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+
+  }
+  .display-md-regular {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-md-medium {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-md-semibold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+
+  }
+.display-md-bold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+
+  }
+  .display-sm-regular {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-sm-medium {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-sm-semibold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+
+  }
+.display-sm-bold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+
+  }
+  .display-xs-regular {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-xs-medium {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;;
+    letter-spacing: -0.02em;
+
+  }
+
+.display-xs-semibold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+  }
+.display-xs-bold {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+  }
+.text-xl-regular {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+
+}
+.text-xl-medium {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+
+}
+.text-xl-semibold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+
+}
+.text-xl-bold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+
+}
+
+.text-lg-regular {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+
+}
+.text-lg-medium {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+
+}
+.text-lg-semibold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+
+}
+.text-lg-bold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+
+}
+.text-md-regular {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+
+}
+.text-md-medium {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+
+}
+.text-md-semibold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+
+}
+.text-md-bold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+
+}
+.text-sm-regular {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+}
+.text-sm-medium {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+}
+.text-sm-semibold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+}
+.text-sm-bold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+}
+.text-xs-regular {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+
+}
+.text-xs-medium {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+
+}
+.text-xs-semibold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+
+}
+.text-xs-bold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+
+}
+.text-6xl-regular {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+}
+.text-6xl-medium {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+}
+.text-6xl-semibold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+}
+.text-6xl-bold {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+
+}
+
+
+
+
+

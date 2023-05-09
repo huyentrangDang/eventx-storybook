@@ -1,0 +1,136 @@
+.icon-root {
+  /* defined file icon . Do not delete */
+}
+.alert-circle::before {
+    content: url(../icons/icons/alertAndFeedback/alert-circle.svg);
+}
+.alert-hexagon::before {
+    content: url(../icons/icons/alertAndFeedback/alert-hexagon.svg);
+}
+.alert-octagon::before {
+    content: url(../icons/icons/alertAndFeedback/alert-octagon.svg);
+}
+.alert-square::before {
+    content: url(../icons/icons/alertAndFeedback/alert-square.svg);
+}
+.alert-triangle::before {
+    content: url(../icons/icons/alertAndFeedback/alert-triangle.svg);
+}
+.announcement-01::before {
+    content: url(../icons/icons/alertAndFeedback/announcement-01.svg);
+}
+.announcement-02::before {
+    content: url(../icons/icons/alertAndFeedback/announcement-02.svg);
+}
+.announcement-03::before {
+    content: url(../icons/icons/alertAndFeedback/announcement-03.svg);
+}
+.bell-01::before {
+    content: url(../icons/icons/alertAndFeedback/bell-01.svg);
+}
+.bell-02::before {
+    content: url(../icons/icons/alertAndFeedback/bell-02.svg);
+}
+.bell-03::before {
+    content: url(../icons/icons/alertAndFeedback/bell-03.svg);
+}
+.bell-04::before {
+    content: url(../icons/icons/alertAndFeedback/bell-04.svg);
+}
+.bell-minus::before {
+    content: url(../icons/icons/alertAndFeedback/bell-minus.svg);
+}
+.bell-off-01::before {
+    content: url(../icons/icons/alertAndFeedback/bell-off-01.svg);
+}
+.bell-off-02::before {
+    content: url(../icons/icons/alertAndFeedback/bell-off-02.svg);
+}
+.bell-off-03::before {
+    content: url(../icons/icons/alertAndFeedback/bell-off-03.svg);
+}
+.bell-plus::before {
+    content: url(../icons/icons/alertAndFeedback/bell-plus.svg);
+}
+
+/* .icon-alert-circle:before {
+  content: "\e900";
+}
+.icon-alert-hexagon:before {
+  content: "\e901";
+}
+.icon-alert-octagon:before {
+  content: "\e902";
+}
+.icon-alert-square:before {
+  content: "\e903";
+}
+.icon-alert-triangle:before {
+  content: "\e904";
+}
+.icon-announcement-01:before {
+  content: "\e905";
+}
+.icon-announcement-02:before {
+  content: "\e906";
+}
+.icon-announcement-03:before {
+  content: "\e907";
+}
+.icon-bell-01:before {
+  content: "\e908";
+}
+.icon-bell-02:before {
+  content: "\e909";
+}
+.icon-bell-03:before {
+  content: "\e90a";
+}
+.icon-bell-04:before {
+  content: "\e90b";
+}
+.icon-bell-minus:before {
+  content: "\e90c";
+}
+.icon-bell-off-01:before {
+  content: "\e90d";
+}
+.icon-bell-off-02:before {
+  content: "\e90e";
+}
+.icon-bell-off-03:before {
+  content: "\e90f";
+}
+.icon-bell-plus:before {
+  content: "\e910";
+}
+.icon-bell-ringing-01:before {
+  content: "\e911";
+}
+.icon-bell-ringing-02:before {
+  content: "\e912";
+}
+.icon-bell-ringing-03:before {
+  content: "\e913";
+}
+.icon-bell-ringing-04:before {
+  content: "\e914";
+}
+.icon-notification-box:before {
+  content: "\e915";
+}
+.icon-notification-message:before {
+  content: "\e916";
+}
+.icon-notification-text:before {
+  content: "\e917";
+}
+.icon-thumbs-down:before {
+  content: "\e918";
+}
+.icon-thumbs-up:before {
+  content: "\e919";
+} */
+.icon-home1:before {
+  content: "\e900";
+}

@@ -1,0 +1,34 @@
+.misc-category-icon-root {
+    /* defined file misc icon . Do not delete */
+}
+.type--food::before {
+    content: url(../../icons/misc-icons/category-icons/type--food.svg);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+.type--gift::before {
+    content: url(../../icons/misc-icons/category-icons/type--gift.svg);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+.type--machandise::before {
+    content: url(../../icons/misc-icons/category-icons/type--machandise.svg);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+.type--viptable::before {
+    content: url(../../icons/misc-icons/category-icons/type--viptable.svg);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+.type--wine::before {
+    content: url(../../icons/misc-icons/category-icons/type--wine.svg);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
