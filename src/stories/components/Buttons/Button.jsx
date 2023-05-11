@@ -6,27 +6,26 @@ import '../../assets/css/typography.css'
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({destructive, hierarchy, state, size, icon, iconLeading,iconTrailing,...props }) => {
+export const Button = ({destructive, hierarchy, state, size, icon, iconLeading,iconTrailing, text }) => {
   return (
     <>
       {(hierarchy !== 'linkColor' && hierarchy !== 'linkGray') &&
         <div>
         <button
         type="button"
-        className={['base-button',`button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
-        {...props}
+        className={[`button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
         >
         {iconLeading === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
-        <span className={`text-button-${size}-semibold`}> Button CTA</span>
+        <span className={`text-button-${size}-semibold`}> {text}</span>
         {iconTrailing === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
         </button>
       </div>
       }
       {
         (hierarchy === 'linkColor' || hierarchy === 'linkGray') &&
-        <div className={[ 'base-button',`button-icon-${icon}-size--${size}`, `button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}>
+        <div className={[ `button-icon-${icon}-size--${size}`, `button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}>
         {iconLeading === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
-        <span className={`text-button-${size}-semibold`}> Button CTA</span>
+        <span className={`text-button-${size}-semibold`}> {text}</span>
         {iconTrailing === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
         </div>
       }
@@ -42,6 +41,7 @@ Button.propTypes = {
   state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
   iconLeading : PropTypes.oneOf(['true', 'false']),
   iconTrailing: PropTypes.oneOf(['true', 'false']),
+  text: PropTypes.string,
 };
 
 Button.defaultProps = {

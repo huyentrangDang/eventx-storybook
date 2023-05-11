@@ -22,7 +22,8 @@ export const button_primary = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 export const button_secondaryGray = {
@@ -33,7 +34,8 @@ export const button_secondaryGray = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 export const button_secondaryColor = {
@@ -44,7 +46,8 @@ export const button_secondaryColor = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 export const button_tertiaryGray = {
@@ -55,7 +58,8 @@ export const button_tertiaryGray = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 
@@ -67,7 +71,8 @@ export const button_tertiaryColor = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 export const button_linkGray = {
@@ -78,7 +83,8 @@ export const button_linkGray = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 export const button_linkColor = {
@@ -89,7 +95,8 @@ export const button_linkColor = {
     destructive: 'false',
     icon: 'default',
     iconLeading: 'true',
-    iconTrailing: 'true'
+    iconTrailing: 'true',
+    text: "Button CTA"
   }
 }
 

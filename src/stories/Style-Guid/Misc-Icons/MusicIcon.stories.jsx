@@ -1,13 +1,14 @@
-import { CategoryIcons, MiscCategoryIcons, MiscIcon } from "./MiscIcon"
+import { CategoryIcons, MiscIcon, MiscellaneousCheckIcons, MiscellaneousCheckItemText, MiscellaneousIcons } from "./MiscIcon"
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
   title: 'Style Guid/Misc Icon',
-  component: MiscIcon,
+  component: MiscellaneousCheckItemText,
   tags: ['autodocs'],
-  argTypes: {}
+
 }
+
 export const featureIcon = () =>{
   return MiscIcon();
 }
@@ -15,6 +16,18 @@ export const featureIcon = () =>{
 export const categoryIcons = () =>{
   return CategoryIcons();
 }
-export const miscellaneousIcon = () =>{
-  return CategoryIcons();
+export const miscellaneousCheckIcon = () =>{
+  return MiscellaneousCheckIcons();
+}
+export const miscellaneousCheckItemText = {
+  args: {
+    type: "default",
+    size: "sm",
+    color: 'primary',
+    breakpoint: 'desktop',
+
+  }
+}
+export const miscellaneousStarIcon = () =>{
+  return MiscellaneousCheckIcons();
 }
