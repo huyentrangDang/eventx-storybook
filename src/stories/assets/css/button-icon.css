@@ -306,181 +306,307 @@ border: 1px solid var(--error-25);
 
 .circle_white_sm::before {
     content: url(../icons/icon-button/circle-default/circle-white-sm.svg);
+    height: 100%;
+    width: 100%;
+
 }
 .circle_white_md::before {
     content: url(../icons/icon-button/circle-default/circle-white-md.svg);
+    height: 100%;
+    width: 100%;
+
 }
 .circle_white_lg::before {
     content: url(../icons/icon-button/circle-default/circle-white-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_white_xl::before {
     content: url(../icons/icon-button/circle-default/circle-white-xl.svg);
+    height: 100%;
+    width: 100%;
+
 }
 .circle_white_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-white-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray700_sm::before {
     content: url(../icons/icon-button/circle-default/circle-gray-700-sm.svg);
+    height: 100%;
+    width: 100%;
+
 }
 .circle_gray700_md::before {
     content: url(../icons/icon-button/circle-default/circle-gray-700-md.svg);
+    height: 100%;
+    width: 100%;
+
 }
 .circle_gray700_lg::before {
     content: url(../icons/icon-button/circle-default/circle-gray-700-lg.svg);
+    height: 100%;
+    width: 100%;
+
 }
 .circle_gray700_xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-700-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray700_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-700-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray300_sm::before {
     content: url(../icons/icon-button/circle-default/circle-gray-300-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray300_md::before {
     content: url(../icons/icon-button/circle-default/circle-gray-300-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray300_lg::before {
     content: url(../icons/icon-button/circle-default/circle-gray-300-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray300_xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-300-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray300_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-300-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray800_sm::before {
     content: url(../icons/icon-button/circle-default/circle-gray-800-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray800_md::before {
     content: url(../icons/icon-button/circle-default/circle-gray-800-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray800_lg::before {
     content: url(../icons/icon-button/circle-default/circle-gray-800-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray800_xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-800-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray800_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-800-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray600_sm::before {
     content: url(../icons/icon-button/circle-default/circle-gray-600-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray600_md::before {
     content: url(../icons/icon-button/circle-default/circle-gray-600-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray600_lg::before {
     content: url(../icons/icon-button/circle-default/circle-gray-600-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray600_xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-600-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_gray600_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-gray-600-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary700_sm::before {
     content: url(../icons/icon-button/circle-default/circle-primary-700-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary700_md::before {
     content: url(../icons/icon-button/circle-default/circle-primary-700-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary700_lg::before {
     content: url(../icons/icon-button/circle-default/circle-primary-700-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary700_xl::before {
     content: url(../icons/icon-button/circle-default/circle-primary-700-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary700_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-primary-700-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary800_sm::before {
     content: url(../icons/icon-button/circle-default/circle-primary-800-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary800_md::before {
     content: url(../icons/icon-button/circle-default/circle-primary-800-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary800_lg::before {
     content: url(../icons/icon-button/circle-default/circle-primary-800-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary800_xl::before {
     content: url(../icons/icon-button/circle-default/circle-primary-800-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary800_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-primary-800-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary300_sm::before {
     content: url(../icons/icon-button/circle-default/circle-primary-300-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary300_md::before {
     content: url(../icons/icon-button/circle-default/circle-primary-300-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary300_lg::before {
     content: url(../icons/icon-button/circle-default/circle-primary-300-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary300_xl::before {
     content: url(../icons/icon-button/circle-default/circle-primary-300-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_primary300_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-primary-300-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error300_sm::before {
     content: url(../icons/icon-button/circle-default/circle-error-300-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error300_md::before {
     content: url(../icons/icon-button/circle-default/circle-error-300-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error300_lg::before {
     content: url(../icons/icon-button/circle-default/circle-error-300-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error300_xl::before {
     content: url(../icons/icon-button/circle-default/circle-error-300-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error300_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-error-300-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error700_sm::before {
     content: url(../icons/icon-button/circle-default/circle-error-700-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error700_md::before {
     content: url(../icons/icon-button/circle-default/circle-error-700-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error700_lg::before {
     content: url(../icons/icon-button/circle-default/circle-error-700-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error700_xl::before {
     content: url(../icons/icon-button/circle-default/circle-error-700-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error700_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-error-700-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error800_sm::before {
     content: url(../icons/icon-button/circle-default/circle-error-800-sm.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error800_md::before {
     content: url(../icons/icon-button/circle-default/circle-error-800-md.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error800_lg::before {
     content: url(../icons/icon-button/circle-default/circle-error-800-lg.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error800_xl::before {
     content: url(../icons/icon-button/circle-default/circle-error-800-xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .circle_error800_2xl::before {
     content: url(../icons/icon-button/circle-default/circle-error-800-2xl.svg);
+    height: 100%;
+    width: 100%;
 }
 .dot_leading_white::before{
     content: url(../icons/icon-button/dot-leading/dot-leading-white.svg);
+    height: 100%;
+    width: 100%;
 }
 .dot_leading_success_500::before{
     content: url(../icons/icon-button/dot-leading/dot-leading-success-500.svg);
+    height: 100%;
+    width: 100%;
 }
 .dot_leading_error_300::before{
     content: url(../icons/icon-button/dot-leading/dot-leading-error-300.svg);
+    height: 100%;
+    width: 100%;
 }
 .dot_leading_gray_300::before{
     content: url(../icons/icon-button/dot-leading/dot-leading-gray-300.svg);
+    height: 100%;
+    width: 100%;
 }
 .dot_leading_priamry_300::before{
     content: url(../icons/icon-button/dot-leading/dot-leading-primary-300.svg);
+    height: 100%;
+    width: 100%;
 }

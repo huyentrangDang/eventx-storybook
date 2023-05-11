@@ -26,7 +26,7 @@
 border: 10px solid #344054;
 border-radius: 28px;
 }
-.type--default-size-xs-color--gray::before {
+/* .type--default-size-xs-color--gray::before {
     content: url(../icons/misc-icons/miscellaneous-icons/type-default/type--default-size-xs-color--gray.svg);
 }
 .type--default-size-sm-color--gray::before {
@@ -43,4 +43,4 @@ border-radius: 28px;
 }
 .type--default-size-2xl-color--gray::before {
     content: url(../icons/misc-icons/miscellaneous-icons/type-default/type--default-size-2xl-color--gray.svg);
-}
+} */
