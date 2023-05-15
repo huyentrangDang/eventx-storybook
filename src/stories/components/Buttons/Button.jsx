@@ -3,30 +3,36 @@ import PropTypes from 'prop-types';
 import '../../assets/css/button.css'
 import '../../assets/css/button-icon.css'
 import '../../assets/css/typography.css'
+import '../../assets/css/common.css'
+import '../../assets/css/icon.css'
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({destructive, hierarchy, state, size, icon, iconLeading,iconTrailing, text }) => {
+export const Button = ({destructive, hierarchy, state, size, icon, showIconLeading,showiconTrailing, text ,iconLeading, iconTrailing}) => {
   return (
     <>
       {(hierarchy !== 'linkColor' && hierarchy !== 'linkGray') &&
         <div>
         <button
         type="button"
-        className={[`button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
+        className={[`button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}
         >
-        {iconLeading === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
-        <span className={`text-button-${size}-semibold`}> {text}</span>
-        {iconTrailing === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
+
+        {showIconLeading === 'true' && 
+        <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconLeading}`, `${state}`, `${destructive}`)}`].join(' ')}>
+          
+        </div>}
+        <div className={`text-button-${size}-semibold`}> {text}</div>
+        {showiconTrailing === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
         </button>
       </div>
       }
       {
         (hierarchy === 'linkColor' || hierarchy === 'linkGray') &&
-        <div className={[ `button-icon-${icon}-size--${size}`, `button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}>
-        {iconLeading === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
-        <span className={`text-button-${size}-semibold`}> {text}</span>
-        {iconTrailing === 'true' && <span class={[`container-icon--${icon}`, `${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></span>}
+        <div className={[ `button-icon-${icon}-size--${size}`, `button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}>
+        {showIconLeading === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconLeading}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
+        <div className={`text-button-${size}-semibold`}> {text}</div>
+        {showiconTrailing === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
         </div>
       }
     </>
@@ -36,11 +42,13 @@ export const Button = ({destructive, hierarchy, state, size, icon, iconLeading,i
 Button.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl']),
   hierarchy: PropTypes.string,
-  icon: PropTypes.oneOf(['default', 'dotLeading']),
+  // icon: PropTypes.oneOf(['default', 'dotLeading']),
   destructive: PropTypes.oneOf(['true', 'false']),
   state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
-  iconLeading : PropTypes.oneOf(['true', 'false']),
-  iconTrailing: PropTypes.oneOf(['true', 'false']),
+  showIconLeading : PropTypes.oneOf(['true', 'false']),
+  iconLeading: PropTypes.string,
+  showiconTrailing: PropTypes.oneOf(['true', 'false']),
+  iconTrailing: PropTypes.string,
   text: PropTypes.string,
 };
 
@@ -53,7 +61,9 @@ export const iconPath = (size, hierarchy, icon, state, destructive)=>{
   if(icon === 'dotLeading'){
     return iconDotLeadingPath(size, hierarchy, state, destructive);
   }
- 
+  else{
+    return icon;
+  }
   
 }
 export const iconDefaultPath = (size, hierarchy, state, destructive) => {
