@@ -2486,31 +2486,31 @@ background: var(--base-white);
     height: 24px;
     width: 24px;
 }
-.dot_leading_white::before{
+.dot_leading_white{
     content: url(../icons/icon-button/dot-leading/dot-leading-white.svg);
     display: inline-block;
     height: 10px;
     width: 10px;
 }
-.dot_leading_success_500::before{
+.dot_leading_success_500{
     content: url(../icons/icon-button/dot-leading/dot-leading-success-500.svg);
     display: inline-block;
     height: 10px;
     width: 10px;
 }
-.dot_leading_error_300::before{
+.dot_leading_error_300{
     content: url(../icons/icon-button/dot-leading/dot-leading-error-300.svg);
     display: inline-block;
     height: 10px;
     width: 10px;
 }
-.dot_leading_gray_300::before{
+.dot_leading_gray_300{
     content: url(../icons/icon-button/dot-leading/dot-leading-gray-300.svg);
     display: inline-block;
     height: 10px;
     width: 10px;
 }
-.dot_leading_priamry_300::before{
+.dot_leading_priamry_300{
     content: url(../icons/icon-button/dot-leading/dot-leading-primary-300.svg);
     display: inline-block;
     height: 10px;
