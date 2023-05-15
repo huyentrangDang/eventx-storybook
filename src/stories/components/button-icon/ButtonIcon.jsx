@@ -1,26 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../assets/css/button-icon.css'
-
+import '../../assets/css/icon.css'
 
 export const ButtonIcon = ({destructive, hierarchy, state, size, icon, ...props }) => {
 
     return (
-
       <button
         type="button"
-        className={['base-button-icon', `icon-button-icon--${icon}-size--${size}`, `icon-button-${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
+        className={[`icon-button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}
         {...props}
       >
-      {/* <img src={iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)} alt='icon'></img> */}
-      <span class={iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}></span>
+      <div class={[`container-icon-size--${size}`,`${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></div>
       </button>
     );
   };
 ButtonIcon.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl']),
   hierarchy: PropTypes.string,
-  icon: PropTypes.oneOf(['only']),
+  icon: PropTypes.string,
   destructive: PropTypes.oneOf(['true', 'false']),
   state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled'])
 };
@@ -30,6 +28,9 @@ export const iconPath = (size, hierarchy, icon, state, destructive) =>{
   if(icon === 'only'){
 
     return iconOnlyPath (destructive, hierarchy, state, size)
+  }
+  else{
+    return icon;
   }
 
 }
