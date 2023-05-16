@@ -5,44 +5,59 @@ import '../../assets/css/button-icon.css'
 import '../../assets/css/typography.css'
 import '../../assets/css/common.css'
 import '../../assets/css/icon.css'
+import { ButtonIcon } from '../button-icon/ButtonIcon';
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({destructive, hierarchy, state, size, icon, showIconLeading,showiconTrailing, text ,iconLeading, iconTrailing}) => {
   return (
     <>
-      {(hierarchy !== 'linkColor' && hierarchy !== 'linkGray') &&
-        <div>
-        <button
-        type="button"
-        className={[`button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}
-        >
+      {icon !== "only" &&
+      <div>
+        {(hierarchy !== 'linkColor' && hierarchy !== 'linkGray') &&
+          <div>
+          <button
+          type="button"
+          className={[`button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}
+          >
 
-        {showIconLeading === 'true' && 
-        <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconLeading}`, `${state}`, `${destructive}`)}`].join(' ')}>
-          
-        </div>}
-        <div className={`text-button-${size}-semibold`}> {text}</div>
-        {showiconTrailing === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
-        </button>
+          {showIconLeading === 'true' && 
+          <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconLeading}`, `${state}`, `${destructive}`)}`].join(' ')}>
+            
+          </div>}
+          <div className={`text-button-${size}-semibold`}> {text}</div>
+          {showiconTrailing === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
+          </button>
+        </div>
+        }
+        {
+          (hierarchy === 'linkColor' || hierarchy === 'linkGray') &&
+          <div className={[ `button-icon-${icon}-size--${size}`, `button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}>
+          {showIconLeading === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconLeading}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
+          <div className={`text-button-${size}-semibold`}> {text}</div>
+          {showiconTrailing === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
+          </div>
+        }
       </div>
       }
-      {
-        (hierarchy === 'linkColor' || hierarchy === 'linkGray') &&
-        <div className={[ `button-icon-${icon}-size--${size}`, `button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}>
-        {showIconLeading === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconLeading}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
-        <div className={`text-button-${size}-semibold`}> {text}</div>
-        {showiconTrailing === 'true' && <div class={[`container-icon-size--${size}`, `${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>}
-        </div>
+      { icon === "only" &&
+      <button
+        type="button"
+        className={[`button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
+      >
+      <div class={[`container-icon-size--${size}`,`${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>
+      </button>
       }
     </>
   );
 };
 
+
+
 Button.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl']),
   hierarchy: PropTypes.string,
-  // icon: PropTypes.oneOf(['default', 'dotLeading']),
+  icon: PropTypes.oneOf(['default', 'dotLeading', 'only']),
   destructive: PropTypes.oneOf(['true', 'false']),
   state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
   showIconLeading : PropTypes.oneOf(['true', 'false']),
@@ -51,6 +66,7 @@ Button.propTypes = {
   iconTrailing: PropTypes.string,
   text: PropTypes.string,
 };
+
 
 Button.defaultProps = {
 };

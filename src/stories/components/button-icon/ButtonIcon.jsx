@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import '../../assets/css/button-icon.css'
 import '../../assets/css/icon.css'
 
-export const ButtonIcon = ({destructive, hierarchy, state, size, icon, ...props }) => {
+export const ButtonIcon = ({destructive, hierarchy, state, size, icon}) => {
 
     return (
       <button
         type="button"
         className={[`icon-button-size--${size}-hierarchy--${hierarchy}-destructive--${destructive}-state--${state}`].join(' ')}
-        {...props}
       >
       <div class={[`container-icon-size--${size}`,`${iconPath(`${size}`,`${hierarchy}`,`${icon}`, `${state}`, `${destructive}`)}`].join(' ')}></div>
       </button>
