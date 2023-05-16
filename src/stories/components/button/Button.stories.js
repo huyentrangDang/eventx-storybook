@@ -17,56 +17,56 @@ export default {
 export const button_primary = {
   args: {
     hierarchy: 'primary',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
 export const button_secondaryGray = {
   args: {
     hierarchy: 'secondaryGray',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
 export const button_secondaryColor = {
   args: {
     hierarchy: 'secondaryColor',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
 export const button_tertiaryGray = {
   args: {
     hierarchy: 'tertiaryGray',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
@@ -74,42 +74,43 @@ export const button_tertiaryGray = {
 export const button_tertiaryColor = {
   args: {
     hierarchy: 'tertiaryColor',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
 export const button_linkGray = {
   args: {
     hierarchy: 'linkGray',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
 export const button_linkColor = {
   args: {
     hierarchy: 'linkColor',
+    text: "Button CTA",
     size: 'sm',
     state: 'default',
     destructive: 'false',
-    // icon: 'default',
+    icon: 'default',
     showIconLeading: 'true',
-    showiconTrailing: 'true',
-    text: "Button CTA",
     iconLeading: "default",
+    showiconTrailing: 'true',
     iconTrailing: "default",
   }
 }
+
