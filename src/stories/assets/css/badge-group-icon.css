@@ -1,0 +1,74 @@
+
+/* Badge Leading */
+
+.arrow_right_primary_leading {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-primary.svg);
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.arrow_right_gray_leading {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-gray.svg);
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.arrow_right_error_leading {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-error.svg);
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.arrow_right_warning_leading {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-warning.svg);
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.arrow_right_success_leading {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-success.svg);
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+
+/* Badge Trailing */
+
+.arrow_right_primary_trailing {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-primary.svg);
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+.arrow_right_gray_trailing {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-gray.svg);
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+.arrow_right_error_trailing {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-error.svg);
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+.arrow_right_warning_trailing {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-warning.svg);
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+.arrow_right_success_trailing {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-success.svg);
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+.arrow_right_base_white_trailing {
+    content: url(../icons/icon-badge-group/arrow-right/arrow-right-base-white.svg);
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+
