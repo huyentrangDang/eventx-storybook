@@ -1,0 +1,2114 @@
+/* Badge Leading */
+
+.badge-group-size--md-color--primary-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--primary-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--primary-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--primary-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--primary-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--gray-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--gray-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--gray-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--gray-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--error-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--error-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--error-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--error-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--error-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--warning-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--warning-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--warning-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--warning-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--warning-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--success-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--success-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--success-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--success-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+}
+
+.badge-group-size--md-color--success-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--success-600);
+    border-radius : 16px;
+    height        : 30px;
+}
+
+
+.badge-group-size--lg-color--primary-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--primary-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--primary-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--primary-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--primary-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--gray-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--gray-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--gray-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--gray-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--error-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--error-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--error-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--error-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--error-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--warning-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--warning-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--warning-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--warning-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--warning-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--success-badge--leading-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--success-badge--leading-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--success-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--success-badge--leading-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+}
+
+.badge-group-size--lg-color--success-badge--leading-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 10px 4px 4px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--success-600);
+    border-radius : 16px;
+    height        : 32px;
+}
+
+
+
+/* Badge Trailing */
+
+.badge-group-size--md-color--primary-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--primary-700);
+}
+
+.badge-group-size--md-color--primary-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--primary-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--primary-700);
+}
+
+.badge-group-size--md-color--primary-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--primary-700);
+}
+
+.badge-group-size--md-color--primary-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    height        : 30px;
+    color         : var(--primary-700);
+}
+
+
+
+.badge-group-size--md-color--gray-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--gray-700);
+}
+
+.badge-group-size--md-color--gray-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--gray-700);
+}
+
+.badge-group-size--md-color--gray-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--gray-700);
+}
+
+.badge-group-size--md-color--gray-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    height        : 30px;
+    color         : var(--gray-700);
+}
+
+
+
+.badge-group-size--md-color--error-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--error-700);
+}
+
+.badge-group-size--md-color--error-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--error-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--error-700);
+}
+
+.badge-group-size--md-color--error-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--error-700);
+}
+
+.badge-group-size--md-color--error-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    height        : 30px;
+    color         : var(--error-700);
+}
+
+
+
+.badge-group-size--md-color--warning-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--warning-700);
+}
+
+.badge-group-size--md-color--warning-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--warning-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--warning-700);
+}
+
+.badge-group-size--md-color--warning-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--warning-700);
+}
+
+.badge-group-size--md-color--warning-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    height        : 30px;
+    color         : var(--warning-700);
+}
+
+
+
+.badge-group-size--md-color--success-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--success-700);
+}
+
+.badge-group-size--md-color--success-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--success-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--success-700);
+}
+
+.badge-group-size--md-color--success-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 30px;
+    color         : var(--success-700);
+}
+
+.badge-group-size--md-color--success-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 12px;
+    gap           : 8px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--success-600);
+    border-radius : 16px;
+    height        : 30px;
+    color         : var(--success-700);
+}
+
+
+
+.badge-group-size--lg-color--primary-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--primary-700);
+}
+
+.badge-group-size--lg-color--primary-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--primary-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--primary-700);
+}
+
+.badge-group-size--lg-color--primary-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--primary-700);
+}
+
+.badge-group-size--lg-color--primary-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    height        : 32px;
+    color         : var(--primary-700);
+}
+
+
+
+.badge-group-size--lg-color--gray-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--gray-700);
+}
+
+.badge-group-size--lg-color--gray-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--gray-700);
+}
+
+.badge-group-size--lg-color--gray-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--gray-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--gray-700);
+}
+
+.badge-group-size--lg-color--gray-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    height        : 32px;
+    color         : var(--gray-700);
+}
+
+
+
+.badge-group-size--lg-color--error-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--error-700);
+}
+
+.badge-group-size--lg-color--error-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--error-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--error-700);
+}
+
+.badge-group-size--lg-color--error-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--error-700);
+}
+
+.badge-group-size--lg-color--error-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    height        : 32px;
+    color         : var(--error-700);
+}
+
+
+
+.badge-group-size--lg-color--warning-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--warning-700);
+}
+
+.badge-group-size--lg-color--warning-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--warning-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--warning-700);
+}
+
+.badge-group-size--lg-color--warning-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--warning-700);
+}
+
+.badge-group-size--lg-color--warning-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    height        : 32px;
+    color         : var(--warning-700);
+}
+
+
+
+.badge-group-size--lg-color--success-badge--trailing-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--success-700);
+}
+
+.badge-group-size--lg-color--success-badge--trailing-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--success-100);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--success-700);
+}
+
+.badge-group-size--lg-color--success-badge--trailing-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    height        : 32px;
+    color         : var(--success-700);
+}
+
+.badge-group-size--lg-color--success-badge--trailing-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 4px 4px 4px 14px;
+    gap           : 12px;
+    background    : var(--base-white);
+    border        : 1.5px solid var(--success-600);
+    border-radius : 16px;
+    height        : 32px;
+    color         : var(--success-700);
+}
+
+
+
+
+
+
+.badge--leading-color--primary {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 4px;
+    color         : var(--primary-700);
+    border        : none;
+    background    : none;
+}
+
+.badge--leading-color--gray {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 4px;
+    color         : var(--gray-700);
+    border        : none;
+    background    : none;
+}
+
+.badge--leading-color--error {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 4px;
+    color         : var(--error-700);
+    border        : none;
+    background    : none;
+}
+
+.badge--leading-color--warning {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 4px;
+    color         : var(--warning-700);
+    border        : none;
+    background    : none;
+}
+
+.badge--leading-color--success {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 4px;
+    color         : var(--success-700);
+    border        : none;
+    background    : none;
+}
+
+
+.text-badge-group-size--md {
+    font-family: 'Lato';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 12px;
+    line-height: 18px;
+}
+
+.text-badge-group-size--lg {
+    font-family: 'Lato';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 14px;
+    line-height: 20px;
+}
+
+
+.badge-size--md-color--primary-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--primary-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--primary-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--primary-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--primary-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : none;
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    color         : var(--primary-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--gray-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : none;
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--error-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : none;
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    color         : var(--error-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--warning-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : none;
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    color         : var(--warning-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : var(--success-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 8px;
+    background    : none;
+    border-radius : 16px;
+    border        : 1.5px solid var(--success-600);
+    color         : var(--success-700);
+    height        : 22px;
+}
+
+.badge-size--lg-color--primary-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--primary-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--primary-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--primary-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--primary-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : none;
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    color         : var(--primary-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--gray-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : none;
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    color         : var(--gray-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--error-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : none;
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    color         : var(--error-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--warning-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : none;
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    color         : var(--warning-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--light {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--medium {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--dark {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : var(--success-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--outline {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 10px;
+    background    : none;
+    border-radius : 16px;
+    border        : 1.5px solid var(--success-600);
+    color         : var(--success-700);
+    height        : 24px;
+}
+
+
+/* ============================================================ */
+
+.badge-size--md-color--primary-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--primary-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--primary-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--primary-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--primary-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    color         : var(--primary-700);
+    height        : 22px;
+}
+
+
+
+.badge-size--md-color--gray-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--gray-700);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--gray-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    color         : var(--gray-700);
+    height        : 22px;
+}
+
+
+
+.badge-size--md-color--error-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--error-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--error-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    color         : var(--error-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--warning-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--warning-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    color         : var(--warning-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : var(--success-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 22px;
+}
+
+.badge-size--md-color--success-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 8px;
+    gap           : 4px;
+    background    : none;
+    border-radius : 16px;
+    border        : 1.5px solid var(--success-600);
+    color         : var(--success-700);
+    height        : 22px;
+}
+
+
+
+
+
+
+.badge-size--lg-color--primary-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--primary-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--primary-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--primary-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--primary-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--primary-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--primary-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--primary-600);
+    border-radius : 16px;
+    color         : var(--primary-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--gray-100);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--gray-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--gray-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--gray-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--gray-600);
+    border-radius : 16px;
+    color         : var(--gray-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--error-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--error-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--error-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--error-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--error-600);
+    border-radius : 16px;
+    color         : var(--error-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--warning-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--warning-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--warning-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--warning-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : none;
+    border        : 1.5px solid var(--warning-600);
+    border-radius : 16px;
+    color         : var(--warning-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--light-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--base-white);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--medium-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--success-50);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--success-700);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--dark-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : var(--success-600);
+    border-radius : 16px;
+    border        : none;
+    color         : var(--base-white);
+    height        : 24px;
+}
+
+.badge-size--lg-color--success-theme--outline-icon--trailing {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 2px 6px 2px 10px;
+    gap           : 4px;
+    background    : none;
+    border-radius : 16px;
+    border        : 1.5px solid var(--success-600);
+    color         : var(--success-700);
+    height        : 24px;
+}
