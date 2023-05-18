@@ -28,6 +28,28 @@
   width: fit-content;
   font-size: 24px;
 }
+
+.container-icon-only-size--sm {
+  width: 20px !important;
+  height: 20px !important;
+}
+.container-icon-only-size--md {
+  width: 20px !important;
+  height: 20px !important;
+}
+.container-icon-only-size--lg {
+  width: 20px !important;
+  height: 20px !important;
+}
+.container-icon-only-size--xl {
+  width: 20px !important;
+  height: 20px !important;
+}
+.container-icon-only-size--2xl {
+  width: 24px !important;
+  height: 24px !important;
+}
+
 .button-size--sm-hierarchy--primary-icon--only-destructive--false-state--default {
   box-sizing: border-box;
   display: flex;

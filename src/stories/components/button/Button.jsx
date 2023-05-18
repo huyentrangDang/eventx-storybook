@@ -45,7 +45,7 @@ export const Button = ({destructive, hierarchy, state, size, icon, showIconLeadi
         type="button"
         className={[`button-size--${size}-hierarchy--${hierarchy}-icon--${icon}-destructive--${destructive}-state--${state}`].join(' ')}
       >
-      <div class={[`container-icon-size--${size}`,`${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>
+      <div class={[`container-icon-only-size--${size}`,`${iconPath(`${size}`,`${hierarchy}`,`${iconTrailing}`, `${state}`, `${destructive}`)}`].join(' ')}></div>
       </button>
       }
     </>
