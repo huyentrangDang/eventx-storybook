@@ -5,9 +5,25 @@ import '../../assets/css/badge-icon.css';
 import '../../assets/css/typography.css';
 import '../../assets/css/common.css';
 import '../../assets/css/icon.css';
-import { iconOnlyPath } from '../badge-icon/BadgeIcon';
 
-export const Badges = ({ outline, color, size, icon, text }) => {
+export const Badges = ({
+  outline,
+  color,
+  size,
+  icon,
+  text,
+  iconAvatar,
+  iconCountry,
+  iconDotLeading,
+  iconDotTrailing,
+  iconXCloseLeading,
+  iconXCloseTrailing,
+  iconArrowRightLeading,
+  iconArrowRightTrailing,
+  iconArrowUpLeading,
+  iconArrowUpTrailing,
+  iconOnly,
+}) => {
   return (
     <>
       <div>
@@ -21,50 +37,201 @@ export const Badges = ({ outline, color, size, icon, text }) => {
             <div className={`text-badge-${size}-medium`}> {text}</div>
           </button>
         )}
-        {(icon === 'dot' || icon === 'iconLeading') && (
+
+        {icon === 'dot' ? (
           <button
             type='button'
             className={[
               `badge-size--${size}-color--${color}-outline--${outline}-icon--${icon}`,
             ].join(' ')}
           >
-            <div
-              class={[
-                `container-icon-size--${size}`,
-                `${iconPath(`${color}`, `${icon}`)}`,
-              ].join(' ')}
-            />
+            {String(iconDotLeading)?.includes('dot') && (
+              <div
+                class={[`${iconPath(`${color}`, `${iconDotLeading}`)}`].join(
+                  ' '
+                )}
+              />
+            )}
             <div className={`text-badge-${size}-medium`}> {text}</div>
+            {String(iconDotTrailing)?.includes('dot') && (
+              <div
+                class={[`${iconPath(`${color}`, `${iconDotTrailing}`)}`].join(
+                  ' '
+                )}
+              />
+            )}
           </button>
+        ) : (
+          icon === 'dot' && (
+            <button
+              type='button'
+              className={[
+                `badge-size--${size}-color--${color}-outline--${outline}`,
+              ].join(' ')}
+            >
+              <div className={`text-badge-${size}-medium`}> {text}</div>
+            </button>
+          )
         )}
 
-        {(icon === 'xclose' || icon === 'iconTrailing') && (
+        {icon === 'xclose' ? (
           <button
             type='button'
             className={[
               `badge-size--${size}-color--${color}-outline--${outline}-icon--${icon}`,
             ].join(' ')}
           >
+            {String(iconXCloseLeading)?.includes('x_close') && (
+              <div
+                class={[`${iconPath(`${color}`, `${iconXCloseLeading}`)}`].join(
+                  ' '
+                )}
+              />
+            )}
             <div className={`text-badge-${size}-medium`}> {text}</div>
-            <div
-              class={[
-                `container-icon-size--${size}`,
-                `${iconPath(`${color}`, `${icon}`)}`,
-              ].join(' ')}
-            />
+            {String(iconXCloseTrailing)?.includes('x_close') && (
+              <div
+                class={[
+                  `${iconPath(`${color}`, `${iconXCloseTrailing}`)}`,
+                ].join(' ')}
+              />
+            )}
           </button>
+        ) : (
+          icon === 'xclose' && (
+            <button
+              type='button'
+              className={[
+                `badge-size--${size}-color--${color}-outline--${outline}`,
+              ].join(' ')}
+            >
+              <div className={`text-badge-${size}-medium`}> {text}</div>
+            </button>
+          )
         )}
 
-        {(icon === 'country' || icon === 'avatar') && (
+        {icon === 'arrowRight' ? (
+          <button
+            type='button'
+            className={[
+              `badge-size--${size}-color--${color}-outline--${outline}-icon--${icon}`,
+            ].join(' ')}
+          >
+            {String(iconArrowRightLeading)?.includes('arrow_right') && (
+              <div
+                class={[
+                  `${iconPath(`${color}`, `${iconArrowRightLeading}`)}`,
+                ].join(' ')}
+              />
+            )}
+            <div className={`text-badge-${size}-medium`}> {text}</div>
+            {String(iconArrowRightTrailing)?.includes('arrow_right') && (
+              <div
+                class={[
+                  `${iconPath(`${color}`, `${iconArrowRightTrailing}`)}`,
+                ].join(' ')}
+              />
+            )}
+          </button>
+        ) : (
+          icon === 'arrowRight' && (
+            <button
+              type='button'
+              className={[
+                `badge-size--${size}-color--${color}-outline--${outline}`,
+              ].join(' ')}
+            >
+              <div className={`text-badge-${size}-medium`}> {text}</div>
+            </button>
+          )
+        )}
+
+        {icon === 'arrowUp' ? (
+          <button
+            type='button'
+            className={[
+              `badge-size--${size}-color--${color}-outline--${outline}-icon--${icon}`,
+            ].join(' ')}
+          >
+            {String(iconArrowUpLeading)?.includes('arrow_up') && (
+              <div
+                class={[
+                  `${iconPath(`${color}`, `${iconArrowUpLeading}`)}`,
+                ].join(' ')}
+              />
+            )}
+            <div className={`text-badge-${size}-medium`}> {text}</div>
+            {String(iconArrowUpTrailing)?.includes('arrow_up') && (
+              <div
+                class={[
+                  `${iconPath(`${color}`, `${iconArrowUpTrailing}`)}`,
+                ].join(' ')}
+              />
+            )}
+          </button>
+        ) : (
+          icon === 'arrowUp' && (
+            <button
+              type='button'
+              className={[
+                `badge-size--${size}-color--${color}-outline--${outline}`,
+              ].join(' ')}
+            >
+              <div className={`text-badge-${size}-medium`}> {text}</div>
+            </button>
+          )
+        )}
+
+        {icon === 'avatar' && String(iconAvatar)?.includes('avatar') ? (
           <button
             type='button'
             className={[
               `badge-size--${size}-color--${color}-outline--${outline}-icon-image`,
             ].join(' ')}
           >
-            <div className={[`${iconPath(`${color}`, `${icon}`)}`].join(' ')} />
+            <div
+              className={[`${iconPath(`${color}`, `${iconAvatar}`)}`].join(' ')}
+            />
             <div className={`text-badge-${size}-medium`}> {text}</div>
           </button>
+        ) : (
+          icon === 'avatar' && (
+            <button
+              type='button'
+              className={[
+                `badge-size--${size}-color--${color}-outline--${outline}`,
+              ].join(' ')}
+            >
+              <div className={`text-badge-${size}-medium`}> {text}</div>
+            </button>
+          )
+        )}
+
+        {icon === 'country' && String(iconCountry)?.includes('country') ? (
+          <button
+            type='button'
+            className={[
+              `badge-size--${size}-color--${color}-outline--${outline}-icon-image`,
+            ].join(' ')}
+          >
+            <div
+              className={[`${iconPath(`${color}`, `${iconCountry}`)}`].join(
+                ' '
+              )}
+            />
+            <div className={`text-badge-${size}-medium`}> {text}</div>
+          </button>
+        ) : (
+          icon === 'country' && (
+            <button
+              type='button'
+              className={[
+                `badge-size--${size}-color--${color}-outline--${outline}`,
+              ].join(' ')}
+            >
+              <div className={`text-badge-${size}-medium`}> {text}</div>
+            </button>
+          )
         )}
 
         {icon === 'only' && (
@@ -74,7 +241,12 @@ export const Badges = ({ outline, color, size, icon, text }) => {
               `icon-badge-size--${size}-color--${color}-outline--${outline}`,
             ].join(' ')}
           >
-            <div class={[`${iconPath(`${color}`, `${icon}`)}`].join(' ')}></div>
+            <div
+              class={[
+                `icon-badge-only`,
+                `${iconPath(`${color}`, `${iconOnly}`)}`,
+              ].join(' ')}
+            ></div>
           </button>
         )}
       </div>
@@ -92,17 +264,28 @@ Badges.propTypes = {
     'country',
     'avatar',
     'xclose',
-    'iconTrailing',
-    'iconLeading',
+    'arrowRight',
+    'arrowUp',
     'only',
   ]),
   text: PropTypes.string,
+  iconAvatar: PropTypes.string,
+  iconCountry: PropTypes.string,
+  iconDotLeading: PropTypes.string,
+  iconDotTrailing: PropTypes.string,
+  iconXCloseLeading: PropTypes.string,
+  iconXCloseTrailing: PropTypes.string,
+  iconArrowRightLeading: PropTypes.string,
+  iconArrowRightTrailing: PropTypes.string,
+  iconArrowUpLeading: PropTypes.string,
+  iconArrowUpTrailing: PropTypes.string,
+  iconOnly: PropTypes.string,
 };
 
 Badges.defaultProps = {};
 export const iconPath = (color, icon) => {
   if (icon === 'country') {
-    return 'circle_coutry';
+    return 'circle_country_Australia';
   }
   if (icon === 'avatar') {
     return 'circle_avatar';
@@ -113,11 +296,11 @@ export const iconPath = (color, icon) => {
   if (icon === 'xclose') {
     return iconXClosePath(color);
   }
-  if (icon === 'iconTrailing') {
-    return iconTrailingPath(color);
+  if (icon === 'arrowRight') {
+    return iconArrowRightPath(color);
   }
-  if (icon === 'iconLeading') {
-    return iconLeadingPath(color);
+  if (icon === 'arrowUp') {
+    return iconArrowUpPath(color);
   }
   if (icon === 'only') {
     return iconOnlyPath(color);
@@ -206,300 +389,125 @@ export const iconXClosePath = (color, icon) => {
   }
 };
 
-export const iconTrailingPath = (color, icon) => {
+export const iconArrowRightPath = (color, icon) => {
   if (color === 'gray') {
-    return 'icon_trailing_gray';
+    return 'arrow_right_gray';
   }
   if (color === 'primary') {
-    return 'icon_trailing_primary';
+    return 'arrow_right_primary';
   }
   if (color === 'error') {
-    return 'icon_trailing_error';
+    return 'arrow_right_error';
   }
   if (color === 'warning') {
-    return 'icon_trailing_warning';
+    return 'arrow_right_warning';
   }
   if (color === 'success') {
-    return 'icon_trailing_success';
+    return 'arrow_right_success';
   }
   if (color === 'blueGray') {
-    return 'icon_trailing_blue-gray';
+    return 'arrow_right_blue-gray';
   }
   if (color === 'blueLight') {
-    return 'icon_trailing_blue-light';
+    return 'arrow_right_blue-light';
   }
   if (color === 'blue') {
-    return 'icon_trailing_blue';
+    return 'arrow_right_blue';
   }
   if (color === 'indigo') {
-    return 'icon_trailing_indigo';
+    return 'arrow_right_indigo';
   }
   if (color === 'purple') {
-    return 'icon_trailing_purple';
+    return 'arrow_right_purple';
   }
   if (color === 'pink') {
-    return 'icon_trailing_pink';
+    return 'arrow_right_pink';
   }
   if (color === 'rose') {
-    return 'icon_trailing_rose';
+    return 'arrow_right_rose';
   } else {
-    return 'icon_trailing_orange';
+    return 'arrow_right_orange';
   }
 };
 
-export const iconLeadingPath = (color, icon) => {
+export const iconArrowUpPath = (color, icon) => {
   if (color === 'gray') {
-    return 'icon_leading_gray';
+    return 'arrow_up_gray';
   }
   if (color === 'primary') {
-    return 'icon_leading_primary';
+    return 'arrow_up_primary';
   }
   if (color === 'error') {
-    return 'icon_leading_error';
+    return 'arrow_up_error';
   }
   if (color === 'warning') {
-    return 'icon_leading_warning';
+    return 'arrow_up_warning';
   }
   if (color === 'success') {
-    return 'icon_leading_success';
+    return 'arrow_up_success';
   }
   if (color === 'blueGray') {
-    return 'icon_leading_blue-gray';
+    return 'arrow_up_blue-gray';
   }
   if (color === 'blueLight') {
-    return 'icon_leading_blue-light';
+    return 'arrow_up_blue-light';
   }
   if (color === 'blue') {
-    return 'icon_leading_blue';
+    return 'arrow_up_blue';
   }
   if (color === 'indigo') {
-    return 'icon_leading_indigo';
+    return 'arrow_up_indigo';
   }
   if (color === 'purple') {
-    return 'icon_leading_purple';
+    return 'arrow_up_purple';
   }
   if (color === 'pink') {
-    return 'icon_leading_pink';
+    return 'arrow_up_pink';
   }
   if (color === 'rose') {
-    return 'icon_leading_rose';
+    return 'arrow_up_rose';
   } else {
-    return 'icon_leading_orange';
+    return 'arrow_up_orange';
   }
 };
 
-export const iconOtherPath = (color, icon) => {
-  switch (color) {
-    case 'gray': {
-      if (icon === 'dot') {
-        return 'dot_leading_gray';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_gray';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_gray';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_gray';
-      }
-
-      break;
-    }
-    case 'primary': {
-      if (icon === 'dot') {
-        return 'dot_leading_primary';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_primary';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_primary';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_primary';
-      }
-
-      break;
-    }
-    case 'error': {
-      if (icon === 'dot') {
-        return 'dot_leading_error';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_error';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_error';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_error';
-      }
-
-      break;
-    }
-    case 'warning': {
-      if (icon === 'dot') {
-        return 'dot_leading_warning';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_warning';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_warning';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_warning';
-      }
-
-      break;
-    }
-    case 'succes': {
-      if (icon === 'dot') {
-        return 'dot_leading_success';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_success';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_success';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_success';
-      }
-
-      break;
-    }
-    case 'blueGray': {
-      if (icon === 'dot') {
-        return 'dot_leading_blue-gray';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_blue-gray';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_blue-gray';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_blue-gray';
-      }
-
-      break;
-    }
-    case 'blueLight': {
-      if (icon === 'dot') {
-        return 'dot_leading_blue-light';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_blue-light';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_blue-light';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_blue-light';
-      }
-
-      break;
-    }
-    case 'blue': {
-      if (icon === 'dot') {
-        return 'dot_leading_blue';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_blue';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_blue';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_blue';
-      }
-
-      break;
-    }
-    case 'indigo': {
-      if (icon === 'dot') {
-        return 'dot_leading_indigo';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_indigo';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_indigo';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_indigo';
-      }
-
-      break;
-    }
-    case 'purple': {
-      if (icon === 'dot') {
-        return 'dot_leading_purple';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_purple';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_purple';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_purple';
-      }
-
-      break;
-    }
-    case 'pink': {
-      if (icon === 'dot') {
-        return 'dot_leading_pink';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_pink';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_pink';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_pink';
-      }
-
-      break;
-    }
-    case 'rose': {
-      if (icon === 'dot') {
-        return 'dot_leading_rose';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_rose';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_rose';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_rose';
-      }
-
-      break;
-    }
-    case 'orange': {
-      if (icon === 'dot') {
-        return 'dot_leading_orange';
-      }
-      if (icon === 'xCloseTrailing') {
-        return 'x_close_trailing_orange';
-      }
-      if (icon === 'arrowRightTrailing') {
-        return 'arrow-right_trailing_orange';
-      }
-      if (icon === 'arrowUpLeading') {
-        return 'arrow-up_leading_orange';
-      }
-
-      break;
-    }
-    default: {
-      return {};
-    }
+export const iconOnlyPath = (color) => {
+  if (color === 'gray') {
+    return 'plus_gray';
+  }
+  if (color === 'primary') {
+    return 'plus_primary';
+  }
+  if (color === 'error') {
+    return 'plus_error';
+  }
+  if (color === 'warning') {
+    return 'plus_warning';
+  }
+  if (color === 'success') {
+    return 'plus_success';
+  }
+  if (color === 'blueGray') {
+    return 'plus_blue_gray';
+  }
+  if (color === 'blueLight') {
+    return 'plus_blue_light';
+  }
+  if (color === 'blue') {
+    return 'plus_blue';
+  }
+  if (color === 'indigo') {
+    return 'plus_indigo';
+  }
+  if (color === 'purple') {
+    return 'plus_purple';
+  }
+  if (color === 'pink') {
+    return 'plus_pink';
+  }
+  if (color === 'rose') {
+    return 'plus_rose';
+  } else {
+    return 'plus_orange';
   }
 };

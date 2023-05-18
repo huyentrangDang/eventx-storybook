@@ -27,6 +27,7 @@ export const badge_primary = {
     text: 'New feature',
     textBadge: 'We’ve just released a new feature',
     badge: 'leading',
+    iconTrailing: 'trailing',
   },
 };
 export const badge_gray = {
@@ -41,6 +42,7 @@ export const badge_gray = {
     text: 'Version 4.0',
     textBadge: 'We’ve just released a new feature',
     badge: 'leading',
+    iconTrailing: 'trailing',
   },
 };
 export const badge_error = {
@@ -55,6 +57,7 @@ export const badge_error = {
     text: 'Fix now',
     textBadge: 'There was a problem with that action',
     badge: 'leading',
+    iconTrailing: 'trailing',
   },
 };
 export const badge_warning = {
@@ -69,6 +72,7 @@ export const badge_warning = {
     text: 'Warning',
     textBadge: 'Just to let you know this might be a problem',
     badge: 'leading',
+    iconTrailing: 'trailing',
   },
 };
 export const badge_success = {
@@ -83,5 +87,6 @@ export const badge_success = {
     text: 'New feature',
     textBadge: 'You’ve updated your profile and details',
     badge: 'leading',
+    iconTrailing: 'trailing',
   },
 };

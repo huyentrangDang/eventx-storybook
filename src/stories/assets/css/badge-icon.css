@@ -1,5 +1,10 @@
 @import url('./color.css');
 
+.icon-badge-only {
+    width: 12px !important;
+    height: 12px !important;
+}
+
 .button-icon-only{
     gap: 0px;
 }
@@ -19,7 +24,7 @@
     font-size: 10px;
 }
 
-.circle_coutry::before {
+.circle_country_Australia::before {
     content: url(../icons/icon-badge/circle/circle_country.svg);
     display: block;
     height: 16px;
@@ -190,159 +195,159 @@
     width: 12px;
 }
 
-.icon_trailing_gray {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_gray.svg);
+.arrow_right_gray {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_gray.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_primary {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_primary.svg);
+.arrow_right_primary {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_primary.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_error {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_error.svg);
+.arrow_right_error {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_error.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_warning {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_warning.svg);
+.arrow_right_warning {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_warning.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_success {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_success.svg);
+.arrow_right_success {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_success.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_blue-gray {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_blue-gray.svg);
+.arrow_right_blue-gray {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_blue-gray.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_blue-light {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_blue-light.svg);
+.arrow_right_blue-light {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_blue-light.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_blue {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_blue.svg);
+.arrow_right_blue {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_blue.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_indigo {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_indigo.svg);
+.arrow_right_indigo {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_indigo.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_purple {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_purple.svg);
+.arrow_right_purple {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_purple.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_pink {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_pink.svg);
+.arrow_right_pink {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_pink.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_rose {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_rose.svg);
+.arrow_right_rose {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_rose.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_trailing_orange {
-    content: url(../icons/icon-badge/arrow-right/icon_trailing_orange.svg);
+.arrow_right_orange {
+    content: url(../icons/icon-badge/arrow-right/arrow_right_orange.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
 
-.icon_leading_gray {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_gray.svg);
+.arrow_up_gray {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_gray.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_primary {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_primary.svg);
+.arrow_up_primary {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_primary.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_error {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_error.svg);
+.arrow_up_error {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_error.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_warning {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_warning.svg);
+.arrow_up_warning {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_warning.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_success {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_success.svg);
+.arrow_up_success {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_success.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_blue-gray {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_blue-gray.svg);
+.arrow_up_blue-gray {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_blue-gray.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_blue-light {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_blue-light.svg);
+.arrow_up_blue-light {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_blue-light.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_blue {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_blue.svg);
+.arrow_up_blue {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_blue.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_indigo {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_indigo.svg);
+.arrow_up_indigo {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_indigo.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_purple {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_purple.svg);
+.arrow_up_purple {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_purple.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_pink {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_pink.svg);
+.arrow_up_pink {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_pink.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_rose {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_rose.svg);
+.arrow_up_rose {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_rose.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
 }
-.icon_leading_orange {
-    content: url(../icons/icon-badge/arrow-up/icon_leading_orange.svg);
+.arrow_up_orange {
+    content: url(../icons/icon-badge/arrow-up/icon_arrow_up_orange.svg);
     display: inline-block;
     height: 12px;
     width: 12px;
@@ -431,6 +436,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--gray-100);
@@ -442,6 +449,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--primary-50);
@@ -453,6 +462,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--error-50);
@@ -464,6 +475,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--warning-50);
@@ -475,6 +488,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--success-50);
@@ -486,6 +501,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--grayblue-50);
@@ -497,6 +514,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--bluelight-50);
@@ -508,6 +527,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--blue-50);
@@ -519,6 +540,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--indigo-50);
@@ -530,6 +553,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--purple-50);
@@ -541,6 +566,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--pink-50);
@@ -552,6 +579,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--rose-50);
@@ -563,6 +592,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 20px;
+    height: 20px;
     padding: 4px;
     gap: 4px;
     background: var(--orangedark-50);
@@ -715,10 +746,14 @@
     border: 1.5px solid var(--orangedark-600);
 }
 
+
+
 .icon-badge-size--md-color--gray-outline--false {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--gray-100);
@@ -730,6 +765,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--primary-50);
@@ -741,6 +778,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--error-50);
@@ -752,6 +791,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--warning-50);
@@ -763,6 +804,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--success-50);
@@ -774,6 +817,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--grayblue-50);
@@ -785,6 +830,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--bluelight-50);
@@ -796,6 +843,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--blue-50);
@@ -807,6 +856,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--indigo-50);
@@ -818,6 +869,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--purple-50);
@@ -829,6 +882,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--pink-50);
@@ -840,6 +895,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--rose-50);
@@ -851,6 +908,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24px;
+    height: 24px;
     padding: 6px;
     gap: 4px;
     background: var(--orangedark-50);
@@ -863,6 +922,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -874,6 +934,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -885,6 +946,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -896,6 +958,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -907,6 +970,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -918,6 +982,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -929,6 +994,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -940,6 +1006,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -951,6 +1018,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -962,6 +1030,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -973,6 +1042,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -984,6 +1054,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -995,6 +1066,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 6px;
     gap: 4px;
     background: none;
@@ -1007,6 +1079,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--gray-100);
@@ -1018,6 +1092,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--primary-50);
@@ -1029,6 +1105,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--error-50);
@@ -1040,6 +1118,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--warning-50);
@@ -1051,6 +1131,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--success-50);
@@ -1062,6 +1144,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--grayblue-50);
@@ -1073,6 +1157,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--bluelight-50);
@@ -1084,6 +1170,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--blue-50);
@@ -1095,6 +1183,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--indigo-50);
@@ -1106,6 +1196,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--purple-50);
@@ -1117,6 +1209,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--pink-50);
@@ -1128,6 +1222,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--rose-50);
@@ -1139,6 +1235,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 28px;
+    height: 28px;
     padding: 8px;
     gap: 4px;
     background: var(--orangedark-50);
@@ -1151,6 +1249,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1162,6 +1261,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1173,6 +1273,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1184,6 +1285,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1195,6 +1297,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1206,6 +1309,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1217,6 +1321,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1228,6 +1333,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1239,6 +1345,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1250,6 +1357,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1261,6 +1369,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1272,6 +1381,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
@@ -1283,6 +1393,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 8px;
     gap: 4px;
     background: none;
