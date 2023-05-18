@@ -83,7 +83,7 @@ export const BadgeGroup = ({
 
 BadgeGroup.propTypes = {
   size: PropTypes.oneOf(['md', 'lg']),
-  color: PropTypes.string,
+  color: PropTypes.oneOf(['primary', 'gray', 'error', 'warning', 'success']),
   theme: PropTypes.oneOf(['light', 'medium', 'dark', 'outline']),
   text: PropTypes.string,
   sizeBadge: PropTypes.oneOf(['sm', 'md']),
