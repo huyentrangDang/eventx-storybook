@@ -7,121 +7,76 @@ export default {
   tags: ['autodocs'],
   excludePropTypes: ['color'],
   argTypes: {
-    color: { table: { disable: true } },
+    // color: { table: { disable: true } },
+    iconAvatar: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'avatar' },
+    },
+    iconCountry: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'country' },
+    },
+    text: {
+      control: 'text',
+      if: { arg: 'icon', neq: 'only' },
+    },
+    iconDotLeading: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'dot' },
+    },
+    iconDotTrailing: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'dot' },
+    },
+    iconXCloseLeading: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'xclose' },
+    },
+    iconXCloseTrailing: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'xclose' },
+    },
+    iconArrowRightLeading: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'arrowRight' },
+    },
+    iconArrowRightTrailing: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'arrowRight' },
+    },
+    iconArrowUpLeading: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'arrowUp' },
+    },
+    iconArrowUpTrailing: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'arrowUp' },
+    },
+    iconOnly: {
+      control: 'text',
+      if: { arg: 'icon', eq: 'only' },
+    },
   },
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const badge_gray = {
+export const Badge = {
   args: {
+    text: 'Label',
+    size: 'sm',
     color: 'gray',
-    size: 'sm',
     outline: 'false',
     icon: 'false',
-    text: 'Label',
-  },
-};
-export const badge_primary = {
-  args: {
-    color: 'primary',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-export const badge_error = {
-  args: {
-    color: 'error',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-export const badge_warning = {
-  args: {
-    color: 'warning',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-
-export const badge_success = {
-  args: {
-    color: 'success',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-export const badge_blueGray = {
-  args: {
-    color: 'blueGray',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-export const badge_blueLight = {
-  args: {
-    color: 'blueLight',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-export const badge_indigo = {
-  args: {
-    color: 'indigo',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-
-export const badge_purple = {
-  args: {
-    color: 'purple',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-
-export const badge_pink = {
-  args: {
-    color: 'pink',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-
-export const badge_rose = {
-  args: {
-    color: 'rose',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
-  },
-};
-
-export const badge_orange = {
-  args: {
-    color: 'orange',
-    size: 'sm',
-    outline: 'false',
-    icon: 'false',
-    text: 'Label',
+    iconAvatar: 'avatar',
+    iconCountry: 'country',
+    iconDotLeading: 'dot',
+    iconDotTrailing: 'false',
+    iconXCloseLeading: 'false',
+    iconXCloseTrailing: 'xclose',
+    iconArrowRightLeading: 'false',
+    iconArrowRightTrailing: 'arrowRight',
+    iconArrowUpLeading: 'arrowUp',
+    iconArrowUpTrailing: 'false',
+    iconOnly: 'only',
   },
 };

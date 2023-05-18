@@ -14,6 +14,7 @@ export const BadgeGroup = ({
   text,
   iconBadge,
   textBadge,
+  iconTrailing,
 }) => {
   return (
     <>
@@ -24,26 +25,6 @@ export const BadgeGroup = ({
             `badge-group-size--${size}-color--${color}-badge--${badge}-theme--${theme}`,
           ].join(' ')}
         >
-          {/* {iconBadge === 'trailing' ? (
-            <button
-              type='button'
-              className={[
-                `badge-size--${size}-color--${color}-theme--${theme}-icon--${iconBadge}`,
-              ].join(' ')}
-            >
-              <div className={`text-badge-group-size--${size}`}>{text}</div>
-              <div class={[`${iconPath(`${color}`)}`].join(' ')} />
-            </button>
-          ) : (
-            <button
-              type='button'
-              className={[
-                `badge-size--${size}-color--${color}-theme--${theme}`,
-              ].join(' ')}
-            >
-              <div className={`text-badge-group-size--${size}`}>{text}</div>
-            </button>
-          )} */}
           <button
             type='button'
             className={[
@@ -54,7 +35,16 @@ export const BadgeGroup = ({
           </button>
           <button className={`badge--${badge}-color--${color}`}>
             <div className={`text-badge-group-size--${size}`}>{textBadge}</div>
-            <div class={[`${iconPath(`${color}`, `${badge}`)}`].join(' ')} />
+            <div
+              class={[
+                `${iconPath(
+                  `${color}`,
+                  `${badge}`,
+                  `${theme}`,
+                  `${iconTrailing}`
+                )}`,
+              ].join(' ')}
+            />
           </button>
         </button>
       )}
@@ -67,26 +57,6 @@ export const BadgeGroup = ({
           ].join(' ')}
         >
           <div className={`text-badge-group-size--${size}`}>{textBadge}</div>
-          {/* {iconBadge === 'trailing' ? (
-            <button
-              type='button'
-              className={[
-                `badge-size--${size}-color--${color}-theme--${theme}-icon--${iconBadge}`,
-              ].join(' ')}
-            >
-              <div className={`text-badge-group-size--${size}`}>{text}</div>
-              <div class={[`${iconPath(`${color}`)}`].join(' ')} />
-            </button>
-          ) : (
-            <button
-              type='button'
-              className={[
-                `badge-size--${size}-color--${color}-theme--${theme}`,
-              ].join(' ')}
-            >
-              <div className={`text-badge-group-size--${size}`}>{text}</div>
-            </button>
-          )} */}
           <button
             type='button'
             className={[
@@ -95,9 +65,14 @@ export const BadgeGroup = ({
           >
             <div className={`text-badge-group-size--${size}`}>{text}</div>
             <div
-              class={[`${iconPath(`${color}`, `${badge}`, `${theme}`)}`].join(
-                ' '
-              )}
+              class={[
+                `${iconPath(
+                  `${color}`,
+                  `${badge}`,
+                  `${theme}`,
+                  `${iconTrailing}`
+                )}`,
+              ].join(' ')}
             />
           </button>
         </button>
@@ -108,61 +83,70 @@ export const BadgeGroup = ({
 
 BadgeGroup.propTypes = {
   size: PropTypes.oneOf(['md', 'lg']),
-  color: PropTypes.string,
+  color: PropTypes.oneOf(['primary', 'gray', 'error', 'warning', 'success']),
   theme: PropTypes.oneOf(['light', 'medium', 'dark', 'outline']),
   text: PropTypes.string,
   sizeBadge: PropTypes.oneOf(['sm', 'md']),
   iconBadge: PropTypes.oneOf(['false', 'trailing']),
   colorBadge: PropTypes.string,
   badge: PropTypes.oneOf(['leading', 'trailing']),
+  iconTrailing: PropTypes.string,
 };
 
 BadgeGroup.defaultProps = {};
-export const iconPath = (color, badge, theme) => {
-  if (badge === 'leading') {
-    return iconLeadingPath(color);
+export const iconPath = (color, badge, theme, iconBadge) => {
+  if (theme === 'dark' && badge === 'trailing') {
+    return 'arrow_right_base_white_trailing';
   }
-  if (badge === 'trailing') {
-    if (theme === 'dark') {
-      return 'arrow_right_base_white_trailing';
-    } else {
-      return iconTrailingPath(color);
+  if (iconBadge === 'trailing') {
+    return iconTrailingPath(color, badge);
+  } else {
+    return iconBadge;
+  }
+};
+
+export const iconTrailingPath = (color, badge) => {
+  switch (badge) {
+    case 'leading': {
+      if (color === 'primary') {
+        return 'arrow_right_primary_leading';
+      }
+      if (color === 'gray') {
+        return 'arrow_right_gray_leading';
+      }
+      if (color === 'error') {
+        return 'arrow_right_error_leading';
+      }
+      if (color === 'warning') {
+        return 'arrow_right_warning_leading';
+      }
+      if (color === 'success') {
+        return 'arrow_right_success_leading';
+      }
+
+      break;
     }
-  }
-};
+    case 'trailing': {
+      if (color === 'primary') {
+        return 'arrow_right_primary_trailing';
+      }
+      if (color === 'gray') {
+        return 'arrow_right_gray_trailing';
+      }
+      if (color === 'error') {
+        return 'arrow_right_error_trailing';
+      }
+      if (color === 'warning') {
+        return 'arrow_right_warning_trailing';
+      }
+      if (color === 'success') {
+        return 'arrow_right_success_trailing';
+      }
 
-export const iconLeadingPath = (color) => {
-  if (color === 'primary') {
-    return 'arrow_right_primary_leading';
-  }
-  if (color === 'gray') {
-    return 'arrow_right_gray_leading';
-  }
-  if (color === 'error') {
-    return 'arrow_right_error_leading';
-  }
-  if (color === 'warning') {
-    return 'arrow_right_warning_leading';
-  }
-  if (color === 'success') {
-    return 'arrow_right_success_leading';
-  }
-};
-
-export const iconTrailingPath = (color) => {
-  if (color === 'primary') {
-    return 'arrow_right_primary_trailing';
-  }
-  if (color === 'gray') {
-    return 'arrow_right_gray_trailing';
-  }
-  if (color === 'error') {
-    return 'arrow_right_error_trailing';
-  }
-  if (color === 'warning') {
-    return 'arrow_right_warning_trailing';
-  }
-  if (color === 'success') {
-    return 'arrow_right_success_trailing';
+      break;
+    }
+    default: {
+      return {};
+    }
   }
 };

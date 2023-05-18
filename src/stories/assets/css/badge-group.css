@@ -45,7 +45,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
-    height        : 30px;
 }
 
 .badge-group-size--md-color--gray-badge--leading-theme--light {
@@ -93,7 +92,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
-    height        : 30px;
 }
 
 .badge-group-size--md-color--error-badge--leading-theme--light {
@@ -141,7 +139,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
-    height        : 30px;
 }
 
 .badge-group-size--md-color--warning-badge--leading-theme--light {
@@ -189,7 +186,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
-    height        : 30px;
 }
 
 .badge-group-size--md-color--success-badge--leading-theme--light {
@@ -237,7 +233,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--success-600);
     border-radius : 16px;
-    height        : 30px;
 }
 
 
@@ -286,7 +281,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
-    height        : 32px;
 }
 
 .badge-group-size--lg-color--gray-badge--leading-theme--light {
@@ -334,7 +328,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
-    height        : 32px;
 }
 
 .badge-group-size--lg-color--error-badge--leading-theme--light {
@@ -382,7 +375,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
-    height        : 32px;
 }
 
 .badge-group-size--lg-color--warning-badge--leading-theme--light {
@@ -430,7 +422,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
-    height        : 32px;
 }
 
 .badge-group-size--lg-color--success-badge--leading-theme--light {
@@ -478,7 +469,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--success-600);
     border-radius : 16px;
-    height        : 32px;
 }
 
 
@@ -533,7 +523,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
-    height        : 30px;
     color         : var(--primary-700);
 }
 
@@ -587,7 +576,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
-    height        : 30px;
     color         : var(--gray-700);
 }
 
@@ -641,7 +629,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
-    height        : 30px;
     color         : var(--error-700);
 }
 
@@ -695,7 +682,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
-    height        : 30px;
     color         : var(--warning-700);
 }
 
@@ -749,7 +735,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--success-600);
     border-radius : 16px;
-    height        : 30px;
     color         : var(--success-700);
 }
 
@@ -803,7 +788,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
-    height        : 32px;
     color         : var(--primary-700);
 }
 
@@ -857,7 +841,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
-    height        : 32px;
     color         : var(--gray-700);
 }
 
@@ -911,7 +894,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
-    height        : 32px;
     color         : var(--error-700);
 }
 
@@ -965,7 +947,6 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
-    height        : 32px;
     color         : var(--warning-700);
 }
 
@@ -1019,12 +1000,8 @@
     background    : var(--base-white);
     border        : 1.5px solid var(--success-600);
     border-radius : 16px;
-    height        : 32px;
     color         : var(--success-700);
 }
-
-
-
 
 
 
@@ -1146,7 +1123,6 @@
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
     color         : var(--primary-700);
-    height        : 22px;
 }
 
 .badge-size--md-color--gray-theme--light {
@@ -1194,7 +1170,6 @@
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
     color         : var(--gray-700);
-    height        : 22px;
 }
 
 .badge-size--md-color--error-theme--light {
@@ -1242,7 +1217,6 @@
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
     color         : var(--error-700);
-    height        : 22px;
 }
 
 .badge-size--md-color--warning-theme--light {
@@ -1290,7 +1264,6 @@
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
     color         : var(--warning-700);
-    height        : 22px;
 }
 
 .badge-size--md-color--success-theme--light {
@@ -1338,7 +1311,6 @@
     border-radius : 16px;
     border        : 1.5px solid var(--success-600);
     color         : var(--success-700);
-    height        : 22px;
 }
 
 .badge-size--lg-color--primary-theme--light {
@@ -1386,7 +1358,6 @@
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
     color         : var(--primary-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--gray-theme--light {
@@ -1434,7 +1405,6 @@
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
     color         : var(--gray-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--error-theme--light {
@@ -1482,7 +1452,6 @@
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
     color         : var(--error-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--warning-theme--light {
@@ -1530,7 +1499,6 @@
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
     color         : var(--warning-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--success-theme--light {
@@ -1578,7 +1546,6 @@
     border-radius : 16px;
     border        : 1.5px solid var(--success-600);
     color         : var(--success-700);
-    height        : 24px;
 }
 
 
@@ -1633,7 +1600,6 @@
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
     color         : var(--primary-700);
-    height        : 22px;
 }
 
 
@@ -1687,7 +1653,6 @@
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
     color         : var(--gray-700);
-    height        : 22px;
 }
 
 
@@ -1741,7 +1706,6 @@
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
     color         : var(--error-700);
-    height        : 22px;
 }
 
 .badge-size--md-color--warning-theme--light-icon--trailing {
@@ -1793,7 +1757,6 @@
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
     color         : var(--warning-700);
-    height        : 22px;
 }
 
 .badge-size--md-color--success-theme--light-icon--trailing {
@@ -1845,7 +1808,6 @@
     border-radius : 16px;
     border        : 1.5px solid var(--success-600);
     color         : var(--success-700);
-    height        : 22px;
 }
 
 
@@ -1902,7 +1864,6 @@
     border        : 1.5px solid var(--primary-600);
     border-radius : 16px;
     color         : var(--primary-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--gray-theme--light-icon--trailing {
@@ -1954,7 +1915,6 @@
     border        : 1.5px solid var(--gray-600);
     border-radius : 16px;
     color         : var(--gray-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--error-theme--light-icon--trailing {
@@ -2006,7 +1966,6 @@
     border        : 1.5px solid var(--error-600);
     border-radius : 16px;
     color         : var(--error-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--warning-theme--light-icon--trailing {
@@ -2058,7 +2017,6 @@
     border        : 1.5px solid var(--warning-600);
     border-radius : 16px;
     color         : var(--warning-700);
-    height        : 24px;
 }
 
 .badge-size--lg-color--success-theme--light-icon--trailing {
@@ -2110,5 +2068,4 @@
     border-radius : 16px;
     border        : 1.5px solid var(--success-600);
     color         : var(--success-700);
-    height        : 24px;
 }

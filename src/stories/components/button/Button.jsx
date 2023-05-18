@@ -56,7 +56,6 @@ export const Button = ({destructive, hierarchy, state, size, icon, showIconLeadi
 
 Button.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl']),
-  hierarchy: PropTypes.string,
   icon: PropTypes.oneOf(['default', 'dotLeading', 'only']),
   destructive: PropTypes.oneOf(['true', 'false']),
   state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
@@ -65,6 +64,7 @@ Button.propTypes = {
   showiconTrailing: PropTypes.oneOf(['true', 'false']),
   iconTrailing: PropTypes.string,
   text: PropTypes.string,
+  hierarchy: PropTypes.oneOf(['primary', 'secondaryGray', 'secondaryColor', 'tertiaryGray', 'tertiaryColor', 'linkGray', 'linkColor']),
 };
 
 
