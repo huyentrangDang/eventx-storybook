@@ -6,7 +6,24 @@ export default {
   component: Button,
   tags: ['autodocs'],
   excludePropTypes: ['hierarchy'],
-  argTypes: {},
+  argTypes: {
+    text: {
+      control: 'text',
+      if: { arg: 'icon', neq: 'only' },
+    },
+    showIconLeading: {
+      control: 'radio',
+      if: { arg: 'icon', neq: 'only' },
+    },
+    iconLeading: {
+      control: 'text',
+      if: { arg: 'icon', neq: 'only' },
+    },
+    showiconTrailing: {
+      control: 'radio',
+      if: { arg: 'icon', neq: 'only' },
+    },
+  },
   excludeProps: ['hierarchy'],
 };
 
