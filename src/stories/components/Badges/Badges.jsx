@@ -256,7 +256,21 @@ export const Badges = ({
 
 Badges.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  color: PropTypes.string,
+  color: PropTypes.oneOf([
+    'gray',
+    'primary',
+    'error',
+    'warning',
+    'success',
+    'blueGray',
+    'blueLight',
+    'blue',
+    'indigo',
+    'purple',
+    'pink',
+    'rose',
+    'orange',
+  ]),
   outline: PropTypes.oneOf(['true', 'false']),
   icon: PropTypes.oneOf([
     'false',
