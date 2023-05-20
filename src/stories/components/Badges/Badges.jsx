@@ -364,42 +364,42 @@ export const iconDotPath = (color, icon) => {
 
 export const iconXClosePath = (color, icon) => {
   if (color === 'gray') {
-    return 'x_close_trailing_gray';
+    return 'x_close_gray';
   }
   if (color === 'primary') {
-    return 'x_close_trailing_primary';
+    return 'x_close_primary';
   }
   if (color === 'error') {
-    return 'x_close_trailing_error';
+    return 'x_close_error';
   }
   if (color === 'warning') {
-    return 'x_close_trailing_warning';
+    return 'x_close_warning';
   }
   if (color === 'success') {
-    return 'x_close_trailing_success';
+    return 'x_close_success';
   }
   if (color === 'blueGray') {
-    return 'x_close_trailing_blue-gray';
+    return 'x_close_blue-gray';
   }
   if (color === 'blueLight') {
-    return 'x_close_trailing_blue-light';
+    return 'x_close_blue-light';
   }
   if (color === 'blue') {
-    return 'x_close_trailing_blue';
+    return 'x_close_blue';
   }
   if (color === 'indigo') {
-    return 'x_close_trailing_indigo';
+    return 'x_close_indigo';
   }
   if (color === 'purple') {
-    return 'x_close_trailing_purple';
+    return 'x_close_purple';
   }
   if (color === 'pink') {
-    return 'x_close_trailing_pink';
+    return 'x_close_pink';
   }
   if (color === 'rose') {
-    return 'x_close_trailing_rose';
+    return 'x_close_rose';
   } else {
-    return 'x_close_trailing_orange';
+    return 'x_close_orange';
   }
 };
 

@@ -1,11 +1,11 @@
 import { Button } from './Button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
   title: 'Buttons/Buttons',
   component: Button,
   tags: ['autodocs'],
   excludePropTypes: ['hierarchy'],
+  excludeProps: ['hierarchy'],
   argTypes: {
     text: {
       control: 'text',
@@ -24,11 +24,9 @@ export default {
       if: { arg: 'icon', neq: 'only' },
     },
   },
-  excludeProps: ['hierarchy'],
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const button = {
+export const buttons = {
   args: {
     text: 'Button CTA',
     size: 'sm',
