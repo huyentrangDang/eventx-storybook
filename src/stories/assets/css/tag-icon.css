@@ -1,0 +1,42 @@
+.icon-x-close-size--sm-state--default {
+  content: url('../icons/icon-tag/x-close/x-close-gray400-sm.svg');
+}
+
+.icon-x-close-size--md-state--default {
+  content: url('../icons/icon-tag/x-close/x-close-gray400-md.svg');
+}
+
+.icon-x-close-size--lg-state--default {
+  content: url('../icons/icon-tag/x-close/x-close-gray400-lg.svg');
+}
+
+.icon-x-close-size--sm-state--hover {
+  content: url('../icons/icon-tag/x-close/x-close-gray500-sm.svg');
+}
+
+.icon-x-close-size--md-state--hover {
+  content: url('../icons/icon-tag/x-close/x-close-gray500-md.svg');
+}
+
+.icon-x-close-size--lg-state--hover {
+  content: url('../icons/icon-tag/x-close/x-close-gray500-lg.svg');
+}
+
+.icon-x-close-size--sm-state--focus {
+  content: url('../icons/icon-tag/x-close/x-close-gray400-sm.svg');
+}
+
+.icon-x-close-size--md-state--focus {
+  content: url('../icons/icon-tag/x-close/x-close-gray400-md.svg');
+}
+
+.icon-x-close-size--lg-state--focus {
+  content: url('../icons/icon-tag/x-close/x-close-gray400-lg.svg');
+}
+
+.dot_success_500 {
+  content: url(../icons/icon-button/dot-leading/dot-leading-success-500.svg);
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+}
