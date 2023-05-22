@@ -30,18 +30,20 @@ tag.argTypes = {
     control: 'text',
     if: { arg: 'action', eq: 'count' },
   },
-  iconCountry: {
-    control: 'text',
-    if: { arg: 'icon', eq: 'country' },
-  },
-  iconAvatar: {
-    control: 'text',
-    if: { arg: 'icon', eq: 'avatar' },
-  },
+  // iconCountry: {
+  //   control: 'text',
+  //   if: { arg: 'icon', eq: 'country' },
+  // },
+  // iconAvatar: {
+  //   control: 'text',
+  //   if: { arg: 'icon', eq: 'avatar' },
+  // },
   iconDot: {
     control: 'text',
     if: { arg: 'icon', eq: 'dot' },
   },
+  iconCountry: { table: { disable: true } },
+  iconAvatar: { table: { disable: true } },
 };
 
 // Tag-x-close

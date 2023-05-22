@@ -36,20 +36,10 @@ export const Tag = ({
             />
           )}
           {icon === 'country' && (
-            <div
-              class={[
-                `container-icon-size--${size}`,
-                `${iconPath(`${iconCountry}`)}`,
-              ].join(' ')}
-            />
+            <div class={[`${iconPath(`${iconCountry}`)}`].join(' ')} />
           )}
           {icon === 'avatar' && (
-            <div
-              class={[
-                `container-icon-size--${size}`,
-                `${iconPath(`${iconAvatar}`)}`,
-              ].join(' ')}
-            />
+            <div class={[`${iconPath(`${iconAvatar}`)}`].join(' ')} />
           )}
           {icon === 'dot' && (
             <div
