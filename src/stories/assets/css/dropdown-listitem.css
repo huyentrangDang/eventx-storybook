@@ -1,0 +1,328 @@
+.text-dropdown-listitem-medium {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dropdown-listitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 6px;
+  min-width: 240px;
+  height: 42px;
+  border: none;
+  background: none;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--false-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--false-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  background: var(--gray-50);
+  border: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--false-state--focus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--false-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-300);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--false-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--false-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  background: var(--gray-50);
+  border: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--false-state--focus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--false-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-300);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.container-icon-dropdown {
+  height: fit-content;
+  width: fit-content;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--true-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  background: var(--gray-50);
+  border: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--true-state--focus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--false-checkbox--true-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 12px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-300);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 20px;
+  color: var(--gray-700);
+  min-width: 178px;
+}
+
+.dropdown-listitem-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 20px;
+  color: var(--gray-700);
+  min-width: 178px;
+}
+
+.dropdown-listitem-state--focus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 20px;
+  color: var(--gray-700);
+  min-width: 178px;
+}
+
+.dropdown-listitem-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 20px;
+  color: var(--gray-300);
+  min-width: 178px;
+}
+
+.checkbox-dropdown-listitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+.checkbox-dropdown-state--default {
+  box-sizing: border-box;
+  background: var(--base-white);
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+}
+.checkbox-dropdown-state--hover {
+  box-sizing: border-box;
+  background: var(--primary-100);
+  border: 1px solid var(--primary--600);
+  border-radius: 4px;
+}
+.checkbox-dropdown-state--focus {
+  box-sizing: border-box;
+  background: var(--base-white);
+  border: 1px solid var(--gray-300);
+  box-shadow: 0px 0px 0px 4px var(--primary-100);
+  border-radius: 4px;
+}
+.checkbox-dropdown-state--disabled {
+  box-sizing: border-box;
+  background: var(--gray--100);
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--true-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  background: var(--gray-50);
+  border: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--true-state--focus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-700);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}
+
+.dropdown-listitem-content-icon--true-checkbox--true-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 10px;
+  min-width: 228px;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--gray-300);
+  border: none;
+  background: none;
+  justify-content: space-between;
+}

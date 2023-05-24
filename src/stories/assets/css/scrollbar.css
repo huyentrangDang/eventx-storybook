@@ -1,0 +1,65 @@
+.scrollbar-length--25 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 10px;
+  width: 16px;
+  height: 240px;
+}
+
+.scrollbar-length--50 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 10px;
+  width: 16px;
+  height: 240px;
+}
+
+.scrollbar-length--75 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 10px;
+  width: 16px;
+  height: 240px;
+}
+
+.scrollbar {
+  width: 8px;
+  height: 232px;
+  position: relative;
+}
+
+.scrollbar-bar-length--25 {
+  background: var(--gray-200);
+  border-radius: 8px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 75%;
+}
+
+.scrollbar-bar-length--50 {
+  background: var(--gray-200);
+  border-radius: 8px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 50%;
+}
+
+.scrollbar-bar-length--75 {
+  background: var(--gray-200);
+  border-radius: 8px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 25%;
+}
