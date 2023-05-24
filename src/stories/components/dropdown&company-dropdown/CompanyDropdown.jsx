@@ -49,14 +49,14 @@ export const CompanyDropdown = ({ open }) => {
             </div>
           </div>
 
-          {openDropdown || open === 'true' ? (
+          {open === 'false' ? (
             <icon className={`icon-chevron-down`} />
           ) : (
             <icon className={`icon-chevron-up`} />
           )}
         </button>
 
-        {(openDropdown || open === 'true') && (
+        {open === 'true' && (
           <div
             className={`menu-dropdown-company`}
             id='menu-dropdown-company'
@@ -111,11 +111,11 @@ export const CompanyDropdown = ({ open }) => {
                     );
                   }
                 )}
-                <div className={`scrollbar-dropdown-company`}>
+                {/* <div className={`scrollbar-dropdown-company`}>
                   <div className={[`scrollbar-inner`].join(' ')}>
                     <div className={[`scrollbar-bar`].join(' ')} />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
