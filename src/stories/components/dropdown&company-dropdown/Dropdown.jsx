@@ -74,83 +74,12 @@ export const Dropdown = ({ type, open }) => {
 
   return (
     <>
-      {/* <button
-        type='button'
-        className={`button-open--${open}`}
-        onClick={onClick}
-      >
-        <div id='test'>Account</div>
-      </button>
-      {openDropdown && <div>mmmm</div>} */}
-      {/* <button
-        type='button'
-        className={[`dropdown-listitem`].join(' ')}
-      >
-        {icon === 'false' ? (
-          checkbox === 'false' ? (
-            <div
-              className={[
-                `dropdown-listitem-content-icon--${icon}-checkbox--${checkbox}-state--${state}`,
-              ].join(' ')}
-            >
-              <div className={`text-dropdown-listitem-medium`}> {text}</div>
-              <icon className={[`icon-dropdown-shortcut-state--${state}`]} />
-            </div>
-          ) : (
-            <>
-              <div
-                className={[
-                  `dropdown-listitem-content-icon--${icon}-checkbox--${checkbox}-state--${state}`,
-                ].join(' ')}
-              >
-                <div
-                  className={[`dropdown-listitem-state--${state}`].join(' ')}
-                >
-                  <button className={[`checkbox-dropdown-listitem`].join(' ')}>
-                    <icon
-                      className={[`icon-checkbox-dropdown-state--${state}`]}
-                    />{' '}
-                  </button>
-                  <div className={`text-dropdown-listitem-medium`}> {text}</div>
-                </div>
-                <icon className={[`icon-dropdown-shortcut-state--${state}`]} />
-              </div>
-            </>
-          )
-        ) : checkbox === 'false' ? (
-          <div
-            className={[
-              `dropdown-listitem-content-icon--${icon}-checkbox--${checkbox}-state--${state}`,
-            ].join(' ')}
-          >
-            <div className={[`dropdown-listitem-state--${state}`].join(' ')}>
-              <div
-                class={[
-                  `container-icon-dropdown`,
-                  `${iconPath(`${iconLeading}`, `${state}`)}`,
-                ].join(' ')}
-              />
-              <div className={`text-dropdown-listitem-medium`}> {text}</div>
-            </div>
-            <icon className={[`icon-dropdown-shortcut-state--${state}`]} />
-          </div>
-        ) : (
-          <div
-            className={[
-              `dropdown-listitem-content-icon--${icon}-checkbox--${checkbox}-state--${state}`,
-            ].join(' ')}
-          >
-            <div className={`text-dropdown-listitem-medium`}> {text}</div>
-            <icon className={[`icon-dropdown-shortcut-state--${state}`]} />
-          </div>
-        )}
-      </button> */}
       <div className={`dropdown`}>
         {type === 'button' && (
           <button
             type='button'
             className={`dropdown-button`}
-            onClick={onClick}
+            // onClick={onClick}
           >
             <div className={`text-button-sm-semibold`}>Account</div>
             {openDropdown ? (
@@ -168,7 +97,7 @@ export const Dropdown = ({ type, open }) => {
           >
             <icon
               className={`icon-dots-vertical`}
-              onClick={onClick}
+              // onClick={onClick}
             />
           </button>
         )}
@@ -180,12 +109,12 @@ export const Dropdown = ({ type, open }) => {
           >
             <icon
               className={`icon-avatar-dropdown`}
-              onClick={onClick}
+              // onClick={onClick}
             />
           </button>
         )}
 
-        {openDropdown && open === 'true' && (
+        {open === 'true' && (
           <div
             className={`menu-dropdown`}
             id='menu-dropdown'
@@ -203,7 +132,6 @@ export const Dropdown = ({ type, open }) => {
             </div>
             <div className={`menu-items`}>
               <div className={`list-item-group`}>
-                {/* User */}
                 {listItemGroup
                   .slice(0, 3)
                   .map(({ text, iconHeader, iconShortcut }, index) => {
