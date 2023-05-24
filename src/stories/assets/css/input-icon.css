@@ -1,0 +1,70 @@
+.checked-state--default {
+  content: url(../icons/icon-checkbox/check/checked-primary-600.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.checked-state--hover {
+  content: url(../icons/icon-checkbox/check/checked-primary-600.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.checked-state--focus {
+  content: url(../icons/icon-checkbox/check/checked-primary-600.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.checked-state--disabled {
+  content: url(../icons/icon-checkbox/check/checked-primary-300.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.user-input-state--default {
+  content: url(../icons/icon-user/user-gray-500.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.user-input-state--hover {
+  content: url(../icons/icon-user/user-gray-700.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.user-input-state--focus {
+  content: url(../icons/icon-user/user-gray-500.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.user-input-state--disabled {
+  content: url(../icons/icon-user/user-gray-300.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.avatar-input {
+  content: url(../icons/icon-badge//circle/circle_avatar.svg);
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.input-icon-dotLeading {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-avatar-company {
+  content: url(../icons/icon-dropdown/_avatar_company.svg);
+}

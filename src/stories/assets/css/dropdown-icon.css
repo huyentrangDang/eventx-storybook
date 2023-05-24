@@ -1,0 +1,138 @@
+.circle_gray700::before {
+  content: url(../icons/icon-dropdown/circle/circle-gray-700.svg);
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.circle_gray200::before {
+  content: url(../icons/icon-dropdown/circle/circle-gray-200.svg);
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-checkbox-dropdown-state--default {
+  content: url('../icons/icon-checkbox/checkbox/checkbox-gray-300.svg');
+}
+
+.icon-checkbox-dropdown-state--hover {
+  content: url('../icons/icon-checkbox/checkbox/checkbox-primary-600.svg');
+}
+
+.icon-checkbox-dropdown-state--focus {
+  content: url('../icons/icon-checkbox/checkbox/checkbox-primary-300.svg');
+}
+
+.icon-checkbox-dropdown-state--disabled {
+  content: url('../icons/icon-checkbox/checkbox/checkbox-gray-300-state-disabled.svg');
+}
+
+.icon-dropdown-shortcut-state--default {
+  content: url('../icons/icon-dropdown/shortcut/shortcut-gray-500.svg');
+  width: 18px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.icon-dropdown-shortcut-state--hover {
+  content: url('../icons/icon-dropdown/shortcut/shortcut-gray-500.svg');
+  width: 18px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.icon-dropdown-shortcut-state--focus {
+  content: url('../icons/icon-dropdown/shortcut/shortcut-gray-500.svg');
+  width: 18px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.icon-dropdown-shortcut-state--disabled {
+  content: url('../icons/icon-dropdown/shortcut/shortcut-gray-300.svg');
+  width: 18px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.icon-chevron-down {
+  content: url(../icons/icon-dropdown/chevron-down.svg);
+}
+.icon-chevron-up {
+  content: url(../icons/icon-dropdown/chevron-up.svg);
+}
+
+.icon-dots-vertical {
+  content: url(../icons/icon-dropdown/dots-vertical.svg);
+}
+
+.icon-avatar-dropdown {
+  width: 40px;
+  height: 40px;
+  content: url(../icons/icon-badge/circle/circle_avatar.svg);
+}
+
+.icon-search-refraction {
+  content: url(../icons/icon-dropdown/search-refraction.svg);
+}
+
+.icon-evenchi {
+  background: url(../icons/icon-avatar/icon-event-chi.svg);
+}
+
+.icon-crania {
+  background: url(../icons/icon-avatar/icon-crania.svg);
+}
+
+.icon-zestif {
+  background: url(../icons/icon-avatar/icon-zestif.svg);
+}
+
+.checked-primary-600 {
+  content: url(../icons/icon-checkbox/check/checked-primary-600.svg);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.icon-user {
+  content: url(../icons/icon-user/user-gray-500.svg);
+}
+.icon-avatar {
+  content: url(../icons/icon-badge/circle/circle_avatar.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.icon-dotLeading {
+  content: url(../icons/icon-button/dot-leading/dot-leading-success-500.svg);
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+}
+
+.icon-search {
+  content: url(../icons/icon-dropdown/icon-search.svg);
+}
+
+.icon-avatar-tags {
+  content: url(../icons/icon-badge/circle/circle_avatar.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.icon-tags-x-close {
+  content: url(../icons/icon-badge/x-close/x_close_gray.svg);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+  border-radius: 3px;
+}
