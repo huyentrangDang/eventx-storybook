@@ -1,0 +1,362 @@
+@import url('./color.css');
+@import url('./common.css');
+
+/* toggle text */
+
+.toggle-text-supportingText-size--sm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.toggle-text-supportingText-size--md {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+}
+
+.text-toggle-size--sm-medium {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-700);
+}
+
+.text-toggle-size--md-medium {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-700);
+}
+
+.supportingText-toggle-size--sm-medium {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-600);
+}
+
+.supportingText-toggle-size--md-medium {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-600);
+}
+
+/* toggle content */
+.toggle-pressed--false-size--sm-showText--true-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--false-size--sm-showText--false-state--disabled {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.toggle-pressed--false-size--md-showText--true-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--false-size--md-showText--false-state--disabled {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.toggle-pressed--false-size--sm-showText--true-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--false-size--sm-showText--false-state--default {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--false-size--md-showText--true-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--false-size--md-showText--false-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.toggle-pressed--false-size--sm-showText--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.toggle-pressed--false-size--sm-showText--false-state--hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--false-size--md-showText--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--false-size--md-showText--false-state--hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--false-size--sm-showText--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--false-size--sm-showText--false-state--focused {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--false-size--md-showText--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--false-size--md-showText--false-state--focused {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--sm-showText--true-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--true-size--sm-showText--false-state--disabled {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--md-showText--true-state--disabled {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--true-size--md-showText--false-state--disabled {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--sm-showText--true-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--true-size--sm-showText--false-state--default {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--md-showText--true-state--default {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--true-size--md-showText--false-state--default {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--sm-showText--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--true-size--sm-showText--false-state--hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--md-showText--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--true-size--md-showText--false-state--hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--sm-showText--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.toggle-pressed--true-size--sm-showText--false-state--focused {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+.toggle-pressed--true-size--md-showText--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.toggle-pressed--true-size--md-showText--false-state--focused {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px;
+  gap: 10px;
+}
+
+/* Toggle Icons */
+
+.toggle_primary600_sm {
+  content: url(../icons/icon-toggle/toggle-primary600-sm.svg);
+  display: block;
+}
+.toggle_primary700_sm {
+  content: url(../icons/icon-toggle/toggle-primary700-sm.svg);
+  display: block;
+}
+.toggle_primary600_sm_focused {
+  content: url(../icons/icon-toggle/toggle-primary600-sm-focused.svg);
+  display: block;
+  width: 36px;
+  height: 20px;
+}
+.toggle_gray100_sm_disabled {
+  content: url(../icons/icon-toggle/toggle-gray100-sm-disabled.svg);
+  display: block;
+}
+
+.toggle_gray400_sm {
+  content: url(../icons/icon-toggle/toggle-gray400-sm.svg);
+  display: block;
+}
+.toggle_gray300_sm {
+  content: url(../icons/icon-toggle/toggle-gray300-sm.svg);
+  display: block;
+}
+.toggle_gray100_sm_focused {
+  content: url(../icons/icon-toggle/toggle-gray100-sm-focused.svg);
+  display: block;
+  width: 36px;
+  height: 20px;
+}
+.toggle_gray200_sm {
+  content: url(../icons/icon-toggle/toggle_gray200_sm.svg);
+  display: block;
+}
+
+.toggle_gray400_md {
+  content: url(../icons/icon-toggle/toggle-gray400-md.svg);
+  display: block;
+}
+.toggle_gray300_md {
+  content: url(../icons/icon-toggle/toggle-gray300-md.svg);
+  display: block;
+}
+.toggle_gray50_md {
+  content: url(../icons/icon-toggle/toggle-gray50-md.svg);
+  display: block;
+  width: 44px;
+  height: 24px;
+}
+.toggle_gray200_md_unpressed {
+  content: url(../icons/icon-toggle/toggle-gray200-md-unpressed.svg);
+  display: block;
+}
+
+.toggle_primary600_md {
+  content: url(../icons/icon-toggle/toggle-primary600-md.svg);
+  display: block;
+}
+.toggle_primary700_md {
+  content: url(../icons/icon-toggle/toggle-primary700-md.svg);
+  display: block;
+}
+.toggle_primary600_md_focused {
+  content: url(../icons/icon-toggle/toggle-primary600-md-focused.svg);
+  display: block;
+  width: 44px;
+  height: 24px;
+}
+.toggle_gray200_md_pressed {
+  content: url(../icons/icon-toggle/toggle-gray200-md-pressed.svg);
+  display: block;
+}
