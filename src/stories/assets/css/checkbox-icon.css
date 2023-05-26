@@ -1,0 +1,75 @@
+/* .checkbox-selected-true-size--sm-state-default {
+    content: ;
+} */
+
+.test {
+  content: url(../icons/icon-checkbox/checkbox-sm-base-white.svg);
+}
+
+.icon-layers-two-sm-primary-100 {
+  content: url(../icons/icon-layers/layers-two-sm-primary-100-light.svg);
+}
+
+.icon-layers-two-sm-gray-100 {
+  content: url(../icons/icon-layers/layers-two-sm-gray-100-light.svg);
+}
+
+.icon-layers-two-md-primary-100 {
+  content: url(../icons/icon-layers/layers-two-md-primary-100-light.svg);
+}
+
+.icon-layers-two-md-gray-100 {
+  content: url(../icons/icon-layers/layers-two-md-gray-100-light.svg);
+}
+
+.icon-check-circle-sm-default {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-default.svg);
+}
+.icon-check-circle-sm-hover {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-hover.svg);
+}
+.icon-check-circle-sm-focused {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-focused.svg);
+}
+.icon-check-circle-sm-disabled {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-disabled.svg);
+}
+
+.icon-check-circle-md-default {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-default.svg);
+}
+.icon-check-circle-md-hover {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-hover.svg);
+}
+.icon-check-circle-md-focused {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-focused.svg);
+}
+.icon-check-circle-md-disabled {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-disabled.svg);
+}
+
+.icon-check-circle-sm-default-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-default-selected.svg);
+}
+.icon-check-circle-sm-hover-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-hover-selected.svg);
+}
+.icon-check-circle-sm-focused-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-focused-selected.svg);
+}
+.icon-check-circle-sm-disabled-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-sm-disabled.svg);
+}
+
+.icon-check-circle-md-default-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-default-selected.svg);
+}
+.icon-check-circle-md-hover-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-hover-selected.svg);
+}
+.icon-check-circle-md-focused-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-focused-selected.svg);
+}
+.icon-check-circle-md-disabled-selected {
+  content: url(../icons/icon-checkbox/check-circle/check-circle-md-disabled-selected.svg);
+}
