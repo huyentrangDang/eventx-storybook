@@ -1,0 +1,47 @@
+.mega-size--sm-state--placeholder {
+  content: url(../icons/icon-mega/mega-size-sm-state-placeholder.svg);
+}
+
+.mega-size--md-state--placeholder {
+  content: url(../icons/icon-mega/mega-size-md-state-placeholder.svg);
+}
+
+.mega-size--lg-state--placeholder {
+  content: url(../icons/icon-mega/mega-size-lg-state-placeholder.svg);
+}
+
+.mega-size--sm-state--filled {
+  content: url(../icons/icon-mega/mega-size-sm-state-filled.svg);
+}
+
+.mega-size--md-state--filled {
+  content: url(../icons/icon-mega/mega-size-md-state-filled.svg);
+}
+
+.mega-size--lg-state--filled {
+  content: url(../icons/icon-mega/mega-size-lg-state-filled.svg);
+}
+
+.mega-size--sm-state--focused {
+  content: url(../icons/icon-mega/mega-size-sm-state-focused.svg);
+}
+
+.mega-size--md-state--focused {
+  content: url(../icons/icon-mega/mega-size-md-state-focused.svg);
+}
+
+.mega-size--lg-state--focused {
+  content: url(../icons/icon-mega/mega-size-lg-state-focused.svg);
+}
+
+.mega-size--sm-state--disabled {
+  content: url(../icons/icon-mega/mega-size-sm-state-disabled.svg);
+}
+
+.mega-size--md-state--disabled {
+  content: url(../icons/icon-mega/mega-size-md-state-disabled.svg);
+}
+
+.mega-size--lg-state--disabled {
+  content: url(../icons/icon-mega/mega-size-lg-state-disabled.svg);
+}

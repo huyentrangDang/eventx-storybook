@@ -1,0 +1,143 @@
+.icon-editor-active--false-type--bold-theme--light {
+  content: url(../icons/icon-editor/type-bold-theme-light.svg);
+}
+
+.icon-editor-active--false-type--bold-theme--dark {
+  content: url(../icons/icon-editor/type-bold-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--bold-theme--light {
+  content: url(../icons/icon-editor/active-type-bold-theme-light.svg);
+}
+
+.icon-editor-active--true-type--bold-theme--dark {
+  content: url(../icons/icon-editor/active-type-bold-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--italic-theme--light {
+  content: url(../icons/icon-editor/type-italic-theme-light.svg);
+}
+
+.icon-editor-active--false-type--italic-theme--dark {
+  content: url(../icons/icon-editor/type-italic-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--italic-theme--light {
+  content: url(../icons/icon-editor/active-type-italic-theme-light.svg);
+}
+
+.icon-editor-active--true-type--italic-theme--dark {
+  content: url(../icons/icon-editor/active-type-italic-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--h1-theme--light {
+  content: url(../icons/icon-editor/type-h1-theme-light.svg);
+}
+
+.icon-editor-active--false-type--h1-theme--dark {
+  content: url(../icons/icon-editor/type-h1-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--h1-theme--light {
+  content: url(../icons/icon-editor/active-type-h1-theme-light.svg);
+}
+
+.icon-editor-active--true-type--h1-theme--dark {
+  content: url(../icons/icon-editor/active-type-h1-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--h2-theme--light {
+  content: url(../icons/icon-editor/type-h2-theme-light.svg);
+}
+
+.icon-editor-active--false-type--h2-theme--dark {
+  content: url(../icons/icon-editor/type-h2-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--h2-theme--light {
+  content: url(../icons/icon-editor/active-type-h2-theme-light.svg);
+}
+
+.icon-editor-active--true-type--h2-theme--dark {
+  content: url(../icons/icon-editor/active-type-h2-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--quote-theme--light {
+  content: url(../icons/icon-editor/type-quote-theme-light.svg);
+}
+
+.icon-editor-active--false-type--quote-theme--dark {
+  content: url(../icons/icon-editor/type-quote-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--quote-theme--light {
+  content: url(../icons/icon-editor/active-type-quote-theme-light.svg);
+}
+
+.icon-editor-active--true-type--quote-theme--dark {
+  content: url(../icons/icon-editor/active-type-quote-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--link-theme--light {
+  content: url(../icons/icon-editor/type-link-theme-light.svg);
+}
+
+.icon-editor-active--false-type--link-theme--dark {
+  content: url(../icons/icon-editor/type-link-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--link-theme--light {
+  content: url(../icons/icon-editor/active-type-link-theme-light.svg);
+}
+
+.icon-editor-active--true-type--link-theme--dark {
+  content: url(../icons/icon-editor/active-type-link-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--photo-theme--light {
+  content: url(../icons/icon-editor/type-photo-theme-light.svg);
+}
+
+.icon-editor-active--false-type--photo-theme--dark {
+  content: url(../icons/icon-editor/type-photo-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--photo-theme--light {
+  content: url(../icons/icon-editor/active-type-photo-theme-light.svg);
+}
+
+.icon-editor-active--true-type--photo-theme--dark {
+  content: url(../icons/icon-editor/active-type-photo-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--listBullet-theme--light {
+  content: url(../icons/icon-editor/type-list-bullet-theme-light.svg);
+}
+
+.icon-editor-active--false-type--listBullet-theme--dark {
+  content: url(../icons/icon-editor/type-list-bullet-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--listBullet-theme--light {
+  content: url(../icons/icon-editor/active-type-list-bullet-theme-light.svg);
+}
+
+.icon-editor-active--true-type--listBullet-theme--dark {
+  content: url(../icons/icon-editor/active-type-list-bullet-theme-dark.svg);
+}
+
+.icon-editor-active--false-type--listNumbers-theme--light {
+  content: url(../icons/icon-editor/type-list-number-theme-light.svg);
+}
+
+.icon-editor-active--false-type--listNumbers-theme--dark {
+  content: url(../icons/icon-editor/type-list-number-theme-dark.svg);
+}
+
+.icon-editor-active--true-type--listNumbers-theme--light {
+  content: url(../icons/icon-editor/active-type-list-number-theme-light.svg);
+}
+
+.icon-editor-active--true-type--listNumbers-theme--dark {
+  content: url(../icons/icon-editor/active-type-list-number-theme-dark.svg);
+}
