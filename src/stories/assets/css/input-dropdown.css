@@ -1359,6 +1359,7 @@
 
 .select-support-text-input-state--disabled {
   color: var(--gray-500);
+  background: var(--gray-50);
 }
 
 .menu-select-type--default {

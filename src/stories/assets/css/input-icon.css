@@ -68,3 +68,28 @@
 .icon-avatar-company {
   content: url(../icons/icon-dropdown/_avatar_company.svg);
 }
+
+.icon-help-circle-gray-400 {
+  content: url(../icons/icon-general/help-circle-gray-400.svg);
+}
+
+.icon-alert-circle-error-500 {
+  content: url(../icons/icon-general/alert-circle-error-500.svg);
+}
+
+.icon-mail-gray-500 {
+  content: url(../icons/icon-general/mail-gray-500.svg);
+}
+
+.icon-payment-method {
+  content: url(../icons/icon-general/payment-method.svg);
+}
+
+.icon-copy {
+  content: url(../icons/icon-general/copy.svg);
+}
+
+.icon-x-close {
+  content: url(../icons/icon-badge/x-close/x_close_gray.svg);
+  font-size: 16px;
+}
