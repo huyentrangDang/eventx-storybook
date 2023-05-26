@@ -17,6 +17,29 @@ input_field.args = {
   type: 'default',
   hintText: 'This is a hint text to help user.',
   text: 'olivia@untitledui.com',
+  showLabel: true,
+  showHintText: true,
+  showHelpIcon: true,
+};
+input_field.argTypes = {
+  showLabel: {
+    control: 'boolean',
+  },
+  showHintText: {
+    control: 'boolean',
+  },
+  showHelpIcon: {
+    control: 'boolean',
+    if: { arg: 'type', neq: 'dateInput' },
+  },
+  label: {
+    control: 'text',
+    if: { arg: 'showLabel', eq: true },
+  },
+  hintText: {
+    control: 'text',
+    if: { arg: 'showHintText', eq: true },
+  },
 };
 
 const TextArea_InputField = (args) => <TextAreaInputField {...args} />;

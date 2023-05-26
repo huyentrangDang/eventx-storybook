@@ -11,10 +11,103 @@ import Select from '@mui/material/Select';
 import '../../assets/css/dropdown-icon.css';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import Autocomplete from '@mui/material/Autocomplete';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateField } from '@mui/x-date-pickers/DateField';
+import useAutocomplete from '@mui/base/useAutocomplete';
+import { styled } from '@mui/material/styles';
+import { autocompleteClasses } from '@mui/material/Autocomplete';
+import '../../assets/css/tag-icon.css';
+import '../../assets/css/tag.css';
+
+function Tag(props) {
+  const { image, label, onDelete, ...other } = props;
+  return (
+    <button
+      {...other}
+      className={`tag-size--md-icon--avatar-action--xClose-checkbox--false`}
+    >
+      <div className={`tag-content-size--md`}>
+        <div className={image}></div>
+        <span className={`text-tag-size--md-medium`}>{label}</span>
+      </div>
+      <button
+        className={`tag-x-close-size--md`}
+        onClick={onDelete}
+      >
+        <icon className={`icon-x-close-size--md`} />
+      </button>
+    </button>
+  );
+}
+
+Tag.propTypes = {
+  onDelete: PropTypes.func.isRequired,
+  image: PropTypes.string.isRequired,
+};
+
+const StyledTag = styled(Tag)(
+  () => `
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 4px;
+  gap: 3px;
+  background: var(--base-white);
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  color: var(--gray-700);
+`
+);
+
+const Listbox = styled('ul')(
+  ({ theme }) => `
+  width: 400px;
+  margin: 2px 0 0;
+  padding: 0;
+  position: absolute;
+  list-style: none;
+  background-color: ${theme.palette.mode === 'dark' ? '#141414' : '#fff'};
+  overflow: auto;
+  max-height: 250px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+
+  & li {
+    padding: 5px 12px;
+    display: flex;
+
+    & span {
+      flex-grow: 1;
+    }
+
+    & svg {
+      color: transparent;
+    }
+  }
+
+  & li[aria-selected='true'] {
+    background-color: ${theme.palette.mode === 'dark' ? '#2b2b2b' : '#fafafa'};
+    font-weight: 600;
+
+    & svg {
+      color: #1890ff;
+    }
+  }
+
+  & li.${autocompleteClasses.focused} {
+    background-color: ${theme.palette.mode === 'dark' ? '#003b57' : '#e6f7ff'};
+    cursor: pointer;
+
+    & svg {
+      color: currentColor;
+    }
+  }
+`
+);
 
 export const InputField = ({
   size,
@@ -24,8 +117,26 @@ export const InputField = ({
   label,
   hintText,
   text,
+  showHelpIcon,
 }) => {
+  const {
+    getRootProps,
+    getInputProps,
+    getTagProps,
+    getListboxProps,
+    getOptionProps,
+    groupedOptions,
+    value,
+    setAnchorEl,
+  } = useAutocomplete({
+    defaultValue: [topUsers[1]],
+    multiple: true,
+    image: '1',
+    options: topUsers,
+    getOptionLabel: (option) => option.name,
+  });
   const [country, setCountry] = useState('US');
+
   return (
     <>
       {((destructive === 'true' && state !== 'disabled') ||
@@ -47,12 +158,15 @@ export const InputField = ({
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position='end'>
-                        <div
-                          class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                        />
+                        {showHelpIcon && (
+                          <div
+                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
+                          />
+                        )}
                       </InputAdornment>
                     ),
                   }}
+                  placeholder='olivia@untitledui.com'
                   className={[
                     `container-textfield-default`,
                     `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
@@ -76,12 +190,17 @@ export const InputField = ({
                       ),
                       endAdornment: (
                         <InputAdornment position='end'>
-                          <div
-                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                          />
+                          {showHelpIcon && (
+                            <div
+                              class={[`${iconPath(`${destructive}`)}`].join(
+                                ' '
+                              )}
+                            />
+                          )}
                         </InputAdornment>
                       ),
                     }}
+                    placeholder='olivia@untitledui.com'
                     className={[
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
@@ -114,12 +233,17 @@ export const InputField = ({
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position='end'>
-                          <div
-                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                          />
+                          {showHelpIcon && (
+                            <div
+                              class={[`${iconPath(`${destructive}`)}`].join(
+                                ' '
+                              )}
+                            />
+                          )}
                         </InputAdornment>
                       ),
                     }}
+                    placeholder='olivia@untitledui.com'
                     className={[
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-destructive--${destructive}-state--${state}`,
@@ -134,9 +258,13 @@ export const InputField = ({
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position='end'>
-                          <div
-                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                          />
+                          {showHelpIcon && (
+                            <div
+                              class={[`${iconPath(`${destructive}`)}`].join(
+                                ' '
+                              )}
+                            />
+                          )}
                         </InputAdornment>
                       ),
                       startAdornment: (
@@ -145,6 +273,7 @@ export const InputField = ({
                         </InputAdornment>
                       ),
                     }}
+                    placeholder='olivia@untitledui.com'
                     className={[
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
@@ -178,12 +307,17 @@ export const InputField = ({
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position='end'>
-                          <div
-                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                          />
+                          {showHelpIcon && (
+                            <div
+                              class={[`${iconPath(`${destructive}`)}`].join(
+                                ' '
+                              )}
+                            />
+                          )}
                         </InputAdornment>
                       ),
                     }}
+                    placeholder='olivia@untitledui.com'
                     className={[
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
@@ -208,12 +342,17 @@ export const InputField = ({
                       ),
                       endAdornment: (
                         <InputAdornment position='end'>
-                          <div
-                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                          />
+                          {showHelpIcon && (
+                            <div
+                              class={[`${iconPath(`${destructive}`)}`].join(
+                                ' '
+                              )}
+                            />
+                          )}
                         </InputAdornment>
                       ),
                     }}
+                    placeholder='olivia@untitledui.com'
                     className={[
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
@@ -225,7 +364,7 @@ export const InputField = ({
 
               {type === 'tags' && (
                 <>
-                  <Autocomplete
+                  {/* <Autocomplete
                     multiple
                     size='small'
                     options={topUsers}
@@ -234,16 +373,18 @@ export const InputField = ({
                     renderInput={(params) => (
                       <TextField
                         {...params}
-                        placeholder='Favorites'
+                        placeholder='Users'
                         InputProps={{
                           ...params.InputProps,
                           endAdornment: (
                             <InputAdornment position='end'>
-                              <div
-                                class={[`${iconPath(`${destructive}`)}`].join(
-                                  ' '
-                                )}
-                              />
+                              {showHelpIcon && (
+                                <div
+                                  class={[`${iconPath(`${destructive}`)}`].join(
+                                    ' '
+                                  )}
+                                />
+                              )}
                             </InputAdornment>
                           ),
                         }}
@@ -253,7 +394,56 @@ export const InputField = ({
                       `autocomplete-input-size--${size}-destructive--${destructive}-state--${state}`,
                       `autocomplete-general`,
                     ].join(' ')}
-                  />
+                  /> */}
+
+                  <div {...getRootProps()}>
+                    <div
+                      ref={setAnchorEl}
+                      className={[
+                        `input-wrapper`,
+                        `autocomplete-input-size--${size}-destructive--${destructive}-state--${state}`,
+                      ].join(' ')}
+                    >
+                      <div
+                        style={{ display: 'flex', gap: 8 }}
+                        className={`container-value-tags`}
+                      >
+                        {value.map((option, index) => (
+                          <StyledTag
+                            image={option.image}
+                            label={option.name}
+                            {...getTagProps({ index })}
+                          />
+                        ))}
+
+                        <input
+                          {...getInputProps()}
+                          placeholder='olivia@untitledui.com'
+                        />
+                      </div>
+                      {showHelpIcon && (
+                        <div
+                          class={[`${iconPath(`${destructive}`)}`].join(' ')}
+                        />
+                      )}
+                    </div>
+                  </div>
+                  {groupedOptions.length > 0 ? (
+                    <Listbox {...getListboxProps()}>
+                      {groupedOptions.map((option, index) => (
+                        <li
+                          {...getOptionProps({ option, index })}
+                          className={`item-tags`}
+                        >
+                          <div className={option.image}></div>
+                          <span>{option.name}</span>
+                          <div
+                            className={`icon-x-close-size--sm-state--default`}
+                          ></div>
+                        </li>
+                      ))}
+                    </Listbox>
+                  ) : null}
                 </>
               )}
 
@@ -263,12 +453,17 @@ export const InputField = ({
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position='end'>
-                          <div
-                            class={[`${iconPath(`${destructive}`)}`].join(' ')}
-                          />
+                          {showHelpIcon && (
+                            <div
+                              class={[`${iconPath(`${destructive}`)}`].join(
+                                ' '
+                              )}
+                            />
+                          )}
                         </InputAdornment>
                       ),
                     }}
+                    placeholder='olivia@untitledui.com'
                     className={[
                       `text-input-adornment`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
@@ -324,6 +519,9 @@ InputField.propTypes = {
   state: PropTypes.oneOf(['placeholder', 'filled', 'focused', 'disabled']),
   label: PropTypes.string,
   hintText: PropTypes.string,
+  showLabel: PropTypes.oneOf([true, false]),
+  showHintText: PropTypes.oneOf([true, false]),
+  showHelpIcon: PropTypes.oneOf([true, false]),
 };
 
 InputField.defaultProps = {};
@@ -338,7 +536,34 @@ export const iconPath = (destructive) => {
 };
 
 const topUsers = [
-  { name: 'Olivia', year: 1994 },
-  { name: 'Phoenix', year: 1972 },
-  { name: 'Ahbue', year: 1974 },
+  {
+    name: 'Olivia',
+    year: 1994,
+    image: 'circle_avatar',
+  },
+  {
+    name: 'Phoenix11',
+    year: 1972,
+    image: 'circle_country_Australia',
+  },
+  {
+    name: 'Ahbue',
+    year: 1974,
+    image: 'circle_avatar',
+  },
+  {
+    name: 'Olivia',
+    year: 1994,
+    image: 'circle_avatar',
+  },
+  {
+    name: 'Phoenix',
+    year: 1972,
+    image: 'circle_country_Australia',
+  },
+  {
+    name: 'Ahbue',
+    year: 1974,
+    image: 'circle_avatar',
+  },
 ];
