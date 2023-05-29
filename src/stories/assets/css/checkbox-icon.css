@@ -130,7 +130,6 @@
   content: url(../icons/icon-checkbox/icon-square/square-sm-disabled.svg);
 }
 
-
 .icon-square-md-default {
   content: url(../icons/icon-checkbox/icon-square/square-md-default.svg);
 }
@@ -161,4 +160,39 @@
 
 .icon-check-square-md-gray-300 {
   content: url(../icons/icon-checkbox/check-square/check-square-md-gray-300.svg);
+}
+
+.icon-layer-two-sm-primary-100 {
+  content: url(../icons/icon-layers/layers-two-sm-primary-100-light.svg);
+}
+.icon-layer-two-md-primary-100 {
+  content: url(../icons/icon-layers/layers-two-md-primary-100-light.svg);
+}
+
+.icon-layer-three-sm-primary-100 {
+  content: url(../icons/icon-layers/layers-three-sm-primary-100.svg);
+}
+.icon-layer-three-md-primary-100 {
+  content: url(../icons/icon-layers/layers-three-md-primary-100.svg);
+}
+
+.icon-zap-sm-primary-100 {
+  content: url(../icons/icon-general/zap-sm-primary-100.svg);
+}
+.icon-zap-md-primary-100 {
+  content: url(../icons/icon-general/zap-md-primary-100.svg);
+}
+
+.icon-codepen-sm-primary-100 {
+  content: url(../icons/icon-general/codepen-sm-primary-100.svg);
+}
+.icon-codepen-md-primary-100 {
+  content: url(../icons/icon-general/codepen-md-primary-100.svg);
+}
+
+.icon-rocket-sm-primary-100 {
+  content: url(../icons/icon-general/rocket-sm-primary-100.svg);
+}
+.icon-rocket-md-primary-100 {
+  content: url(../icons/icon-general/rocket-md-primary-100.svg);
 }

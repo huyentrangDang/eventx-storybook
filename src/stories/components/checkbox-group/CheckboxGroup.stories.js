@@ -1,22 +1,21 @@
-import { CheckboxGroupItem } from './CheckboxGroupItem';
+import { CheckboxGroup } from './CheckboxGroup';
 
 export default {
-  title: 'Checkbox Groups/Checkbox Group Item',
-  component: CheckboxGroupItem,
+  title: 'Checkbox Groups/Checkbox Group',
+  component: CheckboxGroup,
   tags: ['autodocs'],
 };
 
-const Checkbox_Group_Item = (args) => <CheckboxGroupItem {...args} />;
-export const checkbox_group_item = Checkbox_Group_Item.bind({});
-checkbox_group_item.args = {
-  selected: 'false',
+const Checkbox_Group = (args) => <CheckboxGroup {...args} />;
+export const checkbox_group = Checkbox_Group.bind({});
+checkbox_group.args = {
   size: 'sm',
   type: 'iconSimple',
-  state: 'default',
   breakpoint: 'desktop',
   text: 'Basic plan',
-  subText1: '$10/month',
-  subText2:
-    'Includes up to 10 users, 20GB individual data and access to all features.',
+  subText: '$10/month',
 };
-checkbox_group_item.argTypes = {};
+checkbox_group.argTypes = {
+  text: { table: { disable: true } },
+  subText: { table: { disable: true } },
+};
