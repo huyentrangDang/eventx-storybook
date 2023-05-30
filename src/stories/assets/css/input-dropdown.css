@@ -1273,7 +1273,7 @@
 .input-tags-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   padding: 0px;
   gap: 8px;
 }
