@@ -122,7 +122,7 @@ export const Dropdown = ({ type, open }) => {
             <div className={`dropdown-list-header`}>
               <div className={`avatar-label-group`}>
                 <div className={[`avatar`, `avatar-header`].join(' ')}>
-                  <div className={`avatar-online-indicator`}></div>
+                  <div className={`online-indicator`}></div>
                 </div>
                 <div className={`text-and-support-text`}>
                   <div className={`text`}>Olivia Rhye</div>
