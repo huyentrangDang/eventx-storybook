@@ -1,0 +1,74 @@
+.bg-avatar-sm-status-false {
+  background-image: url(../icons/icon-avatar/icon-avatar-sm-status-false.svg);
+}
+
+.bg-avatar-user-sm {
+  background-image: url(../icons/icon-general/user-sm.svg);
+}
+
+.icon-avatar-add-button-size--xs {
+  content: url(../icons/icon-avatar/icon-avatar-add-button-xs.svg);
+}
+.icon-avatar-add-button-size--sm {
+  content: url(../icons/icon-avatar/icon-avatar-add-button-sm.svg);
+}
+.icon-avatar-add-button-size--md {
+  content: url(../icons/icon-avatar/icon-avatar-add-button-md.svg);
+}
+
+.icon-avatar-first {
+  content: url(../icons/icon-avatar-group/avatar-first.svg);
+}
+.icon-avatar-second {
+  content: url(../icons/icon-avatar-group/avatar-second.svg);
+}
+.icon-avatar-three {
+  content: url(../icons/icon-avatar-group/avatar-three.svg);
+}
+.icon-avatar-four {
+  content: url(../icons/icon-avatar-group/avatar-four.svg);
+}
+.icon-avatar-five {
+  content: url(../icons/icon-avatar-group/avatar-five.svg);
+}
+.icon-avatar-six {
+  content: url(../icons/icon-avatar-group/avatar-six.svg);
+}
+.icon-avatar-sevent {
+  content: url(../icons/icon-avatar-group/avatar-sevent.svg);
+}
+.icon-avatar-eight {
+  content: url(../icons/icon-avatar-group/avatar-eight.svg);
+}
+.icon-avatar-nine {
+  content: url(../icons/icon-avatar-group/avatar-nine.svg);
+}
+.icon-avatar-ten {
+  content: url(../icons/icon-avatar-group/avatar-ten.svg);
+}
+
+.icon-avatar-sm-status-false {
+  content: url(../icons/icon-avatar/icon-avatar-sm-status-false.svg);
+}
+
+.icon-avatar-user-sm {
+  content: url(../icons/icon-general/user-sm.svg);
+}
+
+.icon-link-gray-400 {
+  content: url(../icons/icon-general/link-gray-400.svg);
+}
+
+.icon-plus-xs-gray-400 {
+  content: url(../icons/icon-general/plus-xs-gray-400.svg);
+}
+.icon-plus-sm-gray-400 {
+  content: url(../icons/icon-general/plus-sm-gray-400.svg);
+}
+.icon-plus-md-gray-400 {
+  content: url(../icons/icon-general/plus-md-gray-400.svg);
+}
+
+.icon-cursor {
+  content: url(../icons/icon-general/cursor.svg);
+}

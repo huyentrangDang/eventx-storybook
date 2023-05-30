@@ -58,7 +58,7 @@
   border-radius: 200px;
 }
 
-.avatar-online-indicator {
+.online-indicator {
   position: absolute;
   width: 10px;
   height: 10px;

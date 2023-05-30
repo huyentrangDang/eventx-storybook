@@ -1,75 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @font-face {
-    font-family: 'CHI-Icon';
-    src:  url('../fonts/CHI-Icon.eot?9u4r00');
-    src:  url('../fonts/CHI-Icon.eot?9u4r00#iefix') format('embedded-opentype'),
-      url('../fonts/CHI-Icon.ttf?9u4r00') format('truetype'),
-      url('../fonts/CHI-Icon.woff?9u4r00') format('woff'),
-      url('../fonts/CHI-Icon.svg?9u4r00#CHI-Icon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'CHI-Icon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  font-family: 'CHI-Icon';
+  src: url('../fonts/CHI-Icon.eot?9u4r00');
+  src: url('../fonts/CHI-Icon.eot?9u4r00#iefix') format('embedded-opentype'),
+    url('../fonts/CHI-Icon.ttf?9u4r00') format('truetype'),
+    url('../fonts/CHI-Icon.woff?9u4r00') format('woff'),
+    url('../fonts/CHI-Icon.svg?9u4r00#CHI-Icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'CHI-Icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 * {
-    font-family:'Lato' ;
+  font-family: 'Lato';
 }
 .mx-20 {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.ml-20{
-    margin-left: 20px;
+.ml-20 {
+  margin-left: 20px;
 }
-.mr-20{
-    margin-right: 20px;
+.mr-20 {
+  margin-right: 20px;
 }
-.mt-20{
-    margin-top: 20px;
+.mt-20 {
+  margin-top: 20px;
 }
-.my-20{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.m-20{
-    margin: 20px;
+.m-20 {
+  margin: 20px;
 }
-.p-20{
-    padding: 20px;
+.p-20 {
+  padding: 20px;
 }
-.col-4{
-    width: 25%;
+.col-4 {
+  width: 25%;
 }
-.text-style{
-    font-family: 'Lato', sans-serif;
+.text-style {
+  font-family: 'Lato', sans-serif;
 }
-.col-2{
-    width: 50%;
+.col-2 {
+  width: 50%;
 }
-.text-center-xy{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text-center-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon-text-name{
-    font-family:'Lato' !important;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
+.icon-text-name {
+  font-family: 'Lato' !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.mt-32 {
+  margin-top: 32px;
+}
