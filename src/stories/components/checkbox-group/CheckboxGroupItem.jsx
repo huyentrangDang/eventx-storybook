@@ -31,7 +31,7 @@ export const CheckboxGroupItem = ({
             <div
               className={[
                 `text-and-support-text`,
-                `container-text-size--${size}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
               ].join(' ')}
             >
               <div
@@ -226,7 +226,10 @@ export const CheckboxGroupItem = ({
           >
             <div className={`${iconAvatarPath(`${size}`)}`} />
             <div
-              className={`text-and-support-text-size--${size}-type--${type}-breakpoint--${breakpoint}`}
+              className={[
+                `text-and-support-text-size--${size}-type--${type}-breakpoint--${breakpoint}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div className={`text-and-subtext-size--${size}-type--${type}`}>
                 <span
@@ -286,7 +289,10 @@ export const CheckboxGroupItem = ({
           >
             <icon className={`icon-payment`} />
             <div
-              className={`content-checkbox-group-item-size--${size}-type--${type}`}
+              className={[
+                `content-checkbox-group-item-size--${size}-type--${type}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div
                 className={`text-and-support-text-size--${size}-type--${type}`}
@@ -355,7 +361,10 @@ export const CheckboxGroupItem = ({
               />
             </div>
             <div
-              className={`text-and-support-text-size--${size}-type--${type}`}
+              className={[
+                `text-and-support-text-size--${size}-type--${type}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div className={`text-and-subtext-size--${size}-type--${type}`}>
                 <span
@@ -405,7 +414,10 @@ export const CheckboxGroupItem = ({
               />
             </div>
             <div
-              className={`text-and-support-text-size--${size}-type--${type}`}
+              className={[
+                `text-and-support-text-size--${size}-type--${type}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div className={`text-and-subtext-size--${size}-type--${type}`}>
                 <span

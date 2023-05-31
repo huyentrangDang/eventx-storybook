@@ -54,7 +54,7 @@ export const CheckboxGroup = ({ size, type, breakpoint, text, subText }) => {
                 <div
                   className={[
                     `text-and-support-text`,
-                    `container-text-size--${size}`,
+                    `container-text-size--${size}-breakpoint--${breakpoint}`,
                   ].join(' ')}
                 >
                   <div
@@ -432,7 +432,10 @@ export const CheckboxGroup = ({ size, type, breakpoint, text, subText }) => {
                   />
                 </div>
                 <div
-                  className={`text-and-support-text-size--${size}-type--${type}`}
+                  className={[
+                    `text-and-support-text-size--${size}-type--${type}`,
+                    `container-text-size--${size}-breakpoint--${breakpoint}`,
+                  ].join(' ')}
                 >
                   <div
                     className={`text-and-subText-size--${size}-type--${type}`}

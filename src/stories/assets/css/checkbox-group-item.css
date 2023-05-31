@@ -565,11 +565,19 @@
   line-height: 24px;
 }
 
-.container-text-size--sm {
+.container-text-size--sm-breakpoint--desktop {
   width: 593px;
 }
 
-.container-text-size--md {
+.container-text-size--sm-breakpoint--mobile {
+  width: 240px;
+}
+
+.container-text-size--md-breakpoint--mobile {
+  width: 223px;
+}
+
+.container-text-size--md-breakpoint--desktop {
   width: 574px;
   gap: 2px;
   overflow: hidden;
@@ -4054,7 +4062,7 @@
   gap: 6px;
 }
 
-.text-size--sm-type--avatar-breakpoint--desktop {
+.text-size--sm-type--avatar {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 500;
@@ -4062,7 +4070,7 @@
   line-height: 20px;
 }
 
-.text-size--md-type--avatar-breakpoint--desktop {
+.text-size--md-type--avatar {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 500;
@@ -4108,6 +4116,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-size--md-type--avatar {
@@ -4116,6 +4127,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-color-selected--false-type--avatar-state--default {
@@ -5000,6 +5014,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
+  width: 100%;
 }
 
 .text-and-support-text-size--md-type--paymentIcon {
@@ -5008,6 +5023,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 2px;
+  width: 100%;
 }
 
 .text-size--sm-type--paymentIcon {
@@ -5016,6 +5032,9 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .text-size--md-type--paymentIcon {
@@ -5024,6 +5043,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .text-color-selected--false-type--paymentIcon-state--default {
@@ -5064,6 +5086,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-size--md-type--paymentIcon {
@@ -5072,6 +5097,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-color-selected--false-type--paymentIcon-state--default {
@@ -5494,6 +5522,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-checkbox-group-item-size--md-type--radioButton {
@@ -5502,6 +5533,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-color-checkbox-group-item-selected--false-type--radioButton-state--default {
@@ -6269,6 +6303,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-checkbox-group-item-size--md-type--checkbox {
@@ -6277,6 +6314,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .subText-color-checkbox-group-item-selected--false-type--checkbox-state--default {

@@ -136,7 +136,10 @@ export const InputDropdown = ({ type, state, label, hintText }) => {
             </div>
           )}
           {type === 'tags' && (
-            <div className={`input-type--${type}-state--${state}`}>
+            <div
+              className={`input-type--${type}-state--${state}`}
+              style={{ height: selectedOptions.length > 3 ? 'auto' : '44px' }}
+            >
               <div className={`input-tags-content`}>
                 <icon className={`icon-search`} />
                 <div className={`input-tags`}>
@@ -190,7 +193,11 @@ export const InputDropdown = ({ type, state, label, hintText }) => {
                     }
                   >
                     <div
-                      className={`content-input-dropdown-select`}
+                      className={
+                        type === 'tags' || type === 'search'
+                          ? `content-input-dropdown-select-type--tags`
+                          : `content-input-dropdown-select`
+                      }
                       style={{
                         background:
                           (type !== 'tags' && text === value?.text) ||
@@ -204,9 +211,13 @@ export const InputDropdown = ({ type, state, label, hintText }) => {
                           value.text === text
                             ? type === 'tags'
                               ? `text-and-support-text-select-checked-type--tags`
+                              : type === 'search'
+                              ? `text-and-support-text-select-checked-type--search`
                               : `text-and-support-text-select-checked`
                             : type === 'tags'
                             ? `text-and-support-text-select-type--tags`
+                            : type === 'search'
+                            ? `text-and-support-text-select-type--search`
                             : `text-and-support-text-select`
                         }
                       >
@@ -247,88 +258,8 @@ export const InputDropdown = ({ type, state, label, hintText }) => {
                 );
               })}
             </div>
-            {/* <div className={`scrollbar-input-dropdown`}>
-              <div className={`inner-scrollbar-input-dropdown`}></div>
-            </div> */}
           </div>
         )}
-      </div>
-
-      <div className='custom-select'>
-        {/* <div className='selected-options'>
-            {selectedOptions.map((option) => (
-              <div
-                key={option}
-                className='selected-option'
-              >
-                {option}
-                <button
-                  className='remove-option'
-                  onClick={() => handleRemoveOption(option)}
-                >
-                  &times;
-                </button>
-              </div>
-            ))}
-          </div> */}
-
-        {/* <div className={`menu-select`}>
-          <div className={`menu-item-select`}>
-            {listItemInput.map(({ text, supportText }, index) => {
-              return (
-                <div
-                  className={`dropdown-list-item`}
-                  key={index}
-                  onClick={() => handleOptionClick(text)}
-                >
-                  <div className={`content-input-dropdown-select`}>
-                    {type === 'iconLeading' && <icon className={`icon-user`} />}
-                    {type === 'avatarLeading' && (
-                      <icon className={`icon-avatar`} />
-                    )}
-                    {type === 'dotLeading' && (
-                      <icon className={`icon-dotLeading`} />
-                    )}
-                    <div className={`text-and-support-text-select`}>
-                      <div
-                        className={[
-                          `select-text-input-state--${state}`,
-                          `text-input-md-medium`,
-                        ].join(' ')}
-                      >
-                        {text}
-                      </div>
-                      <div
-                        className={[
-                          `select-support-text-input-state--${state}`,
-                          `text-input-md-regular`,
-                        ].join(' ')}
-                      >
-                        {supportText}
-                      </div>
-                    </div>
-                  </div>
-                  {value?.selected && (
-                    <icon className={`checked-primary-600`} />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div> */}
-
-        {/* <input
-            type='text'
-            value={inputValue}
-            placeholder='Select options'
-            onChange={handleInputChange}
-          />
-          <ul className='options'>
-            <li onClick={() => handleOptionClick('Option 1')}>Option 1</li>
-            <li onClick={() => handleOptionClick('Option 2')}>Option 2</li>
-            <li onClick={() => handleOptionClick('Option 3')}>Option 3</li>
-            <li onClick={() => handleOptionClick('Option 4')}>Option 4</li>
-          </ul> */}
       </div>
     </>
   );
