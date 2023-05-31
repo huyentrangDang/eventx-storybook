@@ -1,0 +1,390 @@
+.progress-indicator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 320px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.progress-indicator-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 8px;
+  width: 320px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.progress-bar {
+  width: 320px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.background-progress {
+  position: relative;
+  height: 8px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: var(--gray-200);
+  border-radius: 4px;
+}
+
+.progress--0 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 86.25%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--10 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 77.56%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--20 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 68.38%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--30 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 59.75%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--40 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 50.94%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--50 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 42.5%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--60 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 33.87%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--70 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 25.34%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--80 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 16.63%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--90 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 8%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--100 {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress-bar-percentage {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--gray-700);
+}
+
+.progress--0-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 97.5%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--10-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 90%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--20-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 80%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--30-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 70%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--40-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 60%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--50-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 50%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--60-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 40%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--70-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 30%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--80-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 20%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--90-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 10%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.progress--100-label {
+  position: absolute;
+  height: 8px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  background: var(--primary-600);
+  border-radius: 4px;
+}
+
+.content-tooltip-progress-bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 12px;
+  max-width: 56px;
+  height: 34px;
+  background: var(--base-white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  color: var(--gray-700);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
+
+.tooltip-label--top-floating {
+  top: -42px;
+}
+
+.tooltip-label--bottom-floating {
+  top: 16px;
+}
+
+.tooltip-progress--0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: calc(50% - 43px / 2 - 156px);
+}
+
+.tooltip-progress--10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 3%;
+}
+
+.tooltip-progress--20 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 13%;
+}
+.tooltip-progress--30 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 23%;
+}
+.tooltip-progress--40 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 33%;
+}
+.tooltip-progress--50 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 43%;
+}
+.tooltip-progress--60 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 53%;
+}
+.tooltip-progress--70 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 63%;
+}
+.tooltip-progress--80 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 73%;
+}
+.tooltip-progress--90 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 83%;
+}
+.tooltip-progress--100 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  left: 93%;
+}
+
+.container-progress {
+  position: relative;
+  height: 500px;
+}
