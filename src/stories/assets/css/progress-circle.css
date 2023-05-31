@@ -1,0 +1,467 @@
+.text-sm-medium-progress-circle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.text-xs-medium-progress-circle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.display-xs-medium-progress-circle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-900);
+}
+.display-sm-medium-progress-circle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-900);
+}
+.display-md-medium-progress-circle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--gray-900);
+}
+.display-lg-medium-progress-circle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+/* TEXT */
+
+.text-size--xxs-shape--circle {
+  position: absolute;
+  left: calc(50% - 28px / 2);
+  top: calc(50% - 20px / 2);
+}
+
+.text-size--xxs-shape--half-circle {
+  position: absolute;
+  left: calc(50% - 28px / 2);
+  top: calc(50% - 20px / 2 - 7px);
+}
+
+.text-size--xs-shape--circle-label--false {
+  left: calc(50% - 48px / 2);
+  top: calc(50% - 32px / 2);
+  position: absolute;
+}
+.text-size--xs-shape--circle-label--true {
+  left: calc(50% - 48px / 2);
+  top: calc(50% - 15px / 2);
+  position: absolute;
+}
+.text-size--xs-shape--half-circle-label--true {
+  left: calc(50% - 43px / 2);
+  top: calc(50% + 15px / 2);
+  position: absolute;
+}
+
+.text-size--xs-shape--half-circle-label--false {
+  left: calc(50% - 43px / 2);
+  top: calc(50% + 15px / 2);
+  position: absolute;
+}
+
+.text-size--sm-shape--half-circle--label--true {
+  left: calc(50% - 50px / 2);
+  top: calc(50% - 38px / 2 + 32px);
+  position: absolute;
+}
+.text-size--sm-shape--half-circle--label--false {
+  left: calc(50% - 50px / 2);
+  top: calc(50% - 38px / 2 + 28px);
+  position: absolute;
+}
+.text-size--sm-shape--circle-label--true {
+  left: calc(50% - 50px / 2);
+  top: calc(50% - 38px / 2 + 8px);
+  position: absolute;
+}
+
+.text-size--sm-shape--circle-label--false {
+  left: calc(50% - 50px / 2);
+  top: calc(50% - 38px / 2);
+  position: absolute;
+}
+
+.text-size--md-shape--circle-label--true {
+  left: calc(50% - 50px / 2);
+  top: calc(50% - 38px / 2 + 8px);
+  position: absolute;
+}
+
+.text-size--md-shape--circle-label--false {
+  left: calc(50% - 50px / 2);
+  top: calc(50% - 38px / 2);
+  position: absolute;
+}
+.text-size--md-shape--half-circle-label--true {
+  left: calc(50% - 70px / 2);
+  top: calc(50% - 44px / 2 + 40px);
+  position: absolute;
+}
+
+.text-size--md-shape--half-circle-label--false {
+  left: calc(50% - 70px / 2);
+  top: calc(50% - 44px / 2 + 36px);
+  position: absolute;
+}
+
+.text-size--lg-shape--circle-label--true {
+  position: absolute;
+  left: calc(50% - 93px / 2 + 1px);
+  top: calc(50% - 60px / 2 + 11px);
+}
+
+.text-size--lg-shape--circle-label--false {
+  position: absolute;
+  left: calc(50% - 93px / 2 + 1px);
+  top: calc(50% - 60px / 2);
+}
+
+.text-size--lg-shape--half-circle-label--true {
+  position: absolute;
+  left: calc(50% - 93px / 2 - 3.5px);
+  top: calc(50% - 60px / 2 + 47px);
+}
+
+.text-size--lg-shape--half-circle-label--false {
+  position: absolute;
+  left: calc(50% - 93px / 2 - 3.5px);
+  top: calc(50% - 60px / 2 + 35px);
+}
+
+.label-size--xxs-shape--circle {
+  position: absolute;
+  left: calc(50% - 30px / 2 + 1px);
+  top: calc(50% - 18px / 2 + 44px);
+}
+.label-size--xxs-shape--half-circle {
+  position: absolute;
+  left: calc(50% - 30px / 2 + 1px);
+  top: calc(50% - 18px / 2 + 15px);
+}
+
+.label-size--xs-shape--circle {
+  position: absolute;
+  left: calc(50% - 65px / 2);
+  top: calc(50% - 18px / 2 - 18px);
+}
+.label-size--xs-shape--half-circle {
+  position: absolute;
+  left: calc(50% - 65px / 2 + 0.5px);
+  top: calc(50% - 18px / 2);
+}
+
+.label-size--sm-shape--half-circle {
+  position: absolute;
+  left: calc(50% - 65px / 2 + 0.5px);
+  top: calc(50% - 10px / 2);
+}
+.label-size--sm-shape--circle {
+  position: absolute;
+  left: calc(50% - 65px / 2);
+  top: calc(50% - 18px / 2 - 19px);
+}
+
+.label-size--md-shape--half-circle {
+  position: absolute;
+  left: calc(50% - 76px / 2 - 0.5px);
+  top: calc(50% - 20px / 2 + 8px);
+}
+.label-size--md-shape--circle {
+  position: absolute;
+  left: calc(50% - 65px / 2);
+  top: calc(50% - 18px / 2 - 19px);
+}
+.label-size--lg-shape--circle {
+  position: absolute;
+  left: calc(50% - 76px / 2);
+  top: calc(50% - 20px / 2 - 31px);
+}
+.label-size--lg-shape--half-circle {
+  position: absolute;
+  left: calc(50% - 76px / 2 - 4.5px);
+  top: calc(50% - 20px / 2 + 5px);
+}
+
+/* CONTAINER */
+
+.progress-circle-size--xxs-shape--circle-label--false {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 16px;
+  top: 16px;
+}
+.progress-circle-size--xs-shape--circle-label--false {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--sm-shape--circle-label--false {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--md-shape--circle-label--false {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--lg-shape--circle-label--false {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: 112px;
+  top: 16px;
+}
+
+.progress-circle-size--xxs-shape--circle-label--true {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+}
+.progress-circle-size--xs-shape--circle-label--true {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--sm-shape--circle-label--true {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--md-shape--circle-label--true {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--lg-shape--circle-label--true {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: 112px;
+  top: 16px;
+}
+
+.progress-circle-size--xxs-shape--half-circle-label--false {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+}
+.progress-circle-size--xs-shape--half-circle-label--false {
+  position: absolute;
+  width: 160px;
+  height: 88px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--sm-shape--half-circle-label--false {
+  position: absolute;
+  width: 200px;
+  height: 110px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--md-shape--half-circle-label--false {
+  position: absolute;
+  width: 240px;
+  height: 132px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--lg-shape--half-circle-label--false {
+  position: absolute;
+  width: 280px;
+  height: 154px;
+  left: 112px;
+  top: 16px;
+}
+
+.progress-circle-size--xxs-shape--half-circle-label--true {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+.progress-circle-size--xs-shape--half-circle-label--true {
+  position: absolute;
+  width: 160px;
+  height: 88px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--sm-shape--half-circle-label--true {
+  position: absolute;
+  width: 200px;
+  height: 110px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--md-shape--half-circle-label--true {
+  position: absolute;
+  width: 240px;
+  height: 132px;
+  left: 112px;
+  top: 16px;
+}
+.progress-circle-size--lg-shape--half-circle-label--true {
+  position: absolute;
+  width: 280px;
+  height: 154px;
+  left: 112px;
+  top: 16px;
+}
+
+.group3-progress-circle-size--sm-shape--circle-label--true {
+  position: absolute;
+  width: 65px;
+  height: 55px;
+  left: 67.5px;
+  top: 51px;
+}
+.group3-progress-circle-size--sm-shape--circle-label--false {
+  position: absolute;
+  width: 59px;
+  height: 38px;
+  left: 71px;
+  top: 64px;
+}
+
+/* ICONS */
+.line-size--xxs-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/line-xxs.svg);
+  position: absolute;
+  right: 0;
+}
+.background-size--xxs-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/background-xxs.svg);
+}
+
+.line-size--xs-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/line-xs.svg);
+  position: absolute;
+  right: 0;
+}
+.background-size--xs-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/background-xs.svg);
+}
+.line-size--sm-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/line-sm.svg);
+  position: absolute;
+  right: 0;
+}
+.background-size--sm-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/background-sm.svg);
+}
+.line-size--md-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/line-md.svg);
+  position: absolute;
+  right: 0;
+}
+.background-size--md-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/background-md.svg);
+}
+.line-size--lg-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/line-lg.svg);
+  position: absolute;
+  right: 0;
+}
+.background-size--lg-shape--circle {
+  content: url(../../assets/icons/icon-progress-circle/background-lg.svg);
+}
+
+.line-size--xxs-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/line-haftCircle-xxs.svg);
+  position: absolute;
+  top: 1px;
+}
+.background-size--xxs-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/background-halfCircle-xxs.svg);
+}
+
+.line-size--xs-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/line-haftCircle-xs.svg);
+  position: absolute;
+  top: 3px;
+}
+.background-size--xs-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/background-halfCircle-xs.svg);
+}
+.line-size--sm-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/line-haftCircle-sm.svg);
+  position: absolute;
+  top: 4px;
+}
+.background-size--sm-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/background-halfCircle-sm.svg);
+}
+.line-size--md-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/line-haftCircle-md.svg);
+  position: absolute;
+  top: 5px;
+}
+
+.background-size--md-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/background-halfCircle-md.svg);
+}
+.line-size--lg-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/line-haftCircle-lg.svg);
+  position: absolute;
+  top: 6px;
+}
+.background-size--lg-shape--half-circle {
+  content: url(../../assets/icons/icon-progress-circle/background-halfCircle-lg.svg);
+}
