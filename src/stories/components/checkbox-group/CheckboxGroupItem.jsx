@@ -31,7 +31,7 @@ export const CheckboxGroupItem = ({
             <div
               className={[
                 `text-and-support-text`,
-                `container-text-size--${size}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
               ].join(' ')}
             >
               <div
@@ -46,13 +46,13 @@ export const CheckboxGroupItem = ({
                   {text}
                 </span>
                 <span
-                  className={`sub-text-checkbox-group-item-size--${size}-selected--${selected}-state--${state}`}
+                  className={`subText-text-checkbox-group-item-size--${size}-selected--${selected}-state--${state}`}
                 >
                   {subText1}
                 </span>
               </div>
               <span
-                className={`sub-text-checkbox-group-item-size--${size}-selected--${selected}-state--${state}`}
+                className={`subText-text-checkbox-group-item-size--${size}-selected--${selected}-state--${state}`}
               >
                 {subText2}
               </span>
@@ -226,7 +226,10 @@ export const CheckboxGroupItem = ({
           >
             <div className={`${iconAvatarPath(`${size}`)}`} />
             <div
-              className={`text-and-support-text-size--${size}-type--${type}-breakpoint--${breakpoint}`}
+              className={[
+                `text-and-support-text-size--${size}-type--${type}-breakpoint--${breakpoint}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div className={`text-and-subtext-size--${size}-type--${type}`}>
                 <span
@@ -239,8 +242,8 @@ export const CheckboxGroupItem = ({
                 </span>
                 <span
                   className={[
-                    `subtext-size--${size}-type--${type}`,
-                    `subtext-color-selected--${selected}-type--${type}-state--${state}`,
+                    `subText-size--${size}-type--${type}`,
+                    `subText-color-selected--${selected}-type--${type}-state--${state}`,
                   ].join(' ')}
                 >
                   {subText1}
@@ -248,8 +251,8 @@ export const CheckboxGroupItem = ({
               </div>
               <span
                 className={[
-                  `subtext-size--${size}-type--${type}`,
-                  `subtext-color-selected--${selected}-type--${type}-state--${state}`,
+                  `subText-size--${size}-type--${type}`,
+                  `subText-color-selected--${selected}-type--${type}-state--${state}`,
                 ].join(' ')}
               >
                 {subText2}
@@ -286,7 +289,10 @@ export const CheckboxGroupItem = ({
           >
             <icon className={`icon-payment`} />
             <div
-              className={`content-checkbox-group-item-size--${size}-type--${type}`}
+              className={[
+                `content-checkbox-group-item-size--${size}-type--${type}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div
                 className={`text-and-support-text-size--${size}-type--${type}`}
@@ -301,8 +307,8 @@ export const CheckboxGroupItem = ({
                 </span>
                 <span
                   className={[
-                    `subtext-size--${size}-type--${type}`,
-                    `subtext-color-selected--${selected}-type--${type}-state--${state}`,
+                    `subText-size--${size}-type--${type}`,
+                    `subText-color-selected--${selected}-type--${type}-state--${state}`,
                   ].join(' ')}
                 >
                   {subText1}
@@ -355,7 +361,10 @@ export const CheckboxGroupItem = ({
               />
             </div>
             <div
-              className={`text-and-support-text-size--${size}-type--${type}`}
+              className={[
+                `text-and-support-text-size--${size}-type--${type}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div className={`text-and-subtext-size--${size}-type--${type}`}>
                 <span
@@ -368,8 +377,8 @@ export const CheckboxGroupItem = ({
                 </span>
                 <span
                   className={[
-                    `sub-checkbox-group-item-size--${size}-type--${type}`,
-                    `subtext-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
+                    `subText-checkbox-group-item-size--${size}-type--${type}`,
+                    `subText-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
                   ].join(' ')}
                 >
                   {subText1}
@@ -377,8 +386,8 @@ export const CheckboxGroupItem = ({
               </div>
               <span
                 className={[
-                  `sub-checkbox-group-item-size--${size}-type--${type}`,
-                  `subtext-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
+                  `subText-checkbox-group-item-size--${size}-type--${type}`,
+                  `subText-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
                 ].join(' ')}
               >
                 {subText2}
@@ -405,7 +414,10 @@ export const CheckboxGroupItem = ({
               />
             </div>
             <div
-              className={`text-and-support-text-size--${size}-type--${type}`}
+              className={[
+                `text-and-support-text-size--${size}-type--${type}`,
+                `container-text-size--${size}-breakpoint--${breakpoint}`,
+              ].join(' ')}
             >
               <div className={`text-and-subtext-size--${size}-type--${type}`}>
                 <span
@@ -418,8 +430,8 @@ export const CheckboxGroupItem = ({
                 </span>
                 <span
                   className={[
-                    `subtext-checkbox-group-item-size--${size}-type--${type}`,
-                    `subtext-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
+                    `subText-checkbox-group-item-size--${size}-type--${type}`,
+                    `subText-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
                   ].join(' ')}
                 >
                   {subText1}
@@ -427,8 +439,8 @@ export const CheckboxGroupItem = ({
               </div>
               <span
                 className={[
-                  `subtext-checkbox-group-item-size--${size}-type--${type}`,
-                  `subtext-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
+                  `subText-checkbox-group-item-size--${size}-type--${type}`,
+                  `subText-color-checkbox-group-item-selected--${selected}-type--${type}-state--${state}`,
                 ].join(' ')}
               >
                 {subText2}
