@@ -378,3 +378,56 @@
   align-items: flex-start;
   padding: 0px;
 }
+
+.section-header-tabs--false-type--buttons-breakpoint--desktop,
+.section-header-tabs--false-type--searchAndactions-breakpoint--desktop,
+.section-header-tabs--false-type--button-group-breakpoint--desktop,
+.section-header-tabs--true-type--buttons-breakpoint--desktop,
+.section-header-tabs--true-type--searchAndactions-breakpoint--desktop,
+.section-header-tabs--true-type--button-group-breakpoint--desktop,
+.section-header-tabs--false-type--buttons-breakpoint--mobile,
+.section-header-tabs--false-type--button-group-breakpoint--mobile,
+.section-header-tabs--false-type--search-breakpoint--mobile,
+.section-header-tabs--true-type--buttons-breakpoint--mobile,
+.section-header-tabs--true-type--search-breakpoint--mobile,
+.section-header-tabs--true-type--button-group-breakpoint--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.content-section-header-tabs--false-type--buttons-breakpoint--desktop,
+.content-section-header-tabs--false-type--searchAndactions-breakpoint--desktop,
+.content-section-header-tabs--false-type--button-group-breakpoint--desktop,
+.content-section-header-tabs--true-type--buttons-breakpoint--desktop,
+.content-section-header-tabs--true-type--searchAndactions-breakpoint--desktop,
+.content-section-header-tabs--true-type--button-group-breakpoint--desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.content-section-header-tabs--false-type--buttons-breakpoint--mobile,
+.content-section-header-tabs--false-type--button-group-breakpoint--mobile,
+.content-section-header-tabs--false-type--search-breakpoint--mobile,
+.content-section-header-tabs--true-type--buttons-breakpoint--mobile,
+.content-section-header-tabs--true-type--search-breakpoint--mobile,
+.content-section-header-tabs--true-type--button-group-breakpoint--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  max-width: 343px;
+  position: relative;
+}
+
+.dropdown-section-header-breakpoint--mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
