@@ -2,7 +2,7 @@ import { ButtonGroupBase } from '../button-group-base/ButtonGroupBase';
 import { ButtonGroup } from './ButtonGroup';
 
 export default {
-  title: 'Button Groups/Button Groups',
+  title: 'Components/Button Groups',
   component: ButtonGroup,
   tags: ['autodocs'],
 };

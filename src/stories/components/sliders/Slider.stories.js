@@ -1,7 +1,7 @@
 import { Sliders } from './Slider';
 
 export default {
-  title: 'Sliders/Slider',
+  title: 'Components/Sliders/Slider',
   component: Sliders,
   tags: ['autodocs'],
 };

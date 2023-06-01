@@ -11,7 +11,7 @@ import '../../assets/css/input-icon.css';
 import '../../assets/css/color.css';
 import '../../assets/css/button-icon.css';
 
-export const InputDropdown = ({ type, state, label, hintText }) => {
+export const InputDropdown = ({ type, state, label, hintText, showLabel }) => {
   const [value, setValue] = React.useState({
     text: '',
     supportText: '',
@@ -81,7 +81,11 @@ export const InputDropdown = ({ type, state, label, hintText }) => {
   return (
     <>
       <div className={`input-dropdown-state--${state}`}>
-        <div className={`input-with-label`}>
+        <div
+          className={
+            showLabel === 'true' ? `input-with-label` : `input-with-no-label`
+          }
+        >
           <div className={`input-label`}>{label}</div>
           {type !== 'tags' && (
             <div className={`input-type--${type}-state--${state}`}>
@@ -282,6 +286,7 @@ InputDropdown.propTypes = {
     'focused',
   ]),
   // handleClick: PropTypes.func,
+  showLabel: PropTypes.oneOf(['true', 'false']),
 };
 
 InputDropdown.defaultProps = {};

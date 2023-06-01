@@ -1,13 +1,13 @@
-import { ProgressCircle } from "./ProgressCircle";
+import { ProgressCircle } from './ProgressCircle';
 export default {
-  title: "Progress Indicators/Progress Circle",
+  title: 'Components/Progress Indicators/Progress Circle',
   component: ProgressCircle,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export const progressCircle = ProgressCircle.bind({});
 progressCircle.args = {
-  size: "xxs",
-  shape: "circle",
-  label: "false",
+  size: 'xxs',
+  shape: 'circle',
+  label: 'false',
 };

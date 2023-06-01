@@ -1,7 +1,7 @@
 import { VerifycationCode } from './VerifycationCode';
 
 export default {
-  title: 'Input/Verifycation Code',
+  title: 'Components/Input/Verifycation Code',
   component: VerifycationCode,
   tags: ['autodocs'],
 };

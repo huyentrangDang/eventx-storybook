@@ -5,7 +5,7 @@ import { TagCheckbox } from './TagCheckbox';
 import { Tag } from './Tag';
 
 export default {
-  title: 'Tags/Tags',
+  title: 'Components/Tags',
   component: Tag,
   tags: ['autodocs'],
 };

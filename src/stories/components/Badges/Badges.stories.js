@@ -3,7 +3,7 @@ import { BadgeGroup } from '../badge-group/BadgeGroup';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
-  title: 'Badges/Badges',
+  title: 'Components/Badges',
   component: Badges,
   tags: ['autodocs'],
   excludePropTypes: ['color'],

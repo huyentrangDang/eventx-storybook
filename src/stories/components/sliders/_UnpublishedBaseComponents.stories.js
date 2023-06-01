@@ -1,7 +1,7 @@
 import { ControlHandle } from './ControlHandle';
 
 export default {
-  title: 'Sliders/_Unpublished Base Components',
+  title: 'Components/Sliders/_Unpublished Base Components',
   component: ControlHandle,
   tags: ['autodocs'],
 };

@@ -1,7 +1,7 @@
 import { AvatarUser } from './AvatarUser';
 
 export default {
-  title: 'Avatar/Avatar User',
+  title: 'Components/Avatar/Avatar User',
   component: AvatarUser,
   tags: ['autodocs'],
 };

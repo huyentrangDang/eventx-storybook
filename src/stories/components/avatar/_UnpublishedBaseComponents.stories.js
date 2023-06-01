@@ -5,7 +5,7 @@ import { AvatarOnlineIndicator } from './AvatarOnlineIndicator';
 import { VerifiedTick } from './VerifiedTick';
 
 export default {
-  title: 'Avatar/_Unpublished Base Component',
+  title: 'Components/Avatar/_Unpublished Base Component',
   component: AvatarImage,
   tags: ['autodocs'],
 };

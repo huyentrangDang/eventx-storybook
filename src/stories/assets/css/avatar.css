@@ -2,7 +2,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
+  position: relative;
 }
 
 .statusIcon--false {
@@ -264,25 +264,25 @@
 }
 
 .avatar-profile-photo-size--sm {
-  position: absolute;
+  /* position: absolute; */
   width: 72px;
   height: 72px;
 }
 
 .avatar-profile-photo-size--md {
-  position: absolute;
+  /* position: absolute; */
   width: 96px;
   height: 96px;
 }
 
 .avatar-profile-photo-size--lg {
-  position: absolute;
+  /* position: absolute; */
   width: 160px;
   height: 160px;
 }
 
 .content-avatar-profile-photo-size--sm {
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   right: 0px;
   top: 0px;
@@ -294,7 +294,7 @@
 }
 .content-avatar-profile-photo-size--md,
 .content-avatar-profile-photo-size--lg {
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   right: 0px;
   top: 0px;
