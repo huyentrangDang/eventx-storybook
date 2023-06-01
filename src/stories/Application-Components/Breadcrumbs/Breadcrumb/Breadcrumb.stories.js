@@ -1,7 +1,7 @@
 import { Breadcrumbs } from './Breadcrumb';
 
 export default {
-  title: 'Application Components/Breadcrumbs',
+  title: 'Application Components/Breadcrumbs/Breadcrumb',
   component: Breadcrumbs,
   tags: ['autodocs'],
 };
