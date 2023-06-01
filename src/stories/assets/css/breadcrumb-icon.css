@@ -1,0 +1,19 @@
+.icon-breadcrumb-gray-500 {
+  content: url(../icons/icon-general/home-line-gray-500.svg);
+}
+
+.icon-breadcrumb-gray-700 {
+  content: url(../icons/icon-general/home-line-gray-700.svg);
+}
+
+.icon-breadcrumb-primary-700 {
+  content: url(../icons/icon-general/home-line-primary-700.svg);
+}
+
+.icon-chevron-right {
+  content: url(../icons/icon-breadcrumb/chevron-right-gray-300.svg);
+}
+
+.icon-slash-divider {
+  content: url(../icons/icon-breadcrumb/slash-divider-gray-300.svg);
+}
