@@ -18,6 +18,9 @@ page_header.args = {
   divider: 'true',
 };
 page_header.argTypes = {
-  textFirst: { table: { disable: true } },
-  textDestination: { table: { disable: true } },
+  actions: { table: { disable: true } },
+  supportingText: { table: { disable: true } },
+  breadcrumbs: { table: { disable: true } },
+  search: { table: { disable: true } },
+  divider: { table: { disable: true } },
 };
