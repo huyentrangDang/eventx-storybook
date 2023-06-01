@@ -286,10 +286,9 @@ PageHeader.propTypes = {
     'simple',
     'avatar',
     'banner-avatar',
-    'banner-avatar-centered',
-    'simple',
-    'banner-simple',
-    'banner-simple-centered',
+    // 'banner-avatar-centered',
+    // 'banner-simple',
+    // 'banner-simple-centered',
   ]),
   breakpoint: PropTypes.oneOf(['desktop', 'mobile']),
 };
