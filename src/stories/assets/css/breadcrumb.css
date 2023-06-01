@@ -1,0 +1,236 @@
+.color-gray-600 {
+  color: var(--gray-600);
+}
+.color-gray-700 {
+  color: var(--gray-700);
+}
+.color-gray-800 {
+  color: var(--gray-800);
+}
+.color-primary-700 {
+  color: var(--primary-700);
+}
+
+/* breadcrumb button */
+
+.breadcrumd-button-type--text-current--false-state--default,
+.breadcrumd-button-type--text-current--false-state--hover,
+.breadcrumd-button-type--text-current--true-state--default,
+.breadcrumd-button-type--text-current--true-state--hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.breadcrumd-button-type--text-current--false-state--focused,
+.breadcrumd-button-type--text-current--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  /* box-shadow: 0px 0px 0px 4px var(--primary-100); */
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-primary-current--false-state--default,
+.breadcrumd-button-type--button-primary-current--false-state--focused,
+.breadcrumd-button-type--button-gray-current--false-state--default,
+.breadcrumd-button-type--button-gray-current--false-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-primary-current--false-state--hover,
+.breadcrumd-button-type--button-primary-current--true-state--default,
+.breadcrumd-button-type--button-primary-current--true-state--hover,
+.breadcrumd-button-type--button-primary-current--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  background: var(--primary-50);
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-gray-current--false-state--hover,
+.breadcrumd-button-type--button-gray-current--true-state--default,
+.breadcrumd-button-type--button-gray-current--true-state--hover,
+.breadcrumd-button-type--button-gray-current--true-state--focused {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  background: var(--gray-50);
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-primary-current--false-state--default-icon--false,
+.breadcrumd-button-type--button-gray-current--false-state--default-icon--false,
+.breadcrumd-button-type--button-gray-current--false-state--focused-icon--false,
+.breadcrumd-button-type--button-primary-current--false-state--focused-icon--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-primary-current--false-state--hover-icon--false,
+.breadcrumd-button-type--button-primary-current--true-state--default-icon--false,
+.breadcrumd-button-type--button-primary-current--true-state--hover-icon--false,
+.breadcrumd-button-type--button-primary-current--true-state--focused-icon--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background: var(--primary-50);
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-gray-current--true-state--default-icon--false,
+.breadcrumd-button-type--button-gray-current--true-state--hover-icon--false,
+.breadcrumd-button-type--button-gray-current--true-state--focused-icon--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background: var(--gray-200);
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--text-current--false-state--default-icon--false,
+.breadcrumd-button-type--text-current--false-state--hover-icon--false,
+.breadcrumd-button-type--text-current--true-state--default-icon--false,
+.breadcrumd-button-type--text-current--true-state--hover-icon--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--button-gray-current--false-state--hover-icon--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background: var(--gray-50);
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.breadcrumd-button-type--text-current--true-state--focused-icon--false,
+.breadcrumd-button-type--text-current--false-state--focused-icon--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  /* box-shadow: 0px 0px 0px 4px var(--primary-100); */
+  width: fit-content;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs-type--text-breakpoint--desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.breadcrumbs-type--text-breakpoint--mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.breadcrumbs-type--text-with-line {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 8px;
+  height: 36px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: var(--gray-200);
+}
+
+.breadcrumbs-type--button-primary,
+.breadcrumbs-type--button-gray {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.breadcrumbs-type--button-gray-with-border {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  background: var(--gray-25);
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.tabs-type--text-with-line-breakpoint--desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 8px;
+  gap: 12px;
+  height: 20px;
+}
+
+.tabs-type--text-with-line-breakpoint--mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 20px;
+}
+
+.tabs-type--button-primary-breakpoint--desktop,
+.tabs-type--button-gray-breakpoint--desktop,
+.tabs-type--button-gray-with-border-breakpoint--desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 28px;
+}
+
+.tabs-type--button-primary-breakpoint--mobile,
+.tabs-type--button-gray-breakpoint--mobile,
+.tabs-type--button-gray-with-border-breakpoint--mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+  height: 28px;
+}
