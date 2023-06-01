@@ -1,7 +1,7 @@
 import { Toolbar } from './Toolbar';
 
 export default {
-  title: 'Input/Toolbar',
+  title: 'Components/Input/Toolbar',
   component: Toolbar,
   tags: ['autodocs'],
 };

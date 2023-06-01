@@ -1,6 +1,6 @@
 import { Tooltips } from './Tooltip';
 export default {
-  title: 'Tooltips/Tooltip',
+  title: 'Components/Tooltips/Tooltip',
   component: Tooltips,
   tags: ['autodocs'],
 };

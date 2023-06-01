@@ -4,7 +4,7 @@ import { Scrollbar } from './Scrollbar';
 import { InputDropdownMenuItem } from './InputDropdownMenuItem';
 
 export default {
-  title: 'Dropdowns/_Unpublished Base Components',
+  title: 'Components/Dropdowns/_Unpublished Base Components',
   component: DropdownListItem,
   tags: ['autodocs'],
 };

@@ -1,7 +1,7 @@
 import { Button } from './Button';
 
 export default {
-  title: 'Buttons/Buttons',
+  title: 'Components/Buttons/Button',
   component: Button,
   tags: ['autodocs'],
   excludePropTypes: ['hierarchy'],

@@ -1,7 +1,7 @@
 import { InputDropdown } from './InputDropdown';
 
 export default {
-  title: 'Dropdowns/Input Dropdowns',
+  title: 'Components/Dropdowns/Input Dropdowns',
   component: InputDropdown,
   tags: ['autodocs'],
   argTypes: {
@@ -20,6 +20,7 @@ export default {
       control: 'radio',
       options: ['placeholder', 'default', 'open', 'disabled', 'focused'],
     },
+    showLabel: { table: { disable: true } },
   },
 };
 
@@ -30,4 +31,5 @@ input_dropdown.args = {
   state: 'placeholder',
   label: 'Team member',
   hintText: 'This is a hint text to help user.',
+  showLabel: 'true',
 };

@@ -2,7 +2,7 @@ import { InputField } from './InputField';
 import { TextAreaInputField } from './TextAreaInputField';
 
 export default {
-  title: 'Input/Input Fields',
+  title: 'Components/Input/Input Fields',
   component: InputField,
   tags: ['autodocs'],
 };

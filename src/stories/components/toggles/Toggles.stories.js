@@ -1,6 +1,6 @@
 import { Toggles } from './Toggles';
 export default {
-  title: 'Toggles/Toggles',
+  title: 'Components/Toggles/Toggles',
   component: Toggles,
   tags: ['autodocs'],
 };

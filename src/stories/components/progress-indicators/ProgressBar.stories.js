@@ -1,7 +1,7 @@
 import { ProgressBar } from './ProgressBar';
 
 export default {
-  title: 'Progress Indicators/Progress Bars',
+  title: 'Components/Progress Indicators/Progress Bars',
   component: ProgressBar,
   tags: ['autodocs'],
 };

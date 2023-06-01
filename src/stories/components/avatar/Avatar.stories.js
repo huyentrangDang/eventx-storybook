@@ -4,7 +4,7 @@ import { AvatarLabelGroup } from './AvatarLabelGroup';
 import { AvatarProfilePhoto } from './AvatarProfilePhoto';
 
 export default {
-  title: 'Avatar/Avatar',
+  title: 'Components/Avatar/Avatar',
   component: Avatar,
   tags: ['autodocs'],
 };

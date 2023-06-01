@@ -1,7 +1,7 @@
 import { CheckboxGroup } from './CheckboxGroup';
 
 export default {
-  title: 'Checkbox Groups/Checkbox Group',
+  title: 'Components/Checkbox Groups/Checkbox Group',
   component: CheckboxGroup,
   tags: ['autodocs'],
 };

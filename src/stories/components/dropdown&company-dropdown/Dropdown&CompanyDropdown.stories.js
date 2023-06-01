@@ -4,7 +4,7 @@ import { expect } from '@storybook/jest';
 import { CompanyDropdown } from './CompanyDropdown';
 
 export default {
-  title: 'Dropdowns/Dropdown & Company Dropdown',
+  title: 'Components/Dropdowns/Dropdown & Company Dropdown',
   component: Dropdown,
   tags: ['autodocs'],
   argTypes: {

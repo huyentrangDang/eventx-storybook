@@ -1,6 +1,6 @@
 import { HelpIcon } from './HelpIcon';
 export default {
-  title: 'Tooltips/HelpIcon',
+  title: 'Components/Tooltips/HelpIcon',
   component: HelpIcon,
   tags: ['autodocs'],
 };

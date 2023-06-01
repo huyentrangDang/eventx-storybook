@@ -2,7 +2,7 @@ import { MegaInputFieldBase } from './MegaInputFieldBase';
 import { EditorIcon } from './EditorIcon';
 
 export default {
-  title: 'Input/_Unpublished Base Component',
+  title: 'Components/Input/_Unpublished Base Component',
   component: MegaInputFieldBase,
   tags: ['autodocs'],
 };
