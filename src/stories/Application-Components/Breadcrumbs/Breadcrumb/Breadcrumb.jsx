@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../assets/css/common.css';
-import '../../assets/css/breadcrumb.css';
-import '../../assets/css/breadcrumb-icon.css';
-import { BreadcrumbButtonBase } from './BreadcrumbButtonBase';
+import '../../../assets/css/common.css';
+import '../../../assets/css/breadcrumb.css';
+import '../../../assets/css/breadcrumb-icon.css';
+import { BreadcrumbButtonBase } from '../_UnpublishedBaseComponents/BreadcrumbButtonBase';
 
 export const Breadcrumbs = ({
   divider,

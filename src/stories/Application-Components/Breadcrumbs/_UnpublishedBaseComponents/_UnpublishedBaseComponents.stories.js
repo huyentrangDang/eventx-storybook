@@ -1,7 +1,7 @@
 import { BreadcrumbButtonBase } from './BreadcrumbButtonBase';
 
 export default {
-  title: 'Application Components/_Unpublished Base Components',
+  title: 'Application Components/Breadcrumbs/_Unpublished Base Components',
   component: BreadcrumbButtonBase,
   tags: ['autodocs'],
 };
