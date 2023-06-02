@@ -409,6 +409,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+  width: 100%;
 }
 
 .content-section-header-tabs--false-type--buttons-breakpoint--mobile,
@@ -430,4 +431,14 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.text-and-support-text-section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 100%;
 }
