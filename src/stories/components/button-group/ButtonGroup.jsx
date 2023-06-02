@@ -6,6 +6,7 @@ import '../../assets/css/typography.css';
 import '../../assets/css/common.css';
 import '../../assets/css/icon.css';
 import '../../assets/css/button-icon.css';
+import { ButtonGroupBase } from '../button-group-base/ButtonGroupBase';
 
 export const ButtonGroup = ({
   current,
@@ -18,7 +19,7 @@ export const ButtonGroup = ({
 }) => {
   return (
     <>
-      {icon !== 'only' && (
+      {/* {icon !== 'only' && (
         <div>
           {icon === 'false' ? (
             <div className='button-group'>
@@ -94,19 +95,33 @@ export const ButtonGroup = ({
             </button>
           ))}
         </div>
-      )}
+      )} */}
+      <div className={`button-group`}>
+        {Array.from(new Array(3)).map((_, index) => (
+          <ButtonGroupBase
+            current={'false'}
+            icon={icon}
+            state={'default'}
+            text={'Text'}
+            iconDotLeading={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
+            iconLeading={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
+            iconTrailing={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
+            iconOnly={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
+          />
+        ))}
+      </div>
     </>
   );
 };
 
 ButtonGroup.propTypes = {
   icon: PropTypes.oneOf(['false', 'leading', 'trailing', 'only']),
-  state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
-  iconLeading: PropTypes.string,
-  current: PropTypes.oneOf(['true', 'false']),
-  iconTrailing: PropTypes.string,
-  text: PropTypes.string,
-  iconOnly: PropTypes.string,
+  // state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
+  // iconLeading: PropTypes.string,
+  // current: PropTypes.oneOf(['true', 'false']),
+  // iconTrailing: PropTypes.string,
+  // text: PropTypes.string,
+  // iconOnly: PropTypes.string,
 };
 
 ButtonGroup.defaultProps = {};
