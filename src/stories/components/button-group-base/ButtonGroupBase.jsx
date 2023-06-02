@@ -19,57 +19,50 @@ export const ButtonGroupBase = ({
 }) => {
   return (
     <>
-      {icon !== 'only' && (
-        <div>
-          {icon === 'false' ? (
-            <button
-              type='button'
-              className={[
-                `button-group-current--${current}-state--${state}`,
-              ].join(' ')}
-            >
-              <div className={`text-button-sm-semibold`}> {text}</div>
-            </button>
-          ) : (
-            <button
-              type='button'
-              className={[
-                `button-group-current--${current}-state--${state}`,
-              ].join(' ')}
-            >
-              {icon === 'leading' && (
-                <div
-                  class={[
-                    `container-button-group-icon`,
-                    `${iconPath(`${current}`, `${iconLeading}`, `${state}`)}`,
-                  ].join(' ')}
-                />
-              )}
-              {icon === 'dotLeading' && (
-                <div
-                  class={[
-                    `container-button-group-icon`,
-                    `${iconPath(
-                      `${current}`,
-                      `${iconDotLeading}`,
-                      `${state}`
-                    )}`,
-                  ].join(' ')}
-                />
-              )}
-              <div className={`text-button-sm-semibold`}> {text}</div>
-              {icon === 'trailing' && (
-                <div
-                  class={[
-                    `container-button-group-icon`,
-                    `${iconPath(`${current}`, `${iconTrailing}`, `${state}`)}`,
-                  ].join(' ')}
-                />
-              )}
-            </button>
-          )}
-        </div>
-      )}
+      {icon !== 'only' &&
+        (icon === 'false' ? (
+          <button
+            type='button'
+            className={[
+              `button-group-current--${current}-state--${state}`,
+            ].join(' ')}
+          >
+            <div className={`text-button-sm-semibold`}> {text}</div>
+          </button>
+        ) : (
+          <button
+            type='button'
+            className={[
+              `button-group-current--${current}-state--${state}`,
+            ].join(' ')}
+          >
+            {icon === 'leading' && (
+              <div
+                class={[
+                  `container-button-group-icon`,
+                  `${iconPath(`${current}`, `${iconLeading}`, `${state}`)}`,
+                ].join(' ')}
+              />
+            )}
+            {icon === 'dotLeading' && (
+              <div
+                class={[
+                  `container-button-group-icon`,
+                  `${iconPath(`${current}`, `${iconDotLeading}`, `${state}`)}`,
+                ].join(' ')}
+              />
+            )}
+            <div className={`text-button-sm-semibold`}> {text}</div>
+            {icon === 'trailing' && (
+              <div
+                class={[
+                  `container-button-group-icon`,
+                  `${iconPath(`${current}`, `${iconTrailing}`, `${state}`)}`,
+                ].join(' ')}
+              />
+            )}
+          </button>
+        ))}
 
       {icon === 'only' && (
         <button

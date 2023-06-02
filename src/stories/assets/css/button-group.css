@@ -1,226 +1,245 @@
 .text-button-sm-semibold {
-    font-family: 'Lato';
-    font-style : normal;
-    font-weight: 600;
-    font-size  : 14px;
-    line-height: 20px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .button-group {
-    box-sizing    : border-box;
-    display       : flex;
-    flex-direction: row;
-    align-items   : flex-start;
-    padding       : 0px;
-    isolation     : isolate;
-    border        : 1px solid var(--gray-300);
-    filter        : drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
-    border-radius : 8px;
-    width         : fit-content;
-    height        : fit-content;
-    overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
+  border: 1px solid var(--gray-300);
+  filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
 }
 
 .button-group button:last-child {
-    border-right: 0;
+  border-right: 0;
 }
 
 .button-group-current--false-state--default {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--base-white);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-700);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--base-white);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-700);
 }
 
 .button-group-current--true-state--default {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-800);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-800);
 }
 
 .button-group-current--false-state--hover {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-800);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-800);
 }
 
 .button-group-current--true-state--hover {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-800);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-800);
 }
 
 .button-group-current--false-state--focused {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-700);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-700);
 }
 
 .button-group-current--true-state--focused {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-800);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-800);
 }
 
 .button-group-current--false-state--disabled {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--base-white);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--base-white);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-300);
 }
 
 .button-group-current--true-state--disabled {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 16px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
-    color          : var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+  color: var(--gray-300);
 }
 
 .button-group-icon-current--false-state--default {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--base-white);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--base-white);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--true-state--default {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--false-state--hover {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--true-state--hover {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--false-state--focused {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--true-state--focused {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--false-state--disabled {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--base-white);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--base-white);
+  border: none;
+  border-right: 1px solid var(--gray-300);
 }
 
 .button-group-icon-current--true-state--disabled {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    align-items    : center;
-    padding        : 10px 12px;
-    gap            : 8px;
-    background     : var(--gray-50);
-    border         : none;
-    border-right   : 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+  background: var(--gray-50);
+  border: none;
+  border-right: 1px solid var(--gray-300);
+}
+
+.button-group-icon--false {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
+  border: 1px solid var(--gray-300);
+  filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.button-group-icon--false button:last-child {
+  border-right: 0;
 }
