@@ -21,6 +21,9 @@ export default {
       options: ['placeholder', 'default', 'open', 'disabled', 'focused'],
     },
     showLabel: { table: { disable: true } },
+    text: { table: { disable: true } },
+    hintText: { table: { disable: true } },
+    label: { table: { disable: true } },
   },
 };
 
@@ -32,4 +35,5 @@ input_dropdown.args = {
   label: 'Team member',
   hintText: 'This is a hint text to help user.',
   showLabel: 'true',
+  text: 'Select team member',
 };

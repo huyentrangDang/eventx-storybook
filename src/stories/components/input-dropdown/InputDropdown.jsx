@@ -11,7 +11,14 @@ import '../../assets/css/input-icon.css';
 import '../../assets/css/color.css';
 import '../../assets/css/button-icon.css';
 
-export const InputDropdown = ({ type, state, label, hintText, showLabel }) => {
+export const InputDropdown = ({
+  type,
+  state,
+  label,
+  text,
+  hintText,
+  showLabel,
+}) => {
   const [value, setValue] = React.useState({
     text: '',
     supportText: '',
@@ -110,7 +117,14 @@ export const InputDropdown = ({ type, state, label, hintText, showLabel }) => {
                         ].join(' ')}
                       />
                     ) : (
-                      `Select team member`
+                      <div
+                        className={[
+                          `select-text-input-state--${state}`,
+                          `text-input-md-medium`,
+                        ].join(' ')}
+                      >
+                        {text}
+                      </div>
                     )
                   ) : (
                     <>
@@ -287,6 +301,9 @@ InputDropdown.propTypes = {
   ]),
   // handleClick: PropTypes.func,
   showLabel: PropTypes.oneOf(['true', 'false']),
+  text: PropTypes.string,
+  hintText: PropTypes.string,
+  label: PropTypes.string,
 };
 
 InputDropdown.defaultProps = {};
