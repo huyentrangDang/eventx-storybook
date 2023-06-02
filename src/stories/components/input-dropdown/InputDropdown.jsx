@@ -87,7 +87,10 @@ export const InputDropdown = ({
 
   return (
     <>
-      <div className={`input-dropdown-state--${state}`}>
+      <div
+        className={`input-dropdown-state--${state}`}
+        style={{ gap: hintText ? 8 : 0 }}
+      >
         <div
           className={
             showLabel === 'true' ? `input-with-label` : `input-with-no-label`

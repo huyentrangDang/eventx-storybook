@@ -4,12 +4,11 @@ import '../../assets/css/common.css';
 import '../../assets/css/breadcrumb.css';
 import '../../assets/css/breadcrumb-icon.css';
 import '../../assets/css/page-header.css';
-import { Breadcrumbs } from '../Breadcrumbs/Breadcrumb/Breadcrumb';
 import { Button } from '../../components/button/Button';
 import { InputDropdown } from '../../components/input-dropdown/InputDropdown';
-import { Avatar } from '../../components/avatar/Avatar';
 import { Dropdown } from '../../components/dropdown&company-dropdown/Dropdown';
 import { ButtonGroup } from '../../components/button-group/ButtonGroup';
+import { HorizontalTabs } from '../Tabs/HorizontalTabs/HorizontalTab';
 
 export const SectionHeader = ({ tabs, type, breakpoint }) => {
   const hierarchys = [
@@ -32,75 +31,93 @@ export const SectionHeader = ({ tabs, type, breakpoint }) => {
   ];
   return (
     <>
-      <div
-        className={`section-header-tabs--${tabs}-type--${type}-breakpoint--${breakpoint}`}
-      >
+      {((type !== 'searchAndactions' && breakpoint !== 'desktop') ||
+        (type !== 'search' && breakpoint !== 'mobile')) && (
         <div
-          className={`content-section-header-tabs--${tabs}-type--${type}-breakpoint--${breakpoint}`}
+          className={`section-header-tabs--${tabs}-type--${type}-breakpoint--${breakpoint}`}
         >
-          <div className={`text-and-support-text-card-header`}>
-            <span className={`text-card-header`}>Team members</span>
-            <span className={`support-text-card-header`}>
-              Manage your team members and their account permissions here.
-            </span>
-          </div>
-
-          {(type === 'search' || type === 'searchAndactions') && (
-            <InputDropdown
-              type={'search'}
-              state={'placeholder'}
-            />
-          )}
-
-          {type === 'button-group' ? (
-            <ButtonGroup
-              icon={'false'}
-              text={'Text'}
-              current={'false'}
-              state={'default'}
-            />
-          ) : type === 'search' && breakpoint === 'mobile' ? (
-            ''
-          ) : (
-            <div className={`action-page-header`}>
-              {breakpoint === 'desktop' &&
-                hierarchys.map(({ hierarchy, text }) => (
-                  <Button
-                    size={'md'}
-                    hierarchy={hierarchy}
-                    icon={'default'}
-                    destructive={'false'}
-                    state={'default'}
-                    showIconLeading={'false'}
-                    showiconTrailing={'false'}
-                    text={text}
-                  />
-                ))}
-              {breakpoint === 'mobile' &&
-                hierarchys.slice(2, 4).map(({ hierarchy, text }) => (
-                  <Button
-                    size={'md'}
-                    hierarchy={hierarchy}
-                    icon={'default'}
-                    destructive={'false'}
-                    state={'default'}
-                    showIconLeading={'false'}
-                    showiconTrailing={'false'}
-                    text={text}
-                  />
-                ))}
+          <div
+            className={`content-section-header-tabs--${tabs}-type--${type}-breakpoint--${breakpoint}`}
+          >
+            <div className={`text-and-support-text-section-header`}>
+              <span className={`text-card-header`}>Team members</span>
+              <span className={`support-text-card-header`}>
+                Manage your team members and their account permissions here.
+              </span>
             </div>
+
+            {(type === 'search' || type === 'searchAndactions') && (
+              <InputDropdown
+                type={'search'}
+                state={'placeholder'}
+              />
+            )}
+
+            {type === 'button-group' ? (
+              <ButtonGroup
+                icon={'false'}
+                text={'Text'}
+                current={'false'}
+                state={'default'}
+              />
+            ) : type === 'search' && breakpoint === 'mobile' ? (
+              ''
+            ) : (
+              <div className={`action-page-header`}>
+                {breakpoint === 'desktop' &&
+                  hierarchys.map(({ hierarchy, text }) => (
+                    <Button
+                      size={'md'}
+                      hierarchy={hierarchy}
+                      icon={'default'}
+                      destructive={'false'}
+                      state={'default'}
+                      showIconLeading={'false'}
+                      showiconTrailing={'false'}
+                      text={text}
+                    />
+                  ))}
+                {breakpoint === 'mobile' &&
+                  hierarchys.slice(2, 4).map(({ hierarchy, text }) => (
+                    <Button
+                      size={'md'}
+                      hierarchy={hierarchy}
+                      icon={'default'}
+                      destructive={'false'}
+                      state={'default'}
+                      showIconLeading={'false'}
+                      showiconTrailing={'false'}
+                      text={text}
+                    />
+                  ))}
+              </div>
+            )}
+
+            {((type !== 'searchAndactions' && breakpoint === 'desktop') ||
+              (type !== 'search' && breakpoint === 'mobile')) && (
+              <div
+                className={`dropdown-section-header-breakpoint--${breakpoint}`}
+              >
+                <Dropdown
+                  type={'icon'}
+                  open={'false'}
+                />
+              </div>
+            )}
+          </div>
+
+          {tabs === 'true' && (
+            <HorizontalTabs
+              type={'button-primary'}
+              size={'sm'}
+              fullWidth={'false'}
+              breakpoint={breakpoint}
+            />
           )}
 
-          <div className={`dropdown-section-header-breakpoint--${breakpoint}`}>
-            <Dropdown
-              type={'icon'}
-              open={'false'}
-            />
-          </div>
+          <div className={`divider-page-header-breakpoint--${breakpoint}`} />
         </div>
-        <div className={`divider-page-header-breakpoint--${breakpoint}`} />
-      </div>
+      )}
     </>
   );
 };
