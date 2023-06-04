@@ -442,3 +442,93 @@
   gap: 4px;
   width: 100%;
 }
+
+/* Session footer */
+
+.section-footer-type--section-buttonGroup--true-breakpoint--desktop,
+.section-footer-type--section-buttonGroup--false-breakpoint--desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+
+.section-footer-type--section-buttonGroup--true-breakpoint--mobile,
+.section-footer-type--section-buttonGroup--false-breakpoint--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.section-footer-type--card-buttonGroup--false-breakpoint--desktop,
+.section-footer-type--card-buttonGroup--true-breakpoint--desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 16px;
+  gap: 16px;
+}
+
+.section-footer-type--card-buttonGroup--false-breakpoint--mobile,
+.section-footer-type--card-buttonGroup--true-breakpoint--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 12px;
+  gap: 12px;
+}
+
+.content-section-footer-type--section-buttonGroup--true-breakpoint--desktop,
+.content-section-footer-type--section-buttonGroup--false-breakpoint--desktop,
+.content-section-footer-type--section-buttonGroup--true-breakpoint--mobile,
+.content-section-footer-type--section-buttonGroup--false-breakpoint--mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  height: 40px;
+  width: 100%;
+}
+
+.content-section-footer-type--card-buttonGroup--true-breakpoint--desktop,
+.content-section-footer-type--card-buttonGroup--false-breakpoint--desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 24px;
+  gap: 16px;
+  height: 40px;
+  width: fit-content;
+}
+
+.content-section-footer-type--card-buttonGroup--true-breakpoint--mobile,
+.content-section-footer-type--card-buttonGroup--false-breakpoint--mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 16px;
+  height: 40px;
+  width: fit-content;
+}
+
+.icon-plus-gray500 {
+  content: url(../icons/icon-general/plus-gray-500.svg);
+}
+
+.action-section-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  height: 40px;
+}

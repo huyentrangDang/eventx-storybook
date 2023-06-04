@@ -1,34 +1,40 @@
 .container-button-group-icon {
-    height   : fit-content;
-    width    : fit-content;
-    font-size: 20px;
+  height: fit-content;
+  width: fit-content;
+  font-size: 20px;
 }
 
-
 .circle_gray300::before {
-    content: url(../icons/icon-button-group/circle/circle-gray-300.svg);
-    display: block;
-    height : 20px;
-    width  : 20px;
+  content: url(../icons/icon-button-group/circle/circle-gray-300.svg);
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
 .circle_gray500::before {
-    content: url(../icons/icon-button-group/circle/circle-gray-500.svg);
-    display: block;
-    height : 20px;
-    width  : 20px;
+  content: url(../icons/icon-button-group/circle/circle-gray-500.svg);
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
 .circle_gray800::before {
-    content: url(../icons/icon-button-group/circle/circle-gray-800.svg);
-    display: block;
-    height : 20px;
-    width  : 20px;
+  content: url(../icons/icon-button-group/circle/circle-gray-800.svg);
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
 .arrow_left_gray500::before {
-    content: url(../icons/icon-button-group/arrow-left/arrow-left-gray500.svg);
-    display: block;
-    height : 20px;
-    width  : 20px;
+  content: url(../icons/icon-button-group/arrow-left/arrow-left-gray500.svg);
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.arrow_right_gray500::before {
+  content: url(../icons/icon-badge/arrow-right/arrow-right-gray-500.svg);
+  display: block;
+  height: 20px;
+  width: 20px;
 }

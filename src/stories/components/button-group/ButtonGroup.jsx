@@ -5,17 +5,20 @@ import '../../assets/css/button-group-icon.css';
 import '../../assets/css/typography.css';
 import '../../assets/css/common.css';
 import '../../assets/css/icon.css';
+import '../../assets/css/page-header.css';
 import '../../assets/css/button-icon.css';
 import { ButtonGroupBase } from '../button-group-base/ButtonGroupBase';
 
 export const ButtonGroup = ({
-  current,
-  state,
+  // current,
+  // state,
   icon,
-  text,
-  iconLeading,
-  iconTrailing,
-  iconOnly,
+  // text,
+  // iconLeading,
+  // iconTrailing,
+  // iconOnly,
+  // numberButton,
+  buttonArray,
 }) => {
   return (
     <>
@@ -97,18 +100,19 @@ export const ButtonGroup = ({
         </div>
       )} */}
       <div className={`button-group`}>
-        {Array.from(new Array(3)).map((_, index) => (
-          <ButtonGroupBase
-            current={'false'}
-            icon={icon}
-            state={'default'}
-            text={'Text'}
-            iconDotLeading={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
-            iconLeading={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
-            iconTrailing={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
-            iconOnly={iconPath(`${'false'}`, `${icon}`, `${'default'}`)}
-          />
-        ))}
+        {buttonArray?.map(
+          ({ current, state, text, iconLeading, iconTrailing, iconOnly }) => (
+            <ButtonGroupBase
+              current={current}
+              icon={icon}
+              state={state}
+              text={text}
+              iconLeading={iconLeading}
+              iconTrailing={iconTrailing}
+              iconOnly={iconOnly}
+            />
+          )
+        )}
       </div>
     </>
   );
@@ -116,12 +120,16 @@ export const ButtonGroup = ({
 
 ButtonGroup.propTypes = {
   icon: PropTypes.oneOf(['false', 'leading', 'trailing', 'only']),
-  // state: PropTypes.oneOf(['default', 'hover', 'focused', 'disabled']),
-  // iconLeading: PropTypes.string,
-  // current: PropTypes.oneOf(['true', 'false']),
-  // iconTrailing: PropTypes.string,
-  // text: PropTypes.string,
-  // iconOnly: PropTypes.string,
+  buttonArray: PropTypes.arrayOf(
+    PropTypes.shape({
+      current: PropTypes.string,
+      state: PropTypes.string,
+      text: PropTypes.string,
+      iconLeading: PropTypes.string,
+      iconTrailing: PropTypes.string,
+      iconOnly: PropTypes.string,
+    })
+  ),
 };
 
 ButtonGroup.defaultProps = {};

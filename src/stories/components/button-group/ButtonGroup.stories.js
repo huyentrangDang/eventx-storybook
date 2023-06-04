@@ -10,37 +10,67 @@ export default {
 const Button_Group = (args) => <ButtonGroup {...args} />;
 export const button_group = Button_Group.bind({});
 button_group.args = {
-  // text: 'Text',
-  // current: 'false',
   icon: 'false',
-  // state: 'default',
-  // iconLeading: 'leading',
-  // iconTrailing: 'trailing',
-  // iconOnly: 'only',
+  buttonArray: [
+    {
+      current: 'false',
+      state: 'default',
+      text: 'Text',
+      iconLeading: 'circle_gray500',
+      iconTrailing: 'circle_gray500',
+      iconOnly: 'arrow_left_gray500',
+    },
+    {
+      current: 'false',
+      state: 'default',
+      text: 'Text',
+      iconLeading: 'circle_gray500',
+      iconTrailing: 'circle_gray500',
+      iconOnly: 'icon-plus-gray500',
+    },
+    {
+      current: 'false',
+      state: 'default',
+      text: 'Text',
+      iconLeading: 'circle_gray500',
+      iconTrailing: 'circle_gray500',
+      iconOnly: 'arrow_right_gray500',
+    },
+  ],
 };
 button_group.argTypes = {
-  // current: {
-  //   control: 'radio',
-  //   options: ['true', 'false'],
-  // },
-  // icon: {
-  //   options: ['false', 'leading', 'trailing', 'only'],
-  // },
-  // text: {
-  //   control: 'text',
-  //   if: { arg: 'icon', neq: 'only' },
-  // },
-  // iconLeading: {
-  //   control: 'text',
-  //   if: { arg: 'icon', eq: 'leading' },
-  // },
-  // iconTrailing: {
-  //   control: 'text',
-  //   if: { arg: 'icon', eq: 'trailing' },
-  // },
-  // iconOnly: {
-  //   control: 'text',
-  //   if: { arg: 'icon', eq: 'only' },
+  buttonArray: { table: { disable: true } },
+  // buttonArray: {
+  //   type: {
+  //     summary: 'Array of objects',
+  //   },
+  //   control: {
+  //     type: 'array',
+  //     separator: ',',
+  //     item: {
+  //       type: 'object',
+  //       properties: {
+  //         current: {
+  //           type: 'text',
+  //         },
+  //         state: {
+  //           type: 'text',
+  //         },
+  //         iconLeading: {
+  //           type: 'text',
+  //         },
+  //         iconTrailing: {
+  //           type: 'text',
+  //         },
+  //         iconOnly: {
+  //           type: 'text',
+  //         },
+  //         text: {
+  //           type: 'text',
+  //         },
+  //       },
+  //     },
+  //   },
   // },
 };
 
