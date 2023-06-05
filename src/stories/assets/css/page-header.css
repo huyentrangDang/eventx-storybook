@@ -267,7 +267,7 @@
   align-items: flex-start;
   padding: 20px 24px 0px;
   gap: 16px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .content-card-header-avatar--false-badge--true-accentLine--false-breakpoint--mobile,
@@ -330,6 +330,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
+  flex: 1;
 }
 
 .text-and-badge-card-header {
@@ -370,6 +371,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+  flex: 1;
 }
 
 .text-and-support-text-card-header-avatar--true {
@@ -504,7 +506,7 @@
   padding: 0px 24px;
   gap: 16px;
   height: 40px;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .content-section-footer-type--card-buttonGroup--true-breakpoint--mobile,
@@ -516,7 +518,7 @@
   padding: 0px 16px;
   gap: 16px;
   height: 40px;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .icon-plus-gray500 {
@@ -531,4 +533,13 @@
   padding: 0px;
   gap: 12px;
   height: 40px;
+  flex: 1;
+}
+
+.container-content-section-footer {
+  width: 100%;
+}
+
+.container-content-card-header {
+  width: 100%;
 }

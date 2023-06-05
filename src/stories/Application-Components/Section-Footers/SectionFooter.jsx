@@ -86,66 +86,77 @@ export const SectionFooter = ({ type, buttonGroup, breakpoint }) => {
       >
         <div className={`divider-page-header-breakpoint--desktop`} />
 
-        <div
-          className={`content-section-footer-type--${type}-buttonGroup--${buttonGroup}-breakpoint--${breakpoint}`}
-        >
-          {buttonGroup === 'true' && (
-            <div className={`button-group`}>
-              {breakpoint === 'desktop'
-                ? BUTTON_GROUP_DESKTOP?.map(
-                    ({ current, state, text, iconLeading, iconOnly, icon }) => (
-                      <ButtonGroupBase
-                        current={current}
-                        icon={icon}
-                        state={state}
-                        text={text}
-                        iconLeading={iconLeading}
-                      />
+        <div className={`container-content-section-footer`}>
+          <div
+            className={`content-section-footer-type--${type}-buttonGroup--${buttonGroup}-breakpoint--${breakpoint}`}
+          >
+            {buttonGroup === 'true' && (
+              <div className={`button-group`}>
+                {breakpoint === 'desktop'
+                  ? BUTTON_GROUP_DESKTOP?.map(
+                      ({
+                        current,
+                        state,
+                        text,
+                        iconLeading,
+                        iconOnly,
+                        icon,
+                      }) => (
+                        <ButtonGroupBase
+                          current={current}
+                          icon={icon}
+                          state={state}
+                          text={text}
+                          iconLeading={iconLeading}
+                        />
+                      )
                     )
-                  )
-                : BUTTON_GROUP_MOBILE?.map(
-                    ({ current, state, text, iconOnly, icon }) => (
-                      <ButtonGroupBase
-                        current={current}
-                        icon={icon}
-                        state={state}
-                        text={text}
-                        iconOnly={iconOnly}
-                      />
-                    )
-                  )}
-            </div>
-          )}
-
-          <Button
-            size={'md'}
-            hierarchy={'linkGray'}
-            icon={'default'}
-            destructive={'false'}
-            state={'default'}
-            text={'Learn more'}
-            showIconLeading={'false'}
-            showiconTrailing={'false'}
-          />
-
-          <div className={`action-section-footer`}>
-            {breakpoint === 'desktop' && (
-              <span className={[`text-sm-medium`, `color-gray-700`].join(' ')}>
-                Your account will be automatically charged
-              </span>
+                  : BUTTON_GROUP_MOBILE?.map(
+                      ({ current, state, text, iconOnly, icon }) => (
+                        <ButtonGroupBase
+                          current={current}
+                          icon={icon}
+                          state={state}
+                          text={text}
+                          iconOnly={iconOnly}
+                        />
+                      )
+                    )}
+              </div>
             )}
-            {BUTTONS.map(({ hierarchy, text }) => (
-              <Button
-                size={'md'}
-                hierarchy={hierarchy}
-                icon={'default'}
-                destructive={'false'}
-                state={'default'}
-                text={text}
-                showIconLeading={'false'}
-                showiconTrailing={'false'}
-              />
-            ))}
+
+            <Button
+              size={'md'}
+              hierarchy={'linkGray'}
+              icon={'default'}
+              destructive={'false'}
+              state={'default'}
+              text={'Learn more'}
+              showIconLeading={'false'}
+              showiconTrailing={'false'}
+            />
+
+            <div className={`action-section-footer`}>
+              {breakpoint === 'desktop' && (
+                <span
+                  className={[`text-sm-medium`, `color-gray-700`].join(' ')}
+                >
+                  Your account will be automatically charged
+                </span>
+              )}
+              {BUTTONS.map(({ hierarchy, text }) => (
+                <Button
+                  size={'md'}
+                  hierarchy={hierarchy}
+                  icon={'default'}
+                  destructive={'false'}
+                  state={'default'}
+                  text={text}
+                  showIconLeading={'false'}
+                  showiconTrailing={'false'}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

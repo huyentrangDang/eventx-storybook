@@ -8,7 +8,17 @@ import '../../assets/css/dropdown.css';
 import '../../assets/css/button.css';
 import '../../assets/css/scrollbar.css';
 
-export const CompanyDropdown = ({ open }) => {
+export const CompanyDropdown = ({
+  open,
+  avatarCompany,
+  textCompany,
+  subTextCompany,
+  colorTextCompany,
+  colorSubTextCompany,
+  iconOpen,
+  iconClose,
+  borderRadiusAvatar,
+}) => {
   const [openDropdown, setOpenDropdown] = React.useState(false);
 
   const onClick = () => {
@@ -42,17 +52,30 @@ export const CompanyDropdown = ({ open }) => {
           // onClick={onClick}
         >
           <div className={`avatar-label-group`}>
-            <div className={`avatar-company-dropdowns`}></div>
+            <div
+              className={[`avatar-company-dropdowns`, avatarCompany].join(' ')}
+              style={{ borderRadius: borderRadiusAvatar }}
+            ></div>
             <div className={`text-and-support-text`}>
-              <div className={`text`}>Crania</div>
-              <div className={`support-text`}>Organizer</div>
+              <div
+                className={`text`}
+                style={{ color: colorTextCompany }}
+              >
+                {textCompany}
+              </div>
+              <div
+                className={`support-text`}
+                style={{ color: colorSubTextCompany }}
+              >
+                {subTextCompany}
+              </div>
             </div>
           </div>
 
           {open === 'false' ? (
-            <icon className={`icon-chevron-down`} />
+            <icon className={[`${iconPathClose(iconClose)}`].join(' ')} />
           ) : (
-            <icon className={`icon-chevron-up`} />
+            <icon className={[`${iconPathOpen(iconOpen)}`].join(' ')} />
           )}
         </button>
 
@@ -127,6 +150,11 @@ export const CompanyDropdown = ({ open }) => {
 
 CompanyDropdown.propTypes = {
   open: PropTypes.oneOf(['false', 'true']),
+  avatarCompany: PropTypes.string,
+  textCompany: PropTypes.string,
+  subTextCompany: PropTypes.string,
+  iconOpen: PropTypes.string,
+  iconClose: PropTypes.string,
 };
 
 CompanyDropdown.defaultProps = {};
@@ -139,5 +167,21 @@ export const iconPath = (icon, state) => {
     }
   } else {
     return icon;
+  }
+};
+
+export const iconPathOpen = (iconOpen) => {
+  if (iconOpen) {
+    return iconOpen;
+  } else {
+    return 'icon-chevron-up';
+  }
+};
+
+export const iconPathClose = (iconClose) => {
+  if (iconClose) {
+    return iconClose;
+  } else {
+    return 'icon-chevron-down';
   }
 };

@@ -11,6 +11,31 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lato';
+}
+
 [class^='icon-'],
 [class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -26,9 +51,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-* {
+/* * {
   font-family: 'Lato';
-}
+} */
+
 .mx-20 {
   margin-left: 20px;
   margin-right: 20px;
