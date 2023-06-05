@@ -22,10 +22,10 @@ navigation_base.args = {
   textBage: 10,
 };
 navigation_base.argTypes = {
-  // dot: { table: { disable: true } },
-  // icon: { table: { disable: true } },
-  // badge: { table: { disable: true } },
-  // dropdown: { table: { disable: true } },
+  dot: { table: { disable: true } },
+  icon: { table: { disable: true } },
+  badge: { table: { disable: true } },
+  dropdown: { table: { disable: true } },
   iconSwap: { table: { disable: true } },
   text: { table: { disable: true } },
   textBage: { table: { disable: true } },
