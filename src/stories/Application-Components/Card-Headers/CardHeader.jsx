@@ -31,40 +31,12 @@ export const CardHeader = ({ avatar, badge, breakpoint, accentLine }) => {
       <div
         className={`card-header-avatar--${avatar}-badge--${badge}-accentLine--${accentLine}-breakpoint--${breakpoint}`}
       >
-        <div
-          className={`content-card-header-avatar--${avatar}-badge--${badge}-accentLine--${accentLine}-breakpoint--${breakpoint}`}
-        >
-          {avatar === 'false' && (
-            <div className={`text-and-support-text-card-header`}>
-              <div className={`text-and-badge-card-header`}>
-                <span className={`text-card-header`}>Team members</span>
-                {badge === 'true' && (
-                  <Badges
-                    size={'sm'}
-                    icon={'false'}
-                    color={'gray'}
-                    outline={'false'}
-                    text={'10/20 seats'}
-                  />
-                )}
-              </div>
-              <span className={`support-text-card-header`}>
-                Manage your team members and their account permissions here.
-              </span>
-            </div>
-          )}
-          {avatar === 'true' && (
-            <div className='avatar-and-text-card-header'>
-              <Avatar
-                size={breakpoint === 'desktop' ? 'xl' : 'lg'}
-                placeholder={'false'}
-                text={'false'}
-                statusIcon={'false'}
-                state={'default'}
-              />
-              <div
-                className={`text-and-support-text-card-header-avatar--${avatar}`}
-              >
+        <div className={`container-content-card-header`}>
+          <div
+            className={`content-card-header-avatar--${avatar}-badge--${badge}-accentLine--${accentLine}-breakpoint--${breakpoint}`}
+          >
+            {avatar === 'false' && (
+              <div className={`text-and-support-text-card-header`}>
                 <div className={`text-and-badge-card-header`}>
                   <span className={`text-card-header`}>Team members</span>
                   {badge === 'true' && (
@@ -81,47 +53,77 @@ export const CardHeader = ({ avatar, badge, breakpoint, accentLine }) => {
                   Manage your team members and their account permissions here.
                 </span>
               </div>
-            </div>
-          )}
+            )}
+            {avatar === 'true' && (
+              <div className='avatar-and-text-card-header'>
+                <Avatar
+                  size={breakpoint === 'desktop' ? 'xl' : 'lg'}
+                  placeholder={'false'}
+                  text={'false'}
+                  statusIcon={'false'}
+                  state={'default'}
+                />
+                <div
+                  className={`text-and-support-text-card-header-avatar--${avatar}`}
+                >
+                  <div className={`text-and-badge-card-header`}>
+                    <span className={`text-card-header`}>Team members</span>
+                    {badge === 'true' && (
+                      <Badges
+                        size={'sm'}
+                        icon={'false'}
+                        color={'gray'}
+                        outline={'false'}
+                        text={'10/20 seats'}
+                      />
+                    )}
+                  </div>
+                  <span className={`support-text-card-header`}>
+                    Manage your team members and their account permissions here.
+                  </span>
+                </div>
+              </div>
+            )}
 
-          <div className={`action-page-header`}>
-            {breakpoint === 'desktop' &&
-              hierarchys.map(({ hierarchy, text }) => (
-                <Button
-                  size={'md'}
-                  hierarchy={hierarchy}
-                  icon={'default'}
-                  destructive={'false'}
-                  state={'default'}
-                  showIconLeading={'false'}
-                  showiconTrailing={'false'}
-                  text={text}
+            <div className={`action-page-header`}>
+              {breakpoint === 'desktop' &&
+                hierarchys.map(({ hierarchy, text }) => (
+                  <Button
+                    size={'md'}
+                    hierarchy={hierarchy}
+                    icon={'default'}
+                    destructive={'false'}
+                    state={'default'}
+                    showIconLeading={'false'}
+                    showiconTrailing={'false'}
+                    text={text}
+                  />
+                ))}
+              {breakpoint === 'mobile' &&
+                hierarchys.slice(2, 4).map(({ hierarchy, text }) => (
+                  <Button
+                    size={'md'}
+                    hierarchy={hierarchy}
+                    icon={'default'}
+                    destructive={'false'}
+                    state={'default'}
+                    showIconLeading={'false'}
+                    showiconTrailing={'false'}
+                    text={text}
+                  />
+                ))}
+            </div>
+
+            {(accentLine === 'false' ||
+              (accentLine === 'true' && breakpoint === 'mobile')) && (
+              <div className={`card-header-dropdown-breakpoint--${breakpoint}`}>
+                <Dropdown
+                  type={'icon'}
+                  open={'false'}
                 />
-              ))}
-            {breakpoint === 'mobile' &&
-              hierarchys.slice(2, 4).map(({ hierarchy, text }) => (
-                <Button
-                  size={'md'}
-                  hierarchy={hierarchy}
-                  icon={'default'}
-                  destructive={'false'}
-                  state={'default'}
-                  showIconLeading={'false'}
-                  showiconTrailing={'false'}
-                  text={text}
-                />
-              ))}
+              </div>
+            )}
           </div>
-
-          {(accentLine === 'false' ||
-            (accentLine === 'true' && breakpoint === 'mobile')) && (
-            <div className={`card-header-dropdown-breakpoint--${breakpoint}`}>
-              <Dropdown
-                type={'icon'}
-                open={'false'}
-              />
-            </div>
-          )}
         </div>
         <div className={`divider-page-header-breakpoint--${breakpoint}`} />
       </div>

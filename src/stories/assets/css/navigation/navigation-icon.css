@@ -1,0 +1,118 @@
+.bar-char-base-white {
+  content: url(../../icons/icon-navigation/bar-chart-base-white.svg);
+}
+
+.bar-char-primary-300 {
+  content: url(../../icons/icon-navigation/bar-chart-primary-300.svg);
+}
+
+.bar-char-primary-500 {
+  content: url(../../icons/icon-navigation/bar-chart-primary-500.svg);
+}
+
+.bar-char-gray-300 {
+  content: url(../../icons/icon-navigation/bar-chart-gray-300.svg);
+}
+.bar-char-gray-500 {
+  content: url(../../icons/icon-navigation/bar-chart-gray-500.svg);
+}
+
+.chevron-down-gray-500 {
+  content: url(../../icons/icon-navigation/chevron-down-gray-500.svg);
+}
+
+.chevron-down-primary-400 {
+  content: url(../../icons/icon-navigation/chevron-down-primary-400.svg);
+}
+
+.chevron-down-gray-300 {
+  content: url(../../icons/icon-navigation/chevron-down-gray-500.svg);
+}
+
+.chevron-down-primary-300 {
+  content: url(../../icons/icon-navigation/chevron-down-primary-400.svg);
+}
+
+.bell-md-gray-500 {
+  content: url(../../icons/icon-navigation/bell-gray-500.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.bell-lg-gray-500 {
+  content: url(../../icons/icon-navigation/bell-gray-500.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.bell-md-primary-700 {
+  content: url(../../icons/icon-navigation/bell-primary-700.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.bell-lg-primary-700 {
+  content: url(../../icons/icon-navigation/bell-primary-700.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.bell-md-gray-700 {
+  content: url(../../icons/icon-navigation/bell-gray-700.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.bell-lg-gray-700 {
+  content: url(../../icons/icon-navigation/bell-gray-700.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.bell-md-primary-300 {
+  content: url(../../icons/icon-navigation/bell-primary-300.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.bell-lg-primary-300 {
+  content: url(../../icons/icon-navigation/bell-primary-300.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.bell-md-gray-300 {
+  content: url(../../icons/icon-navigation/bell-gray-300.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.bell-lg-gray-300 {
+  content: url(../../icons/icon-navigation/bell-gray-300.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.bell-md-base-white {
+  content: url(../../icons/icon-navigation/bell-base-white.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.bell-lg-base-white {
+  content: url(../../icons/icon-navigation/bell-base-white.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.power-gray-500 {
+  content: url(../../icons/icon-navigation/power-gray-500.svg);
+}
+
+.power-gray-300 {
+  content: url(../../icons/icon-navigation/power-gray-300.svg);
+}
+
+.logo-dreamscape {
+  content: url(../../images/logos/logo-dreamscape.svg);
+}

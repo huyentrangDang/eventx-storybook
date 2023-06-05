@@ -40,7 +40,11 @@ const CompanyDropdowns = (args) => <CompanyDropdown {...args} />;
 export const company_dropdown = CompanyDropdowns.bind({});
 company_dropdown.args = {
   open: 'false',
+  textCompany: 'Crania',
+  subTextCompany: 'Organizer',
 };
 company_dropdown.argTypes = {
   type: { table: { disable: true } },
+  textCompany: { table: { disable: true } },
+  subTextCompany: { table: { disable: true } },
 };
