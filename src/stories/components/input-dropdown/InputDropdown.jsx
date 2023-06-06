@@ -89,12 +89,13 @@ export const InputDropdown = ({
     <>
       <div
         className={`input-dropdown-state--${state}`}
-        style={{ gap: hintText ? 8 : 0 }}
+        style={{ gap: hintText ? 8 : 0, width: '100%' }}
       >
         <div
           className={
             showLabel === 'true' ? `input-with-label` : `input-with-no-label`
           }
+          style={{ width: '100%' }}
         >
           <div className={`input-label`}>{label}</div>
           {type !== 'tags' && (

@@ -471,7 +471,8 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  width: 704px;
+  /* width: 704px; */
+  flex: 1;
 }
 
 .content-checkbox-group-item-size--md-type--iconSimple-breakpoint--desktop {
@@ -480,7 +481,8 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  width: 700px;
+  /* width: 700px; */
+  flex: 1;
 }
 
 .content-checkbox-group-item-size--sm-type--iconSimple-breakpoint--mobile {
@@ -566,19 +568,20 @@
 }
 
 .container-text-size--sm-breakpoint--desktop {
-  width: 593px;
+  /* width: 593px; */
+  flex: 1;
 }
 
 .container-text-size--sm-breakpoint--mobile {
-  width: 240px;
+  /* width: 240px; */
 }
 
 .container-text-size--md-breakpoint--mobile {
-  width: 223px;
+  /* width: 223px; */
 }
 
 .container-text-size--md-breakpoint--desktop {
-  width: 574px;
+  /* width: 574px; */
   gap: 2px;
   overflow: hidden;
 }
@@ -4017,6 +4020,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
+  flex: 1;
 }
 
 .content-checkbox-group-item-size--md-type--avatar-breakpoint--desktop {
@@ -4033,7 +4037,8 @@
   justify-content: center;
   align-items: flex-start;
   padding: 0px;
-  width: 601px;
+  /* width: 601px; */
+  flex: 1;
 }
 
 .text-and-support-text-size--md-type--avatar-breakpoint--desktop {
@@ -4043,7 +4048,8 @@
   align-items: flex-start;
   padding: 0px;
   gap: 2px;
-  width: 574px;
+  /* width: 574px; */
+  flex: 1;
 }
 
 .text-and-subText-size--sm-type--avatar {

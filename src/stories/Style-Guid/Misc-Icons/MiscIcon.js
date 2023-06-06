@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 import '../../assets/css/common.css';
+import '../../assets/css/icon.css';
 import '../../assets/css/misc-icon.css';
 import '../../assets/css/misc-icons/category-icons.css';
 import '../../assets/css/misc-icons/miscellaneous-icons.css';
+import '../../assets/css/misc-icons/feature-icon.css';
+
 export const MiscIcon = () => {
   return (
     <div>
@@ -160,5 +163,96 @@ export const iconDot = (size, icon) => {
   }
   if (icon) {
     return icon;
+  }
+};
+
+export const FeatureIcon = ({ size, color, theme, icon }) => {
+  return (
+    <>
+      {theme === 'glass' ? (
+        <>
+          <div
+            className={`feature-icon-size--${size}-color--${color}-theme--${theme}`}
+          >
+            {/* <div
+              className={`icon-glass-size--${size}-color--${color}-theme--${theme}`}
+            >
+              <icon
+                className={[
+                  `${featureIcon(icon)}`,
+                  `icon-feature-size--${size}`,
+                  `${featureColorIcon(theme, color)}`,
+                ].join(' ')}
+              />
+            </div>
+
+            <div
+              className={`icon-background-glass-size--${size}-color--${color}-theme--${theme}`}
+            /> */}
+          </div>
+        </>
+      ) : (
+        <div
+          className={`feature-icon-size--${size}-color--${color}-theme--${theme}`}
+        >
+          <icon
+            className={[
+              `${featureIcon(icon)}`,
+              `icon-feature-size--${size}`,
+              `${featureColorIcon(theme, color)}`,
+            ].join(' ')}
+          />
+        </div>
+      )}
+    </>
+  );
+};
+
+FeatureIcon.propTypes = {
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  color: PropTypes.oneOf(['primary', 'gray', 'error', 'warning', 'success']),
+  theme: PropTypes.oneOf([
+    'light-circle',
+    'light-circle-outline',
+    'dark-circle',
+    'light-square',
+    'mid-square',
+    'dark-square',
+    'glass',
+  ]),
+};
+
+export const featureIcon = (icon) => {
+  if (icon) {
+    return icon;
+  } else {
+    return 'icon-alert-circle';
+  }
+};
+
+export const featureColorIcon = (theme, color) => {
+  if (
+    theme === 'dark-circle' ||
+    theme === 'mid-square' ||
+    theme === 'dark-square' ||
+    theme === 'glass'
+  ) {
+    return 'icon-feature-color--base-white';
+  } else {
+    if (color === 'primary') {
+      return 'icon-feature-color--primary';
+    }
+    if (color === 'gray') {
+      return 'icon-feature-color--gray';
+    }
+    if (color === 'error') {
+      return 'icon-feature-color--error';
+    }
+    if (color === 'warning') {
+      return 'icon-feature-color--warning';
+    }
+    if (color === 'success') {
+      return 'icon-feature-color--success';
+    }
   }
 };

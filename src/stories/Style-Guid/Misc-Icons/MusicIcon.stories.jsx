@@ -1,5 +1,6 @@
 import {
   CategoryIcons,
+  FeatureIcon,
   MiscIcon,
   MiscellaneousCheckIcons,
   MiscellaneousCheckItemText,
@@ -14,9 +15,9 @@ export default {
   tags: ['autodocs'],
 };
 
-export const featureIcon = () => {
-  return MiscIcon();
-};
+// export const featureIcon = () => {
+//   return MiscIcon();
+// };
 
 export const categoryIcons = () => {
   return CategoryIcons();
@@ -47,6 +48,34 @@ miscellaneous_Dot_Icon.argTypes = {
     options: ['sm', 'md', 'lg'],
   },
   color: { table: { disable: true } },
+  breakpoint: { table: { disable: true } },
+  type: { table: { disable: true } },
+};
+
+const featureIcon = (args) => <FeatureIcon {...args} />;
+export const feature_Icon = featureIcon.bind({});
+feature_Icon.args = {
+  size: 'sm',
+  color: 'primary',
+  theme: 'light-circle',
+};
+feature_Icon.argTypes = {
+  color: {
+    control: 'radio',
+    options: ['primary', 'gray', 'error', 'warning', 'success'],
+  },
+  theme: {
+    control: 'radio',
+    options: [
+      'light-circle',
+      'light-circle-outline',
+      'dark-circle',
+      'light-square',
+      'mid-square',
+      'dark-square',
+      'glass',
+    ],
+  },
   breakpoint: { table: { disable: true } },
   type: { table: { disable: true } },
 };
