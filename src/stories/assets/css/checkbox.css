@@ -167,7 +167,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
-  width: 344px;
+  /* width: 344px; */
 }
 .checkbox-checked--false-indeterminate--false-size--sm-type--checkbox-text--true-state--hover {
   display: flex;

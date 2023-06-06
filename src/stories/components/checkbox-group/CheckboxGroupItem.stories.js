@@ -18,5 +18,10 @@ checkbox_group_item.args = {
   subText1: '$10/month',
   subText2:
     'Includes up to 10 users, 20GB individual data and access to all features.',
+  textButton: 'Change',
 };
-checkbox_group_item.argTypes = {};
+checkbox_group_item.argTypes = {
+  textButton: {
+    table: { disable: true },
+  },
+};

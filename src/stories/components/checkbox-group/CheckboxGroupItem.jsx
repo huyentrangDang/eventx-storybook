@@ -17,6 +17,9 @@ export const CheckboxGroupItem = ({
   text,
   subText1,
   subText2,
+  textButton,
+  iconAvatar,
+  iconCheck,
 }) => {
   return (
     <>
@@ -65,7 +68,7 @@ export const CheckboxGroupItem = ({
                   `button-checkbox-group-item-state--${state}`,
                 ].join(' ')}
               >
-                Change
+                {textButton}
               </button>
             )}
           </div>
@@ -224,7 +227,9 @@ export const CheckboxGroupItem = ({
           <div
             className={`content-checkbox-group-item-size--${size}-type--${type}-breakpoint--${breakpoint}`}
           >
-            <div className={`${iconAvatarPath(`${size}`)}`} />
+            <div
+              className={[`${iconAvatarPath(`${size}`)}`, iconAvatar].join(' ')}
+            />
             <div
               className={[
                 `text-and-support-text-size--${size}-type--${type}-breakpoint--${breakpoint}`,
@@ -269,13 +274,16 @@ export const CheckboxGroupItem = ({
                     `text-color-button-type--${type}-state--${state}-breakpoint--${breakpoint}`,
                   ].join(' ')}
                 >
-                  Change
+                  {textButton}
                 </span>
               </button>
             )}
           </div>
           <div
-            className={`${iconEndPath(`${size}`, `${state}`, `${selected}`)}`}
+            className={[
+              `${iconEndPath(`${size}`, `${state}`, `${selected}`)}`,
+              iconCheck,
+            ].join(' ')}
           />
         </div>
       )}
@@ -470,6 +478,7 @@ CheckboxGroupItem.propTypes = {
   text: PropTypes.string,
   subText1: PropTypes.string,
   subText2: PropTypes.string,
+  textButton: PropTypes.string,
 };
 
 CheckboxGroupItem.defaultProps = {};
