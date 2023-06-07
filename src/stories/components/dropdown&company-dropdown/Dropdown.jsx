@@ -7,7 +7,7 @@ import '../../assets/css/icon.css';
 import '../../assets/css/dropdown.css';
 import '../../assets/css/button.css';
 
-export const Dropdown = ({ type, open }) => {
+export const Dropdown = ({ type, open, icon }) => {
   const [openDropdown, setOpenDropdown] = React.useState(false);
 
   const onClick = () => {
@@ -83,9 +83,9 @@ export const Dropdown = ({ type, open }) => {
           >
             <div className={`text-button-sm-semibold`}>Account</div>
             {openDropdown ? (
-              <icon className={`icon-chevron-down`} />
+              <icon className={icon ? icon : `icon-chevron-down`} />
             ) : (
-              <icon className={`icon-chevron-up`} />
+              <icon className={icon ? icon : `icon-chevron-up`} />
             )}
           </button>
         )}
@@ -96,7 +96,7 @@ export const Dropdown = ({ type, open }) => {
             className={`button-dropdown-icon`}
           >
             <icon
-              className={`icon-dots-vertical`}
+              className={icon ? icon : `icon-dots-vertical`}
               // onClick={onClick}
             />
           </button>
@@ -108,7 +108,7 @@ export const Dropdown = ({ type, open }) => {
             className={`button-dropdown-icon`}
           >
             <icon
-              className={`icon-avatar-dropdown`}
+              className={icon ? icon : `icon-avatar-dropdown`}
               // onClick={onClick}
             />
           </button>

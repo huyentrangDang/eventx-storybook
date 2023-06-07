@@ -72,3 +72,8 @@
 .icon-cursor {
   content: url(../icons/icon-general/cursor.svg);
 }
+
+.icon-avatar-olivia-rhye-image-color {
+  content: url(../../assets/images/avatar/olivia-rhye-image-color.svg);
+  border-radius: 200px;
+}

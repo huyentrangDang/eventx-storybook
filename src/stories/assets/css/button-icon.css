@@ -3151,3 +3151,35 @@
 .icon-arrow-left-gray-600 {
   content: url(../icons/icon-arrow/arrow-left-gray-600.svg);
 }
+.icon-arrow-left-gray-700 {
+  content: url(../icons/icon-arrow/arrow-left-gray-700.svg);
+}
+.icon-arrow-right-gray-600 {
+  content: url(../icons/icon-arrow/arrow-right-gray-600.svg);
+}
+.icon-arrow-right-gray-700 {
+  content: url(../icons/icon-arrow/arrow-right-gray-700.svg);
+}
+
+.icon-arrow-down-gray-600 {
+  content: url(../icons/icon-arrow/arrow-down-gray600.svg);
+}
+.icon-arrow-down-gray-300 {
+  content: url(../icons/icon-arrow/arrow-down-gray300.svg);
+}
+.icon-arrow-down-gray-700 {
+  content: url(../icons/icon-arrow/arrow-down-gray700.svg);
+}
+.icon-arrow-down-error-500 {
+  content: url(../icons/icon-arrow/arrow-down-error500.svg);
+}
+
+.icon-arrow-up-gray-600 {
+  content: url(../icons/icon-arrow/arrow-up-gray600.svg);
+}
+.icon-arrow-up-gray-300 {
+  content: url(../icons/icon-arrow/arrow-up-gray300.svg);
+}
+.icon-arrow-up-gray-700 {
+  content: url(../icons/icon-arrow/arrow-up-gray700.svg);
+}

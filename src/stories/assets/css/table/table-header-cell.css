@@ -1,0 +1,21 @@
+.container-table-header-cell {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 12px;
+  border-bottom: 1px solid var(--gray-200);
+}
+.table-header-cell-text--false {
+  width: 68px;
+  height: 44px;
+}
+.table-header-cell-text--true-checkbox--true {
+  width: 155px;
+  height: 44px;
+}
+.table-header-cell-text--true-checkbox--false {
+  width: 103px;
+  height: 44px;
+}
