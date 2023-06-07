@@ -1879,7 +1879,8 @@
   color: var(--gray-300);
   padding: 0px;
   gap: 8px;
-  width: 130px;
+  /* width: 130px; */
+  width: fit-content;
   height: 20px;
 }
 .button-size--lg-hierarchy--linkGray-destructive--false-state--disabled {
@@ -1939,7 +1940,8 @@
   color: var(--primary-700);
   padding: 0px;
   gap: 8px;
-  width: 130px;
+  /* width: 130px; */
+  width: fit-content;
   height: 20px;
 }
 .button-size--lg-hierarchy--linkColor-destructive--false-state--default {
@@ -2120,7 +2122,8 @@
   color: var(--gray-300);
   padding: 0px;
   gap: 8px;
-  width: 130px;
+  /* width: 130px; */
+  width: fit-content;
   height: 20px;
 }
 .button-size--lg-hierarchy--linkColor-destructive--false-state--disabled {

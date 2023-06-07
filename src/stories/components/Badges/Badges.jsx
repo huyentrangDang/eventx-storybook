@@ -5,6 +5,7 @@ import '../../assets/css/badge-icon.css';
 import '../../assets/css/typography.css';
 import '../../assets/css/common.css';
 import '../../assets/css/icon.css';
+import '../../assets/css/button-icon.css';
 
 export const Badges = ({
   outline,
@@ -23,10 +24,33 @@ export const Badges = ({
   iconArrowUpLeading,
   iconArrowUpTrailing,
   iconOnly,
+  iconLeading,
+  iconTrailing,
 }) => {
   return (
     <>
       <div>
+        {(icon === 'iconLeading' || icon === 'iconTrailing') && (
+          <button
+            type='button'
+            className={[
+              `badge-size--${size}-color--${color}-outline--${outline}`,
+            ].join(' ')}
+          >
+            <div
+              className={[`${iconPath(`${color}`, `${iconLeading}`)}`].join(
+                ' '
+              )}
+            />
+            <div className={`text-badge-${size}-medium`}> {text}</div>
+            <div
+              className={[`${iconPath(`${color}`, `${iconTrailing}`)}`].join(
+                ' '
+              )}
+            />
+          </button>
+        )}
+
         {icon === 'false' && (
           <button
             type='button'
@@ -281,6 +305,8 @@ Badges.propTypes = {
     'arrowRight',
     'arrowUp',
     'only',
+    'iconLeading',
+    'iconTrailing',
   ]),
   text: PropTypes.string,
   iconAvatar: PropTypes.string,
@@ -318,7 +344,12 @@ export const iconPath = (color, icon) => {
   }
   if (icon === 'only') {
     return iconOnlyPath(color);
-  } else return icon;
+  }
+  if (icon === 'false') {
+    return;
+  } else {
+    return icon;
+  }
 };
 
 export const iconDotPath = (color, icon) => {
@@ -480,7 +511,8 @@ export const iconArrowUpPath = (color, icon) => {
   }
   if (color === 'rose') {
     return 'arrow_up_rose';
-  } else {
+  }
+  if (color === 'orange') {
     return 'arrow_up_orange';
   }
 };

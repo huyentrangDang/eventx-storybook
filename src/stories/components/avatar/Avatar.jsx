@@ -5,7 +5,14 @@ import '../../assets/css/checkbox-icon.css';
 import '../../assets/css/avatar-icon.css';
 import '../../assets/css/avatar.scss';
 
-export const Avatar = ({ statusIcon, state, size, placeholder, text }) => {
+export const Avatar = ({
+  statusIcon,
+  state,
+  size,
+  placeholder,
+  text,
+  iconAvatar,
+}) => {
   return (
     <>
       {statusIcon === 'false' &&
@@ -15,6 +22,7 @@ export const Avatar = ({ statusIcon, state, size, placeholder, text }) => {
             className={[
               `avatar-placeholder--${placeholder}-text--${text} size--${size} state--${state}`,
               `${iconPath(statusIcon, state, placeholder)}`,
+              iconAvatar,
             ].join(' ')}
           ></div>
         )}
@@ -27,6 +35,7 @@ export const Avatar = ({ statusIcon, state, size, placeholder, text }) => {
               `avatar-placeholder--${placeholder}-text--${text} statusIcon--${statusIcon}`,
               `size--${size} state--${state}`,
               `${iconPath(statusIcon, state, placeholder)}`,
+              iconAvatar,
             ].join(' ')}
           >
             {statusIcon === 'onlineIndicator' && (
@@ -61,6 +70,7 @@ export const Avatar = ({ statusIcon, state, size, placeholder, text }) => {
             `size--${size}`,
             `avatar-placeholder--${placeholder}-state--${state}`,
             `${iconPath(statusIcon, placeholder, placeholder)}`,
+            iconAvatar,
           ].join(' ')}
         ></div>
       )}
@@ -72,6 +82,7 @@ export const Avatar = ({ statusIcon, state, size, placeholder, text }) => {
             `size--${size}`,
             `avatar-placeholder--${placeholder}-state--${state}`,
             `${iconPath(statusIcon, placeholder, placeholder)}`,
+            iconAvatar,
           ].join(' ')}
         >
           {statusIcon === 'onlineIndicator' && (
@@ -157,11 +168,16 @@ Avatar.propTypes = {
   text: PropTypes.oneOf(['true', 'false']),
 };
 
-export const iconPath = (statusIcon, state, placeholder) => {
+export const iconPath = (statusIcon, state, placeholder, iconAvatar) => {
+  // if (iconAvatar) {
+  //   return iconAvatar;
+  // } else {
   if (placeholder === 'true') {
     return 'bg-avatar-user-sm';
   }
   if (placeholder === 'false') {
     return 'bg-avatar-sm-status-false';
   }
+  // return iconAvatar;
+  // }
 };

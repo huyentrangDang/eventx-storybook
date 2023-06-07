@@ -1,6 +1,6 @@
 .text-sm-medium {
   font-style: normal;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -8,7 +8,7 @@
 
 .text-md-regular {
   font-style: normal;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -16,7 +16,36 @@
 
 .text-sm-regular {
   font-style: normal;
-  font-family: 'Lato';
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-lg-medium {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.text-sm-semibold {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-xs-medium {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+.text-sm-regular {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

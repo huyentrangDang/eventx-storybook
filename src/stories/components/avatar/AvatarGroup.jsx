@@ -5,7 +5,7 @@ import '../../assets/css/checkbox-icon.css';
 import '../../assets/css/avatar-icon.css';
 import '../../assets/css/avatar-group.css';
 
-export const AvatarGroup = ({ size }) => {
+export const AvatarGroup = ({ size, moreUser, addMore, arrNameAvatar }) => {
   const nameAvatars = [
     'first',
     'second',
@@ -22,15 +22,26 @@ export const AvatarGroup = ({ size }) => {
     <>
       <div className={`avatar-group`}>
         <div className={`container-avatar-group`}>
-          {nameAvatars.map((name, index) => (
-            <div
-              key={index}
-              className={[
-                `icon-avatar-${name}`,
-                `avatar-group-size--${size}`,
-              ].join(' ')}
-            />
-          ))}
+          {arrNameAvatar
+            ? arrNameAvatar?.map((name, index) => (
+                <div
+                  key={index}
+                  className={[
+                    `icon-avatar-${name}`,
+                    `avatar-group-size--${size}`,
+                    name,
+                  ].join(' ')}
+                />
+              ))
+            : nameAvatars.map((name, index) => (
+                <div
+                  key={index}
+                  className={[
+                    `icon-avatar-${name}`,
+                    `avatar-group-size--${size}`,
+                  ].join(' ')}
+                />
+              ))}
           <div
             className={[`avatar-group-add`, `avatar-group-size--${size}`].join(
               ' '
@@ -39,14 +50,16 @@ export const AvatarGroup = ({ size }) => {
             <span className={`text-avatar-group-add-size--${size}`}>+5</span>
           </div>
         </div>
-        <div className={[`button-avatar-group-size--${size}`].join(' ')}>
-          <div
-            className={[
-              `icon-avatar-add-button-size--${size}`,
-              `button-avatar-group-size--${size}`,
-            ].join(' ')}
-          />
-        </div>
+        {addMore === 'true' && (
+          <div className={[`button-avatar-group-size--${size}`].join(' ')}>
+            <div
+              className={[
+                `icon-avatar-add-button-size--${size}`,
+                `button-avatar-group-size--${size}`,
+              ].join(' ')}
+            />
+          </div>
+        )}
       </div>
     </>
   );
