@@ -1,0 +1,67 @@
+.container-loading-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.content-loading-indicator-size--xl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+.content-loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+.content-content-loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+}
+
+.dot_circle_lg {
+  content: url(../icons/icon-loading-indicators/icon-dot-circle-size-lg.svg);
+}
+.dot_circle_xl {
+  content: url(../icons/icon-loading-indicators/icon-dot-circle-size-xl.svg);
+}
+.dot_circle_sm {
+  content: url(../icons/icon-loading-indicators/icon-dot-circle-size-sm.svg);
+}
+.dot_circle_md {
+  content: url(../icons/icon-loading-indicators/icon-dot-circle-size-md.svg);
+}
+
+.line_spinner_lg {
+  content: url(../icons/icon-loading-indicators/icon-line-spinner-size-lg.svg);
+}
+.line_spinner_xl {
+  content: url(../icons/icon-loading-indicators/icon-line-spinner-size-xl.svg);
+}
+.line_spinner_sm {
+  content: url(../icons/icon-loading-indicators/icon-line-spinner-size-sm.svg);
+}
+.line_spinner_md {
+  content: url(../icons/icon-loading-indicators/icon-line-spinner-size-md.svg);
+}
+
+.line_simple_lg {
+  content: url(../icons/icon-loading-indicators/icon-line-simple-size-lg.svg);
+}
+.line_simple_xl {
+  content: url(../icons/icon-loading-indicators/icon-line-simple-size-xl.svg);
+}
+.line_simple_sm {
+  content: url(../icons/icon-loading-indicators/icon-line-simple-size-sm.svg);
+}
+.line_simple_md {
+  content: url(../icons/icon-loading-indicators/icon-line-simple-size-md.svg);
+}
