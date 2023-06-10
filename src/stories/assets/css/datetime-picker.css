@@ -1,0 +1,301 @@
+.calendar-cell-activeDot--false-type--in-active-position--leading-trailing-state--default {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--in-active-position--leading-trailing-state--hover {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-50);
+  border-radius: 20px;
+  color: var(--gray-700);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--in-active-position--leading-trailing-state--disabled {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--in-active-position--middle-state--default {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--in-active-position--middle-state--hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--gray-50);
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-cell-activeDot--false-type--in-active-position--middle-state--disabled {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--active-position--leading-trailing-state--default {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--base-white);
+  background: var(--primary-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--active-position--leading-trailing-state--hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--base-white);
+  background: var(--primary-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-cell-activeDot--false-type--active-position--leading-trailing-state--disabled {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-500);
+  background: var(--gray-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--active-position--middle-state--default {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-50);
+  position: relative;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--active-position--middle-state--hover {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-100);
+  position: relative;
+  color: var(--gray-700);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--active-position--middle-state--disabled {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-50);
+  position: relative;
+  color: var(--gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--today-date-position--leading-trailing-state--default {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-100);
+  border-radius: 20px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-cell-activeDot--false-type--today-date-position--leading-trailing-state--hover {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-50);
+  border-radius: 20px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-cell-activeDot--false-type--today-date-position--leading-trailing-state--disabled {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-cell-activeDot--true-type--in-active-position--leading-trailing-state--default {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.connection-calendar-cell {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  left: -20px;
+  top: 0px;
+  /* background: var(--gray-50); */
+  background-image: url(../../assets/icons/icon-general/connection-calendar-cell.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-cursor-hand {
+  content: url(../../assets/icons/icon-general/cursor-hand.svg);
+}
+
+.icon-connection-calendar-cell {
+  content: url(../../assets/icons/icon-general/connection-calendar-cell.svg);
+}
+
+.cursor-calendar-cell {
+  position: absolute;
+  left: 60%;
+  right: -10%;
+  top: 50%;
+  bottom: 0%;
+  z-index: 1;
+}
+
+.dot-calendar-cell-type--in-active-position--leading-trailing-state--default,
+.dot-calendar-cell-type--in-active-position--middle-state--default,
+.dot-calendar-cell-type--in-active-position--leading-trailing-state--hover,
+.dot-calendar-cell-type--in-active-position--middle-state--hover,
+.dot-calendar-cell-type--active-position--middle-state--default,
+.dot-calendar-cell-type--active-position--middle-state--hover,
+.dot-calendar-cell-type--today-date-position--leading-trailing-state--default,
+.dot-calendar-cell-type--today-date-position--leading-trailing-state--hover {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: calc(50% - 5px / 2);
+  bottom: 4px;
+  background: var(--primary-600);
+}
+
+.dot-calendar-cell-type--active-position--leading-trailing-state--default,
+.dot-calendar-cell-type--active-position--leading-trailing-state--hover {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: calc(50% - 5px / 2);
+  bottom: 4px;
+  background: var(--base-white);
+}
+
+.dot-calendar-cell-type--in-active-position--leading-trailing-state--disabled,
+.dot-calendar-cell-type--in-active-position--middle-state--disabled,
+.dot-calendar-cell-type--active-position--leading-trailing-state--disabled,
+.dot-calendar-cell-type--active-position--middle-state--disabled,
+.dot-calendar-cell-type--in-active-position--leading-trailing-state--disabled {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: calc(50% - 5px / 2);
+  bottom: 4px;
+  background: var(--gray-400);
+}
+
+.datepicker .MuiPickersLayout-root {
+  box-sizing: border-box;
+  padding: 0px;
+  /* width: 848px;
+  height: 468px; */
+  background: var(--base-white);
+  border: 1px solid var(--gray-100);
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  border-radius: 8px;
+}
+
+.datepicker .MuiPickersLayout-shortcuts {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 4px;
+
+  /* width: 192px; */
+  /* height: 468px; */
+  border: 0;
+  border-right: 1px solid var(--gray-200);
+  /* overflow: hidden; */
+}
+
+.datepicker .MuiPickersLayout-root ul {
+  padding: 0;
+}
+
+.datepicker .MuiPickersLayout-root ul li {
+  padding: 10px 16px;
+  height: 40px;
+}
+
+.datepicker .MuiPickersLayout-root ul li .MuiButtonBase-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 10px 16px; */
+
+  /* width: 160px; */
+  /* height: 40px; */
+  background: var(--base-white);
+  border-radius: 6px;
+}
+
+.datepicker .MuiPickersLayout-root ul li .MuiButtonBase-root .MuiChip-label {
+  padding: 0;
+}
+
+.datepicker .MuiPickersLayout-root .MuiPickersLayout-toolbar {
+  display: none;
+}
