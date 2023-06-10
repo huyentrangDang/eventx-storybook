@@ -21,6 +21,7 @@ export const Button = ({
   iconLeading,
   iconTrailing,
   widthButton,
+  color,
 }) => {
   return (
     <>
@@ -88,7 +89,12 @@ export const Button = ({
                   ].join(' ')}
                 ></div>
               )}
-              <div className={`text-button-${size}-semibold`}> {text}</div>
+              <div
+                className={[`text-button-${size}-semibold`, color].join(' ')}
+              >
+                {' '}
+                {text}
+              </div>
               {showiconTrailing === 'true' && (
                 <div
                   class={[

@@ -1691,7 +1691,7 @@
   color: var(--gray-600);
   padding: 0px;
   gap: 8px;
-  width: 130px;
+  width: fit-content;
   height: 20px;
 }
 .button-size--md-hierarchy--linkGray-destructive--false-state--default {
@@ -1933,8 +1933,9 @@
   color: var(--primary-700);
   padding: 0px;
   gap: 8px;
-  width: 130px;
+  width: fit-content;
   height: 20px;
+  white-space: pre;
 }
 .button-size--md-hierarchy--linkColor-destructive--false-state--default {
   box-sizing: border-box;
