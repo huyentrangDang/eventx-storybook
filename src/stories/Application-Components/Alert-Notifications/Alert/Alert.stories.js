@@ -1,7 +1,7 @@
 import { Alert } from './Alert';
 
 export default {
-  title: 'Application Components/Alerts & notifications/ Alert',
+  title: 'Application Components/Alerts & Notifications/ Alert',
   component: Alert,
   tags: ['autodocs'],
 };
