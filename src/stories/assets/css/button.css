@@ -4089,7 +4089,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: var(--base-white);
+  background: none;
   border: none;
   color: var(--error-700);
   padding: 8px 14px;

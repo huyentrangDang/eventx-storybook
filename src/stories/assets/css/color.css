@@ -527,6 +527,9 @@
 .color-primary-100 {
   color: var(--primary-100);
 }
+.color-primary-600 {
+  color: var(--primary-600);
+}
 .color-primary-700 {
   color: var(--primary-700);
 }
