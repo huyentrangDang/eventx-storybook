@@ -1,0 +1,236 @@
+/* File Upload Item Base */
+
+.file-upload-item-base-state--in-progress {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 4px;
+  isolation: isolate;
+  /* height: 96px; */
+  background: var(--base-white);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.file-upload-item-base-state--complete {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 4px;
+  isolation: isolate;
+  /* height: 96px; */
+  background: var(--base-white);
+  border: 1px solid var(--primary-600);
+  border-radius: 12px;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.file-upload-item-base-state--error {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 4px;
+  isolation: isolate;
+  /* height: 96px; */
+  background: var(--error-25);
+  border: 1px solid var(--error-300);
+  border-radius: 12px;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.body-content-file-upload-item-base {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 100%;
+}
+
+.content-file-upload-item-base {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  flex: 1;
+}
+
+.content-file-upload-item-base > .container-progress {
+  height: auto;
+  width: 100%;
+}
+
+.content-file-upload-item-base
+  > .container-progress
+  > .progress-indicator
+  > .progress-bar {
+  width: 100%;
+}
+
+.text-and-support-text-file-upload-image-base-icon--document {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.text-and-support-text-file-upload-image-base-icon--image,
+.text-and-support-text-file-upload-image-base-icon--video,
+.text-and-support-text-file-upload-image-base-icon--misc,
+.text-and-support-text-file-upload-image-base-icon--false,
+.text-and-support-text-file-upload-image-base-icon--picture {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 32px 0px 0px;
+}
+
+.button-file-upload-item {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.actions-upload-file-item-base {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+
+.actions-upload-file-item-base > div > div {
+  padding: 0;
+  box-shadow: none;
+}
+
+/* File Upload Base */
+
+.file-upload-base-state--default {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 4px;
+  /* width: 512px;
+  height: 126px; */
+  background: var(--base-white);
+  border: 1px dashed var(--gray-200);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.file-upload-base-state--hover {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 4px;
+  /* width: 512px;
+  height: 126px; */
+  background: var(--primary-25);
+  border: 1px dashed var(--primary-300);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.file-upload-base-state--disabled {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 4px;
+  /* width: 512px;
+  height: 126px; */
+  background: var(--gray-50);
+  border: 1px dashed var(--gray-200);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.content-file-upload-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.text-and-support-text-file-upload-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 464px;
+}
+
+.action-file-upload-base {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 100%;
+}
+
+.action-file-upload-base > div {
+  width: auto !important;
+}
+
+.text-file-upload-base {
+  /* width: 50%; */
+  word-break: break-word;
+}
+
+.support-text-file-upload-base {
+  width: 100%;
+  word-break: break-word;
+  text-align: center;
+}
+
+/* File Upload */
+
+.file-upload-breakpoint--desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.file-upload-breakpoint--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 343px;
+}
+
+.file-queue-in-file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 100%;
+}
