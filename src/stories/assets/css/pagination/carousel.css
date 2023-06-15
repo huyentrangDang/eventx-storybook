@@ -1,0 +1,171 @@
+.carouser-arrow-size--md {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 8px; */
+  gap: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+.carouser-arrow-size--lg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  gap: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+}
+.carouser-arrow-color--primary-light-bg {
+  background: var(--primary-700);
+}
+.carouser-arrow-color--primary-dark-bg {
+  background: var(--primary-50);
+}
+.carouser-arrow-color--gray-dark-bg {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+}
+.carouser-arrow-color--gray-light-bg {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(4px);
+}
+
+.chevron_left_base_white_lg {
+  content: url(../../icons/icon-carousel-arrow/chevron-left-base-white-lg.svg);
+}
+.chevron_left_base_white_md {
+  content: url(../../icons/icon-carousel-arrow/chevron-left-base-white-md.svg);
+}
+.chevron_left_gray700_lg {
+  content: url(../../icons/icon-carousel-arrow/chevron-left-gray700-lg.svg);
+}
+.chevron_left_gray700_md {
+  content: url(../../icons/icon-carousel-arrow/chevron-left-gray700-md.svg);
+}
+.chevron_left_primary700_lg {
+  content: url(../../icons/icon-carousel-arrow/chevron-left-primary700-lg.svg);
+}
+.chevron_left_primary700_md {
+  content: url(../../icons/icon-carousel-arrow/chevron-left-primary700-md.svg);
+}
+
+.chevron_right_base_white_lg {
+  content: url(../../icons/icon-carousel-arrow/chevron-right-base-white-lg.svg);
+}
+.chevron_right_base_white_md {
+  content: url(../../icons/icon-carousel-arrow/chevron-right-base-white-md.svg);
+}
+.chevron_right_gray700_lg {
+  content: url(../../icons/icon-carousel-arrow/chevron-right-gray700-lg.svg);
+}
+.chevron_right_gray700_md {
+  content: url(../../icons/icon-carousel-arrow/chevron-right-gray700-md.svg);
+}
+.chevron_right_primary700_lg {
+  content: url(../../icons/icon-carousel-arrow/chevron-right-primary700-lg.svg);
+}
+.chevron_right_primary700_md {
+  content: url(../../icons/icon-carousel-arrow/chevron-right-primary700-md.svg);
+}
+
+/* Pagination-dot-group */
+
+.pagination-dot-group-size--md-style--dot-framed--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.pagination-dot-group-size--lg-style--dot-framed--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.pagination-dot-group-size--md-style--dot-framed--true {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 12px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.pagination-dot-group-size--lg-style--dot-framed--true {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  border-radius: 17px;
+  width: fit-content;
+}
+
+.pagination-dot-group-color--primary-light-framed--true {
+  background: var(--primary-700);
+}
+.pagination-dot-group-color--primary-dark-framed--true {
+  background: var(--primary-50);
+}
+.pagination-dot-group-color--gray-light-framed--true {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+}
+.pagination-dot-group-color--gray-dark-framed--true {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(4px);
+}
+
+.pagination-dot-group-size--md-style--line-framed--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.pagination-dot-group-size--lg-style--line-framed--false {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.pagination-dot-group-size--md-style--line-framed--true {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 11px;
+  width: fit-content;
+}
+
+.pagination-dot-group-size--lg-style--line-framed--true {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 16px;
+  width: fit-content;
+}

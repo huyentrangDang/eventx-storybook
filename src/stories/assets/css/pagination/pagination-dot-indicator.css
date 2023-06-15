@@ -1,0 +1,48 @@
+.pagination-dot-indicator-style--dot--size--md {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+.pagination-dot-indicator-style--dot--size--lg {
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+}
+
+.pagination-dot-indicator-style--line--size--md {
+  width: 40px;
+  height: 6px;
+  border-radius: 3px;
+}
+.pagination-dot-indicator-style--line--size--lg {
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.pagination-dot-indicator-current--false--color--primary-dark {
+  background: var(--primary-500);
+}
+.pagination-dot-indicator-current--false--color--primary-light {
+  background: var(--gray-100);
+  mix-blend-mode: multiply;
+}
+.pagination-dot-indicator-current--false--color--gray-light {
+  background: var(--gray-300);
+}
+.pagination-dot-indicator-current--false--color--gray-dark {
+  background: var(--gray-500);
+}
+
+.pagination-dot-indicator-current--true--color--primary-dark {
+  background: var(--base-white);
+}
+.pagination-dot-indicator-current--true--color--primary-light {
+  background: var(--primary-700);
+}
+.pagination-dot-indicator-current--true--color--gray-light {
+  background: var(--gray-900);
+}
+.pagination-dot-indicator-current--true--color--gray-dark {
+  background: var(--base-white);
+}
