@@ -473,7 +473,7 @@
 }
 
 .input-dropdown-text-state--default {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -482,7 +482,7 @@
 }
 
 .input-dropdown-support-text-state--default {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -491,7 +491,7 @@
 }
 
 .input-dropdown-text-state--hover {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -500,7 +500,7 @@
 }
 
 .input-dropdown-support-text-state--hover {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -509,7 +509,7 @@
 }
 
 .input-dropdown-text-state--focus {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -518,7 +518,7 @@
 }
 
 .input-dropdown-support-text-state--focus {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -527,7 +527,7 @@
 }
 
 .input-dropdown-text-state--disabled {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -536,7 +536,7 @@
 }
 
 .input-dropdown-support-text-state--disabled {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -561,7 +561,7 @@
 }
 
 .text-type--company-state--default {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -570,7 +570,7 @@
 }
 
 .text-type--company-state--hover {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -579,7 +579,7 @@
 }
 
 .text-type--company-state--focus {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -588,7 +588,7 @@
 }
 
 .text-type--company-state--disabled {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -597,7 +597,7 @@
 }
 
 .support-text-type--company-state--default {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -606,7 +606,7 @@
 }
 
 .support-text-type--company-state--hover {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -615,7 +615,7 @@
 }
 
 .support-text-type--company-state--focus {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -624,7 +624,7 @@
 }
 
 .support-text-type--company-state--disabled {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -682,7 +682,7 @@
 
 .text-button-input-md-semibold {
   font-style: normal;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -753,7 +753,7 @@
 }
 
 .input-label {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1319,17 +1319,17 @@
   width: 264px;
 }
 
-.text-md-regular {
+/* .text-md-regular {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--gray-500);
-}
+} */
 
 .hint-text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1338,7 +1338,7 @@
 }
 
 .text-input-md-medium {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1346,7 +1346,7 @@
 }
 
 .text-input-md-regular {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1615,15 +1615,15 @@ ul li {
   cursor: pointer;
 }
 
-input[type='text']:focus + ul {
+input[type="text"]:focus + ul {
   display: block;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #999;
 }
 
-input[type='text']:focus::placeholder {
+input[type="text"]:focus::placeholder {
   color: transparent;
 }
 
@@ -1659,7 +1659,7 @@ input[type='text']:focus::placeholder {
 }
 
 .input-tag-text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
