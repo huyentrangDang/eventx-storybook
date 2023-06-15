@@ -1,0 +1,52 @@
+.pagination-number-base-shape--circle-state--focused {
+  background: #f9fafb;
+  box-shadow: 0px 0px 0px 4px var(--gray-100);
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.pagination-number-base-shape--square-state--focused {
+  background: var(--gray-50);
+  box-shadow: 0px 0px 0px 4px var(--gray-100);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+.pagination-number-base-shape--circle-state--hover-active {
+  background: var(--gray-50);
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.pagination-number-base-shape--square-state--hover-active {
+  background: var(--gray-50);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+.pagination-number-base-shape--circle-state--default {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.pagination-number-base-shape--square-state--default {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.content-pagination-number-base-shape--circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 20px;
+}
+.content-pagination-number-base-shape--square {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+}
