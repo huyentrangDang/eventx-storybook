@@ -21,6 +21,7 @@ export const Button = ({
   iconLeading,
   iconTrailing,
   widthButton,
+  colorIcon,
 }) => {
   return (
     <>
@@ -124,7 +125,9 @@ export const Button = ({
                 `${state}`,
                 `${destructive}`
               )}`,
+              iconTrailing ? `container-icon-size--${size}` : '',
             ].join(' ')}
+            style={{ color: colorIcon }}
           ></div>
         </button>
       )}

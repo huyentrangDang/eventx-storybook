@@ -1,0 +1,12 @@
+.file-upload-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.file-type--picture-state--default {
+  content: url(../icons/icon-file-upload/file-type--picture-state--default.svg);
+}
+
+.file-type--picture-state--error {
+  content: url(../icons/icon-file-upload/file-type--picture-state--error.svg);
+}

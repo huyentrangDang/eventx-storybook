@@ -171,6 +171,7 @@ export const InputField = ({
                     `container-textfield-default`,
                     `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
                   ].join(' ')}
+                  value={text}
                 />
               )}
 
@@ -206,6 +207,7 @@ export const InputField = ({
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
                       `content-text-input-state--${state}`,
                     ].join(' ')}
+                    value={text}
                   />
                 </>
               )}
@@ -248,6 +250,7 @@ export const InputField = ({
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-destructive--${destructive}-state--${state}`,
                     ].join(' ')}
+                    value={text}
                   />
                 </>
               )}
@@ -278,6 +281,7 @@ export const InputField = ({
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
                     ].join(' ')}
+                    value={text}
                   />
                   <Select
                     value={country}
@@ -322,6 +326,7 @@ export const InputField = ({
                       `text-input-dropdown`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
                     ].join(' ')}
+                    value={text}
                   />
                 </>
               )}
@@ -358,6 +363,7 @@ export const InputField = ({
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
                       `content-text-input-state--${state}`,
                     ].join(' ')}
+                    value={text}
                   />
                 </>
               )}
@@ -419,6 +425,7 @@ export const InputField = ({
                         <input
                           {...getInputProps()}
                           placeholder='olivia@untitledui.com'
+                          value={text}
                         />
                       </div>
                       {showHelpIcon && (
@@ -468,6 +475,7 @@ export const InputField = ({
                       `text-input-adornment`,
                       `textfield-input-size--${size}-type--${type}-destructive--${destructive}-state--${state}`,
                     ].join(' ')}
+                    value={text}
                   />
                   <button className={`button-end-adornment-size--${size}`}>
                     <icon className={`icon-copy`} />
