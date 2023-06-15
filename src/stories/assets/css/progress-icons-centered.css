@@ -1,0 +1,99 @@
+.container-progress-icon-centered-theme--light-breakpoint--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.container-progress-icon-centered-theme--light-breakpoint--desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 144px;
+}
+.content-progress-icon-centered-breakpoint--desktop {
+  /* width: 100%; */
+  display: flex;
+  gap: 50px;
+  width: fit-content;
+  position: relative;
+}
+.lines-progress-icon-centered {
+  position: absolute;
+  height: 2px;
+  /* width: 100%; */
+}
+.line-progress-icon-centered-gray200 {
+  background: var(--gray-200);
+  height: 2px;
+}
+.line-progress-icon-centered-primary600 {
+  background: var(--primary-600);
+  height: 2px;
+}
+
+.connector-step-base > div > .connector-wrap-step-base > span:last-child {
+  /* display: none; */
+}
+
+.lines-progress-center-size--sm {
+  position: absolute;
+  height: 2px;
+  /* left: 160px;
+  right: 160px; */
+  top: 11px;
+  width: 100%;
+}
+
+.lines-progress-center-size--md {
+  position: absolute;
+  height: 2px;
+  top: 15px;
+  width: 100%;
+}
+
+.lines-progress-center-size--lg {
+  position: absolute;
+  height: 2px;
+  top: 19px;
+  width: 100%;
+}
+
+.line-first-progress-center-step--3 {
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  background: var(--gray-200);
+  width: 36%;
+}
+
+.line-end-progress-center-step--3 {
+  position: absolute;
+  height: 2px;
+  right: 50%;
+  background: var(--primary-600);
+  width: 36%;
+}
+
+.line-first-progress-center-step--4 {
+  position: absolute;
+  height: 2px;
+  left: 10%;
+  background: var(--primary-600);
+  width: 26%;
+}
+
+.line-center-progress-center-step--4 {
+  position: absolute;
+  height: 2px;
+  left: 36%;
+  background: var(--gray-200);
+  width: 26%;
+}
+
+.line-end-progress-center-step--4 {
+  position: absolute;
+  height: 2px;
+  right: 10%;
+  background: var(--gray-200);
+  width: 26%;
+}
