@@ -11,8 +11,8 @@ export default {
 export const Datetime_picker_menu = {
   args: {
     type: 'pre-set-ranges',
-    actions: 'true',
-    timePicker: 'false',
+    actions: 'false',
+    timePicker: 'true',
     breakpoint: 'desktop',
   },
 };
