@@ -1,94 +1,200 @@
 import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import '../../../assets/css/text.css';
 import '../../../assets/css/color.css';
 import '../../../assets/css/icon.css';
 import '../../../assets/css/chart.css';
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
-import HighchartsMore from 'highcharts/highcharts-more';
+import { Radar } from '@ant-design/plots';
 
-HighchartsMore(Highcharts);
+export const RadarChart = ({ legend, arrRadarChart }) => {
+  const [data, setData] = useState([]);
 
-export const RadarChart = ({ legend, axisLabels, chartStyle, breakpoint }) => {
-  const options = {
-    chart: {
-      polar: true,
-      type: 'area',
+  useEffect(() => {
+    asyncFetch();
+  }, []);
+
+  const mockItem = [
+    {
+      item: 'Mon',
+      user: 'Serial 1',
+      score: 800,
     },
-    title: {
-      text: '',
-      x: -80,
+    {
+      item: 'Mon',
+      user: 'Serial 2',
+      score: 600,
     },
-    pane: {
-      size: '80%',
+    {
+      item: 'Mon',
+      user: 'Serial 3',
+      score: 400,
+    },
+    {
+      item: 'Tue',
+      user: 'Serial 1',
+      score: 600,
+    },
+    {
+      item: 'Tue',
+      user: 'Serial 2',
+      score: 800,
+    },
+    {
+      item: 'Tue',
+      user: 'Serial 3',
+      score: 1000,
+    },
+    {
+      item: 'Wed',
+      user: 'Serial 1',
+      score: 600,
+    },
+    {
+      item: 'Wed',
+      user: 'Serial 2',
+      score: 400,
+    },
+    {
+      item: 'Wed',
+      user: 'Serial 3',
+      score: 200,
+    },
+    {
+      item: 'Thu',
+      user: 'Serial 1',
+      score: 200,
+    },
+    {
+      item: 'Thu',
+      user: 'Serial 2',
+      score: 800,
+    },
+    {
+      item: 'Thu',
+      user: 'Serial 3',
+      score: 600,
+    },
+    {
+      item: 'Fri',
+      user: 'Serial 1',
+      score: 400,
+    },
+    {
+      item: 'Fri',
+      user: 'Serial 2',
+      score: 600,
+    },
+    {
+      item: 'Fri',
+      user: 'Serial 3',
+      score: 200,
+    },
+    {
+      item: 'Sat',
+      user: 'Serial 1',
+      score: 1000,
+    },
+    {
+      item: 'Sat',
+      user: 'Serial 2',
+      score: 600,
+    },
+    {
+      item: 'Sat',
+      user: 'Serial 3',
+      score: 800,
+    },
+    {
+      item: 'Sun',
+      user: 'Serial 1',
+      score: 400,
+    },
+    {
+      item: 'Sun',
+      user: 'Serial 2',
+      score: 800,
+    },
+    {
+      item: 'Sun',
+      user: 'Serial 3',
+      score: 1000,
+    },
+  ];
+
+  const asyncFetch = () => {
+    setData(arrRadarChart?.length > 0 ? arrRadarChart : mockItem);
+  };
+
+  const config = {
+    data,
+    xField: 'item',
+    yField: 'score',
+    seriesField: 'user',
+    tooltip: false,
+    meta: {
+      score: {
+        min: 0,
+        max: 1000,
+      },
     },
     xAxis: {
-      categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-      tickmarkPlacement: 'on',
-      lineWidth: 0,
+      line: null,
+      tickLine: null,
+      grid: {
+        line: {
+          style: {
+            lineDash: null,
+          },
+        },
+      },
+      label: {
+        style: {
+          fill: '#475467',
+          fontSize: 14,
+          fontWeight: 500,
+          fontFamily: 'Lato',
+          fontStyle: 'normal',
+          lineHeight: '20px',
+        },
+      },
     },
     yAxis: {
-      categories: [2, 4, 6, 8, 10],
-      labels: {
+      line: null,
+      tickLine: null,
+      grid: {
+        line: {
+          type: 'line',
+          style: {
+            lineDash: null,
+          },
+        },
+      },
+      label: {
         style: {
-          display: 'flex',
-          alignItems: 'center',
-          padding: '2px 8px',
-          background: '#F2F4F7',
-          borderRadius: 16,
-          fontSize: '12px',
+          fill: '#344054',
+          fontWeight: 500,
+          fontSize: 12,
           fontFamily: 'Lato',
           fontStyle: 'normal',
           lineHeight: '18px',
-          fontWeight: 500,
-          color: '#344054',
-          textAlign: 'center',
         },
       },
-      gridLineInterpolation: 'polygon',
-      lineWidth: 0,
-      min: 0,
     },
-    credits: {
-      enabled: false,
+    color: ['#E83C70', '#0BA5EC', '#EE46BC'],
+    areaStyle: {
+      fillOpacity: 0.1,
     },
     legend: {
-      align: legend === 'right' ? 'right' : 'center',
-      verticalAlign: legend === 'right' ? 'top' : 'middle',
-      layout: 'vertical',
-      y: legend === 'right' ? 0 : 175 ,
-      enabled: legend === 'false' ? false : true,
+      visible: legend === 'false' ? false : true,
+      position: legend === 'right' ? 'right' : 'bottom',
+      marker: {
+        symbol: 'circle',
+      },
     },
-    series: [
-      {
-        data: [8, 6, 6, 2, 4, 10, 4],
-        pointPlacement: 'on',
-        color: '#E83C70',
-      },
-      {
-        data: [4, 10, 2, 6, 2, 8, 10],
-        pointPlacement: 'on',
-        color: '#EE46BC',
-      },
-      {
-        data: [6, 8, 4, 8, 6, 6, 8],
-        pointPlacement: 'on',
-        color: '#0BA5EC',
-      },
-    ],
-    tooltip: {
-      enabled: false,
-    },
+    area: {},
   };
 
-  return (
-    <div className={`hight-charts`}>
-      <HighchartsReact
-        highcharts={Highcharts}
-        options={options}
-      />
-    </div>
-  );
+  return <Radar {...config} />;
 };
 
 RadarChart.propTypes = {

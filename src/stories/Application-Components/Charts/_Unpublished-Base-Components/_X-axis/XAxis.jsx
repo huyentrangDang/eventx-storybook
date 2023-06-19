@@ -52,5 +52,4 @@ export const XAxis = ({ text, data, breakpoint }) => {
 XAxis.propTypes = {
   data: PropTypes.oneOf(['7 days', '30 days', '12 months']),
   breakpoint: PropTypes.oneOf(['desktop', 'mobile']),
-  text: PropTypes.string,
 };

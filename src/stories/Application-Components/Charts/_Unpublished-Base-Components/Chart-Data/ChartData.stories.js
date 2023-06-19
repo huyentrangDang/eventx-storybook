@@ -14,16 +14,7 @@ chartData.args = {
   axisLabels: 'false',
   chartStyle: 'line',
   breakpoint: 'desktop',
+  xAxis: 'true',
+  yAxis: 'true',
 };
-chartData.argTypes = {
-  xAxisValues: {
-    table: {
-      disable: true
-    }
-  },
-  yAxisValues: {
-    table: {
-      disable: true
-    }
-  }
-}
+chartData.argTypes = {};

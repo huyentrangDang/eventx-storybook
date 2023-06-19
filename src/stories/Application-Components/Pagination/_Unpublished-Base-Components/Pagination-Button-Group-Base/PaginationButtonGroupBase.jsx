@@ -1,33 +1,41 @@
-import PropTypes from "prop-types";
-import "../../../../assets/css/pagination/pagination-button-group-base.css";
-import "../../../../assets/css/text.css";
+import PropTypes from 'prop-types';
+import '../../../../assets/css/pagination/pagination-button-group-base.css';
+import '../../../../assets/css/text.css';
 
-export const PaginationButtonGroupBase = ({ icon, state, text }) => {
+export const PaginationButtonGroupBase = ({
+  icon,
+  state,
+  text,
+  iconPrev,
+  iconNext,
+}) => {
   return (
     <div
       className={[
-        `pagination-buron-group-base-icon--${icon}`,
-        `pagination-buron-group-state--${state}`,
-      ].join(" ")}
+        `pagination-button-group-base-icon--${icon}`,
+        `pagination-button-group-state--${state}`,
+      ].join(' ')}
     >
-      {icon === "false" && (
+      {icon === 'false' && (
         <span
-          className="text-sm-semibold"
+          className='text-sm-semibold'
           style={{
-            color: state === "focused" ? `var(--gray-700)` : `var(--gray-800)`,
+            color: state === 'focused' ? `var(--gray-700)` : `var(--gray-800)`,
           }}
         >
           {text}
         </span>
       )}
-      {icon === "leading" && (
+      {icon === 'leading' && (
         <>
-          <icon className={`${iconDefaultPath(icon, state)}`} />
+          <icon
+            className={[`${iconDefaultPath(icon, state)}`, iconPrev].join(' ')}
+          />
           <span
-            className="text-sm-semibold"
+            className='text-sm-semibold'
             style={{
               color:
-                state === "active-hover"
+                state === 'active-hover'
                   ? `var(--gray-800)`
                   : `var(--gray-700)`,
             }}
@@ -36,43 +44,47 @@ export const PaginationButtonGroupBase = ({ icon, state, text }) => {
           </span>
         </>
       )}
-      {icon === "trailing" && (
+      {icon === 'trailing' && (
         <>
           <span
-            className="text-sm-semibold"
+            className='text-sm-semibold'
             style={{
               color:
-                state === "active-hover"
+                state === 'active-hover'
                   ? `var(--gray-800)`
                   : `var(--gray-700)`,
             }}
           >
             Next
           </span>
-          <icon className={`${iconDefaultPath(icon, state)}`} />
+          <icon
+            className={[`${iconDefaultPath(icon, state)}`, iconNext].join(' ')}
+          />
         </>
       )}
-      {icon === "only" && (
-        <icon className={`${iconDefaultPath(icon, state)}`} />
+      {icon === 'only' && (
+        <icon
+          className={[`${iconDefaultPath(icon, state)}`, iconPrev].join(' ')}
+        />
       )}
     </div>
   );
 };
 
 PaginationButtonGroupBase.propTypes = {
-  icon: PropTypes.oneOf(["leading", "trailing", "only", "false"]),
-  state: PropTypes.oneOf(["focused", "active-hover", "default"]),
+  icon: PropTypes.oneOf(['leading', 'trailing', 'only', 'false']),
+  state: PropTypes.oneOf(['focused', 'active-hover', 'default']),
   text: PropTypes.string,
 };
 
 export const iconDefaultPath = (icon, state) => {
-  if (icon === "leading") {
-    if (state === "focused" || state === "default") return "arrow_left_gray700";
-    if (state === "active-hover") return "arrow_left_gray800";
+  if (icon === 'leading') {
+    if (state === 'focused' || state === 'default') return 'arrow_left_gray700';
+    if (state === 'active-hover') return 'arrow_left_gray800';
   }
-  if (icon === "trailing" || icon === "only") {
-    if (state === "focused" || state === "default")
-      return "arrow_right_gray700";
-    if (state === "active-hover") return "arrow_right_gray800";
+  if (icon === 'trailing' || icon === 'only') {
+    if (state === 'focused' || state === 'default')
+      return 'arrow_right_gray700';
+    if (state === 'active-hover') return 'arrow_right_gray800';
   }
 };

@@ -13,19 +13,11 @@ export const DatetimePickerMenu = ({
   timePicker,
   breakpoint,
 }) => {
-  const onRangeChange = (dates, dateStrings) => {
-    if (dates) {
-      console.log('From: ', dates[0], ', to: ', dates[1]);
-      console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
-    } else {
-      console.log('Clear');
-    }
-  };
-
   const today = dayjs();
   const prevWeek = today.subtract(7, 'day');
   const prevMonth = today.subtract(4, 'week');
   const prevYear = today.subtract(12, 'month');
+
   const rangePresets = [
     {
       label: 'Today',
@@ -64,26 +56,52 @@ export const DatetimePickerMenu = ({
     },
   ];
 
-  const eventDates = [
-    new Date('2023-06-10'),
-    new Date('2023-06-15'),
-    new Date('2023-06-20'),
-  ];
+  const isEventDay = (current) => {
+    const events = ['2023-06-10', '2023-06-25', '2023-06-30'];
+    const currentDate = current.format('YYYY-MM-DD');
+    return events.includes(currentDate);
+  };
 
-  const dateRender = (current) => {
-    const formattedDate = current.format('YYYY-MM-DD');
-    const isEventDate = eventDates.includes(formattedDate);
+  const [startDate, setStartDate] = React.useState(null);
+  const [endDate, setEndDate] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
 
-    if (isEventDate) {
-      return (
-        <div className='event-cell'>
-          <div className='event-date'>{current.date()}</div>
-          <icon className='dot-time' />
-        </div>
-      );
+  const handleOpenChange = (status) => {
+    if (status) {
+      setOpen(true);
+      setStartDate(null);
+      setEndDate(null);
+    } else {
+      setOpen(false);
     }
+  };
 
-    return current.date();
+  const handleDateChange = (dates, dateStrings) => {
+    if (dates) {
+      const [start, end] = dates;
+      setStartDate(start);
+      setEndDate(end);
+    }
+  };
+
+  const handleButtonClick = () => {
+    if (startDate && endDate) {
+      setStartDate(startDate);
+      setEndDate(endDate);
+      setOpen(false);
+    }
+  };
+
+  const renderExtraFooter = () => {
+    return (
+      <button
+        type='button'
+        className='button-apply'
+        onClick={handleButtonClick}
+      >
+        Apply
+      </button>
+    );
   };
 
   return (
@@ -92,23 +110,57 @@ export const DatetimePickerMenu = ({
         {type === 'pre-set-ranges' ? (
           <RangePicker
             presets={rangePresets}
-            showTime={timePicker === 'true' ? true : false}
+            showTime={timePicker === 'false' ? false : true}
             format='YYYY/MM/DD HH:mm:ss'
-            onChange={onRangeChange}
+            onChange={handleDateChange}
             getPopupContainer={(trigger) => {
               return trigger;
             }}
-            // dateRender={dateRender}
+            dateRender={(current) => {
+              if (isEventDay(current)) {
+                return (
+                  <div class='ant-picker-cell-inner'>
+                    {current.date()}
+                    {current.date() === startDate?.date() ||
+                    current.date() === endDate?.date() ? (
+                      <div className='dot-time-active' />
+                    ) : (
+                      <div className='dot-time' />
+                    )}
+                  </div>
+                );
+              }
+              return <div class='ant-picker-cell-inner'>{current.date()}</div>;
+            }}
+            // renderExtraFooter={renderExtraFooter}
+            // open={open}
+            // onOpenChange={handleOpenChange}
           />
         ) : (
           <RangePicker
-            showTime={timePicker === 'true' ? true : false}
+            showTime={timePicker === 'false' ? false : true}
             format='YYYY/MM/DD HH:mm:ss'
-            onChange={onRangeChange}
+            onChange={handleDateChange}
             getPopupContainer={(trigger) => {
               return trigger;
             }}
-            // dateRender={dateRender}
+            dateRender={(current) => {
+              if (isEventDay(current)) {
+                return (
+                  <div class='ant-picker-cell-inner'>
+                    {current.date()}
+                    {current.date() === startDate?.date() ||
+                    current.date() === endDate?.date() ? (
+                      <div className='dot-time-active' />
+                    ) : (
+                      <div className='dot-time' />
+                    )}
+                  </div>
+                );
+              }
+              return <div class='ant-picker-cell-inner'>{current.date()}</div>;
+            }}
+            renderExtraFooter={renderExtraFooter}
           />
         )}
       </div>

@@ -139,7 +139,7 @@
   align-items: center;
   padding: 12px 24px 16px;
   gap: 8px;
-  width: 1216px;
+  /* width: 1216px; */
   height: 68px;
   border-top: 1px solid var(--gray-200);
 }
@@ -150,7 +150,7 @@
   align-items: center;
   padding: 12px 24px 16px;
   gap: 8px;
-  width: 1216px;
+  /* width: 1216px; */
   height: 68px;
   border-top: 1px solid var(--gray-200);
 }
@@ -209,7 +209,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   padding: 0px;
   isolation: isolate;
   /* width: 485px;
@@ -238,9 +238,13 @@
 }
 
 .viewing-pagination > div > div > div > div > div {
-  width: 100%;
+  width: 100% !important;
+}
+
+.viewing-pagination > div > div > div > div > div > div {
+  display: none;
 }
 
 .viewing-pagination > div > div > div > div > div > input {
-  max-width: 35px;
+  max-width: 30px;
 }

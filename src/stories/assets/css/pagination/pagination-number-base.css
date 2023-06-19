@@ -50,3 +50,10 @@
   padding: 12px;
   border-radius: 8px;
 }
+.text-pagination-number {
+  text-align: center;
+  line-height: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: max-content;
+}

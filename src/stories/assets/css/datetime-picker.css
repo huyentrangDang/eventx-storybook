@@ -761,28 +761,6 @@
   color: var(--gray-700);
 }
 
-/* .datetime-picker .event-cell.event-date {
-  background-color: red;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.datetime-picker .event-cell.event-date::before {
-  background-color: red;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.datetime-picker .event-cell {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .datetime-picker .ant-picker-cell-range-hover {
   background: none !important;
   border-radius: 20px;
@@ -869,4 +847,65 @@
   bottom: 4px;
   background: #ffffff;
   border-radius: 5px;
+}
+
+.datetime-picker
+  :where(.css-dev-only-do-not-override-12jzuas).ant-btn.ant-btn-sm {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--primary-600);
+  border: 1px solid var(--primary-600);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--base-white);
+}
+
+.datetime-picker
+  :where(.css-dev-only-do-not-override-12jzuas).ant-btn.ant-btn-sm {
+  height: 40px;
+}
+
+/* .datetime-picker .ant-picker-ranges {
+  display: none;
+} */
+
+.button-apply {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: var(--primary-600);
+  border: 1px solid var(--primary-600);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--base-white);
+}
+
+.ant-picker-footer-extra {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 12px;
+  border-top: 1px solid var(--gray-200);
 }
