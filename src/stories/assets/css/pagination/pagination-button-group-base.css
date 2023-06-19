@@ -1,16 +1,16 @@
-.pagination-buron-group-base-icon--leading {
+.pagination-button-group-base-icon--leading {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px 16px;
   gap: 8px;
-  width: 114px;
-  height: 40px;
+  /* width: 114px;
+  height: 40px; */
   border-right: 1px solid var(--gray-300);
 }
 
-.pagination-buron-group-base-icon--false {
+.pagination-button-group-base-icon--false {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,19 +20,19 @@
   height: 40px;
   border-right: 1px solid var(--gray-300);
 }
-.pagination-buron-group-base-icon--trailing {
+.pagination-button-group-base-icon--trailing {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px 16px;
   gap: 8px;
-  width: 91px;
-  height: 40px;
+  /* width: 91px;
+  height: 40px; */
   border-right: 1px solid var(--gray-300);
 }
 
-.pagination-buron-group-base-icon--only {
+.pagination-button-group-base-icon--only {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,13 +43,13 @@
   border-right: 1px solid var(--gray-300);
 }
 
-.pagination-buron-group-state--default {
+.pagination-button-group-state--default {
   background: var(--base-white);
 }
-.pagination-buron-group-state--focused {
+.pagination-button-group-state--focused {
   background: var(--gray-50);
 }
-.pagination-buron-group-state--active-hover {
+.pagination-button-group-state--active-hover {
   background: var(--gray-50);
 }
 

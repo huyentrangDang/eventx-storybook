@@ -9,7 +9,6 @@ export default {
 const xAxis = (args) => <XAxis {...args} />;
 export const _XAxis = xAxis.bind({});
 _XAxis.args = {
-  // text: 'Month',
   data: '7 days',
   breakpoint: 'desktop',
 };
